@@ -1,0 +1,146 @@
+header.page-header
+  .page-header__logo
+    img(src="img/gllacy.svg" alt="логотип компании" width="154" height="64")
+    nav.main-navigation
+      ul.main-navigation__list
+        li.main-navigation__item
+          a.main-navigation__link(href="catalog.html")
+            span Каталог
+          ul.main-navigation__submenu
+            li Новинки
+            li
+              a(href="#") Сливочное
+            li
+              a(href="#") Щербеты
+            li
+              a(href="#") Фруктовый лед
+            li
+              a(href="#") Мелорин
+        li.main-navigation__item
+          a.main-navigation__link(href="#")
+            span Доставка и
+        li.main-navigation__item
+          a.main-navigation__link(href="#")
+            span О Компании
+    nav.user-navigation
+      ul.user-navigation__list
+        li.user-navigation__item
+          a.user-navigation__link.user-navigation__link--search(href="")
+          .user-navigation__sub-search
+            input(type="text" placeholder="Крем-брюле")
+        li.user-navigation__item
+          a.user-navigation__link(href="#") Вход
+          .entry
+            form.entry__form(action="#")
+              input(type="text" placeholder="email@example.com")
+              input(type="password" placeholder="••••••••")
+              button.button(type="submit") Войти
+              p.entry__options
+                a(href="#") Забыли пароль?
+                a(href="#") Новая регистрация
+        li.user-navigation__item
+          a.user-navigation__link(href="#")
+main
+  h1.visually-hidden Gllacy - мороженое на любой вкус!
+  section.schedule
+    h2.visually-hidden Расписание работы и контактный телефон
+    .schedule__container
+      span.schedule__time С 10 до 20, ежедневно
+      span.schedule__phone 8 812 450-25-25
+  section.intro
+    .intro__main-image.intro__main-image--cream
+      img(src="img/icecream.png" alt="мороженое Крем-брюле и пломбир с малиновым джемом" width="647" height="584")
+    .intro__main-image.intro__main-image--chocolate
+      img(src="img/icecream.png" alt="мороженое Крем-брюле и пломбир с малиновым джемом" width="647" height="584")
+    .intro__main-image.intro__main-image--strawberry
+      img(src="img/icecream.png" alt="мороженое Крем-брюле и пломбир с малиновым джемом" width="647" height="584")
+    h2.intro__heading Крем-брюле и пломбир с малиновым джемом
+    a.button(href="#") Давайте оба!
+    .themes
+      span.themes__dot.themes__dot--active.jsDot1
+      span.themes__dot.jsDot2
+      span.themes__dot.jsDot3
+  section.features
+    article.features__item.features__item--raspberry
+      h2.features__heading Малинка даром!
+      p.features__description При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
+      a.button features__link(href="#") Хочу варенье!
+    article.features__item.features__item--chocolate
+      h2.features__heading Шоколадки даром!
+      p.features__description При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
+      a.button.features__link(href="#") Хочу шоколадки!
+  section.content
+    ul.content__list
+      li.content__item.content__item--hit
+        img(src="img/orange.png" width="267" height="267" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой")
+        p.content__info
+          span.content__price 310 ₽
+          span.content__price-measure /кг
+          h3.content__heading Сливочное с апельсиновым джемом и цитрусовой стружкой
+          a.button (href="#") Быстрый просмотр
+      li.content__item.content__item--hit
+        img(src="img/coffee.png"  width="267" height="267" alt="Сливочно-кофейное мороженое с кусочками шоколада")
+        p.content__info
+          span.content__price 380 ₽
+          span.content__price-measure /кг
+        h3.content__heading Сливочно-кофейное с кусочками шоколада
+        a.button(href="#") Быстрый просмотр
+      li.content__item.content__item--hit
+        img(src="img/strawberry.png"  width="267" height="267" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада")
+        p.content__info
+          span.content__price 355 ₽
+          span.content__price-measure /кг
+        h3.content__heading Сливочно-клубничное с присыпкой из белого шоколада
+        a.button(href="#") Быстрый просмотр
+      li.content__item.content__item--hit
+        img(src="img/cream.png"  width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой")
+        p.content__info
+          span.content__price 415 ₽
+          span.content__price-measure /кг
+        h3.content__heading Сливочное крем-брюле с карамельной подливкой
+        a.button(href="#") Быстрый просмотр
+  section.about
+    h2.about__heading Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес
+    ul.about__list
+      li.about__item
+        p.about__description.about__description--icecream Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+      li.about__item
+        p.about__description.about__description--ingredients Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+      li.about__item
+        p.about__description.about__description--leaf Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+      li.about__item
+        p.about__description.about__description--temperature Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+  section.news
+    h2.visually-hidden Новости
+    article.news__item.news__item--news
+      h3.news__heading Новое в нашем блоге
+      a.news__link(href="#") 10 способов сервировки фруктовых щербетов к столу
+    article.news__item.news__item--subscription
+      p.news__description Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+      form.news__form(action="#" method="post")
+        input(type="email" placeholder="email@example.com")
+        button.button(type="submit") Отправить
+footer.page-footer
+  .page-footer__social
+    ul.page-footer__social-list
+      li.page-footer__social-item
+        a.page-footer__social-link(href="#")
+      li.page-footer__social-item
+        a.page-footer__social-link(href="#")
+      li.page-footer__social-item
+        a.page-footer__social-link(href="#")
+      li.page-footer__social-item
+        a.page-footer__social-link(href="#")
+  .page-footer__info
+    ul.page-footer__info-list
+      li.page-footer__info-item.page-footer__info-item--supplier
+        a(href="#") Для поставщиков
+      li.page-footer__info-item.page-footer__info-item--supplier
+        a(href="#") Наши документы
+      li.page-footer__info-item.page-footer__info-item--supplier
+        a(href="#") О производстве
+      li.page-footer__info-item.page-footer__info-item--supplier
+        a(href="#") Экологические стандарты
+  .copyright
+    a.copyright__link(href="#")
+    span Сделано в HTML Academy © 2019

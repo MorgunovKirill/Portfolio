@@ -1,0 +1,15 @@
+stages:
+  - deploy-master
+  
+deploy-master:
+  stage: deploy-master
+  script:
+    - echo "Деплой на продакшн запущен..."
+    - sshpass -V
+    - SSHPASS=$DEV_HOST_PASS
+    - export SSHPASS=$DEV_HOST_PASS
+    - sshpass -e rsync --exclude '.git' --exclude '.gitlab-ci.yml' -avzh -e 'ssh -p 1122' . $DEV_HOST_USER@$DEV_HOST_ADDR:$DEV_HOST_DIR
+    - echo "Деплой на продакшн завершен!"
+  only:
+    - master
+
