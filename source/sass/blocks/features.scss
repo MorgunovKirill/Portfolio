@@ -1,0 +1,42 @@
+.features {
+  @include wrapper();
+  color: #ffffff;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.features__item {
+  flex-basis: calc(50% - 13px);
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 229px;
+  padding: 23px 20px;
+
+  &--raspberry {
+    background-image: url("../../img/raspberry.png");
+    background-repeat: no-repeat;
+    margin-right: 26px;
+  }
+
+  &--chocolate {
+    background-image: url("../../img/chocolate-back.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.features__heading {
+  font-size: 35px;
+  line-height: 1.17;
+  margin: 0 0 20px 0;
+}
+
+.features__description {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.22;
+  margin: 0 0 45px 0;
+}
+
+.features .button {
+  margin-left: auto;
+}

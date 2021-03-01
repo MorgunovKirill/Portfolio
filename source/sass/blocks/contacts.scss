@@ -1,0 +1,36 @@
+.contacts {
+  position: relative;
+  background-color: #ffffff;
+  width: 302px;
+  min-height: 305px;
+  margin-left: auto;
+  border-radius: 15px;
+  padding: 30px 25px;
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+.contacts p {
+  margin: 0 0 10px 0;
+}
+
+.contacts p:last-of-type {
+  margin: 0 0 23px 0;
+}
+
+.contacts__heading {
+  margin: 0 0 23px 0;
+  font-size: 18px;
+  line-height: 1.33;
+}
+
+.contacts__phone {
+  display: block;
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.contacts .button {
+  color: #ffffff;
+}

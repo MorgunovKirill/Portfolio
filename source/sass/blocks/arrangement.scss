@@ -1,0 +1,9 @@
+.arrangement {
+  position: relative;
+  min-height: 430px;
+}
+
+.arrangement__wrapper {
+  @include wrapper();
+  padding-top: 63px;
+}

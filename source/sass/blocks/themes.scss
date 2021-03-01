@@ -1,0 +1,24 @@
+.themes {
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+  display: flex;
+}
+
+.themes__dot {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  margin-right: 8px;
+  cursor: pointer;
+
+  &:not(.themes__dot--active):hover {
+    background-color: #b2c1b7;
+  }
+
+  &--active {
+    background-color: #ffffff;
+  }
+}
+

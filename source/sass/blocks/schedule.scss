@@ -1,0 +1,24 @@
+.schedule {
+  @include wrapper();
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.schedule__container {
+  width: 200px;
+  margin-left: auto;
+}
+
+.schedule__time {
+  display: block;
+  text-align: right;
+  margin-bottom: 8px;
+}
+
+.schedule__phone {
+  display: block;
+  font-size: 22px;
+  line-height: 1.09;
+  text-align: right;
+}

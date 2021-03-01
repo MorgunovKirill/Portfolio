@@ -1,0 +1,41 @@
+.intro {
+  @include wrapper();
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+
+  padding-top: 284px;
+  margin-bottom: 40px;
+}
+
+.intro__heading {
+  font-size: 60px;
+  line-height: 1;
+  max-width: 667px;
+  margin: 0 auto 26px auto;
+  text-align: center;
+}
+
+.intro .button {
+  width: 280px;
+  min-height: 64px;
+  font-size: 32px;
+  margin: 0 auto;
+}
+
+.intro__main-image {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: -1;
+
+  &--chocolate {
+    display: none;
+  }
+
+  &--strawberry {
+    display: none;
+  }
+}

@@ -1,0 +1,67 @@
+mixin header(headerMod, currentPage)
+  -
+    //- var headerLinks = [
+    //-   {
+    //-     href: "#",
+    //-     text: "Проекты"
+    //-   },
+    //-   {
+    //-     href: "#",
+    //-     text: "Квартиры"
+    //-   },
+    //-   {
+    //-     href: "#",
+    //-     text: "Ипотека"
+    //-   },
+    //-   {
+    //-     href: "#",
+    //-     text: "Новости и акции"
+    //-   },
+    //-   {
+    //-     href: "#",
+    //-     text: "Контакты"
+    //-   },
+    //- ]
+
+header.page-header
+  .page-header__logo
+    img(src="img/gllacy.svg" alt="логотип компании" width="154" height="64")
+  nav.main-navigation
+    ul.main-navigation__list
+      li.main-navigation__item
+        a.main-navigation__link(href="catalog.html")
+          span Каталог
+        ul.main-navigation__submenu
+          li Новинки
+          li
+            a(href="#") Сливочное
+          li
+            a(href="#") Щербеты
+          li
+            a(href="#") Фруктовый лед
+          li
+            a(href="#") Мелорин
+      li.main-navigation__item
+        a.main-navigation__link(href="#")
+          span Доставка и оплата
+      li.main-navigation__item
+        a.main-navigation__link(href="#")
+          span О Компании
+  nav.user-navigation
+    ul.user-navigation__list
+      li.user-navigation__item
+        a.user-navigation__link.user-navigation__link--search(href="")
+        .user-navigation__sub-search
+          input(type="text" placeholder="Крем-брюле")
+      //- li.user-navigation__item
+      //-   a.user-navigation__link(href="#") Вход
+      //-   .entry
+      //-     form.entry__form(action="#")
+      //-       input(type="text" placeholder="email@example.com")
+      //-       input(type="password" placeholder="••••••••")
+      //-       button.button(type="submit") Войти
+      //-       p.entry__options
+      //-         a(href="#") Забыли пароль?
+      //-         a(href="#") Новая регистрация
+      //- li.user-navigation__item
+      //-   a.user-navigation__link(href="#") Пусто

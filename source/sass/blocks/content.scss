@@ -1,0 +1,84 @@
+.content {
+  @include wrapper();
+  color: #ffffff;
+  margin-bottom: -43px;
+}
+
+.content__list {
+  @include list-reset();
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+
+.content__item {
+  position: relative;
+  flex-basis: 25%;
+  padding: 6px 13px 83px 13px;
+  margin-top: -35px;
+
+  &--hit {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 61px;
+      height: 61px;
+      top: 0;
+      left: 0;
+      background-image: url("../../img/hit.svg");
+    }
+  }
+
+  &:hover {
+    background-color: rgba(248, 247, 244, 0.2);
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    z-index: 15;
+  }
+}
+
+
+.content__item:last-child {
+  margin-right: 0;
+}
+
+.content__info {
+  position: absolute;
+  top: 214px;
+  margin: 0;
+  text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+  font-weight: bold;
+}
+
+.content__price {
+  font-size: 45px;
+  line-height: 1;
+}
+
+.content__price-measure {
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+.content__heading {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  max-width: 250px;
+  margin: 0;
+}
+
+.content__item .button {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 22px;
+  margin: 0 auto;
+  width: 200px;
+  padding: 11px 15px 5px 15px;
+}
+
+.content__item:hover .button {
+  display: block;
+}
