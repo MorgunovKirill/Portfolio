@@ -1,10 +1,14 @@
 const themes = () => {
+  if (!document.querySelector('.themes')) {
+    return;
+  }
+
   const dot1 = document.querySelector('.jsDot1');
   const dot2 = document.querySelector('.jsDot2');
   const dot3 = document.querySelector('.jsDot3');
-  const image1 = document.querySelector('.intro__main-image--cream');
-  const image2 = document.querySelector('.intro__main-image--chocolate');
-  const image3 = document.querySelector('.intro__main-image--strawberry');
+  const image1 = document.querySelector('.intro__main-image--soty');
+  const image2 = document.querySelector('.intro__main-image--banki');
+  const image3 = document.querySelector('.intro__main-image--rozliv');
   const heading = document.querySelector('.intro__heading');
   const body = document.querySelector('body');
 
@@ -15,7 +19,7 @@ const themes = () => {
     image1.style.display = 'block';
     image2.style.display = 'none';
     image3.style.display = 'none';
-    heading.textContent = 'Крем-брюле и пломбир с малиновым джемом';
+    heading.textContent = 'Мед в сотах';
     body.style.backgroundColor = '#849d8f';
   });
 
@@ -26,7 +30,7 @@ const themes = () => {
     image1.style.display = 'none';
     image2.style.display = 'block';
     image3.style.display = 'none';
-    heading.textContent = 'Шоколадный пломбир и лимонный сорбет';
+    heading.textContent = 'Мед в банках';
     body.style.backgroundColor = '#8996a6';
   });
 
@@ -37,7 +41,7 @@ const themes = () => {
     image1.style.display = 'none';
     image2.style.display = 'none';
     image3.style.display = 'block';
-    heading.textContent = 'Пломбир с помадкой и клубничный щербет';
+    heading.textContent = 'Мед на розлив';
     body.style.backgroundColor = '#9d8b84';
   });
 };
