@@ -60,6 +60,8 @@
   background-color: rgba(255, 255, 255, 0.2);
   padding: 9px 17px 9px 16px;
   border-radius: 15px;
+  transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
+  outline: none;
 
   &--search {
     justify-content: center;
@@ -79,7 +81,8 @@
   }
 }
 
-.user-navigation__link:hover {
+.user-navigation__link:hover,   
+.user-navigation__link:focus {
   background-color: rgba(255, 255, 255, 1);
   color: #000000;
 }
@@ -88,7 +91,8 @@
   fill: #ffffff;
 }
 
-.user-navigation__link:hover svg {
+.user-navigation__link:hover svg,
+.user-navigation__link:focus svg {
   fill: #000000;
 }
 

@@ -14,6 +14,10 @@
   color: inherit;
   text-decoration: none;
   padding: 5px 13px 6px 14px;
+  transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
+  border-radius: 15px;
+  outline: none;
+
 
   &--active {
     border-radius: 15px;
@@ -34,11 +38,11 @@
   border-bottom: 1px solid #a0b5a9;
 }
 
-.main-navigation__link:not(.main-navigation__link--active):hover {
+.main-navigation__link:not(.main-navigation__link--active):hover,
+.main-navigation__link:not(.main-navigation__link--active):focus {
   border: none;
   background-color: #ffffff;
-  color: #000000;
-  border-radius: 15px;
+  color: #000000;  
 }
 
 .main-navigation__link:active {

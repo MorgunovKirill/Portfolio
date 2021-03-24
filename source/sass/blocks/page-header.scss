@@ -1,5 +1,6 @@
 .page-header {
   @include wrapper();
+  padding-top: 20px;
   position: relative;
   color: #ffffff;
   display: flex;
@@ -13,7 +14,7 @@
     right: 0;
     margin: 0 auto;
     height: 859px;
-    background-image: url("../../img/lightback.png");
+    background-image: url("../img/lightback.png");
     background-repeat: no-repeat;
     z-index: -10;
   }

@@ -7,13 +7,12 @@
 
 .news__item {
   flex-basis: calc(50% - 13px);
-  min-height: 220px;
-  background-color: #ffffff;
+  min-height: 220px;  
   padding: 26px 20px;
   border-radius: 15px;
 
   &--news {
-    background-image: url("../../img/news-back.jpg");
+    background-image: url("../img/maple_sugar.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -22,7 +21,7 @@
     background-color: #f8f7f4;
     padding: 33px 20px 35px 20px;
     border: 6px solid #40c4c8;
-    border-image: url("../../img/letter-back.png") 6 round round;
+    border-image: url("../img/letter-back.png") 6 round round;
   }
 }
 
@@ -30,6 +29,7 @@
   font-size: 16px;
   font-weight: 500;
   margin: 0 0 13px 0;
+  color: #ffffff;
 }
 
 .news__description {
@@ -42,8 +42,24 @@
   font-size: 24px;
   font-weight: bold;
   line-height: 1.25;
-  color: #323232;
+  color: #ffffff;
   display: block;
+  max-width: 280px;
+
+  transition: color 0.3s ease;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    color: yellowgreen;
+  }
+}
+
+.news__link-description {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
   max-width: 280px;
 }
 

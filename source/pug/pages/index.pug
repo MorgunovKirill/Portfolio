@@ -35,11 +35,11 @@ block main
     section.features
       article.features__item.features__item--raspberry
         h2.features__heading Малинка даром!
-        p.features__description При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
+        p.features__description При покупке 2 кг любого меда, добавим в ваш заказ банку малинового варенья бесплатно.
         a.button.features__link(href="#") Подробнее
       article.features__item.features__item--chocolate
         h2.features__heading Шоколадки даром!
-        p.features__description При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
+        p.features__description При покупке 2 кг меда, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
         a.button.features__link(href="#") Подробнее
     section.content
       ul.content__list
@@ -76,23 +76,32 @@ block main
           h3.content__heading Мед с прополисом
           a.button(href="#") Быстрый просмотр
     section.about
-      h2.about__heading Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес
+      h2.about__heading Магазин "МЁД" — это онлайн- и офлайн-магазин по продаже мёда собственного производства на развес и в упаковке
       ul.about__list
         li.about__item
-          p.about__description.about__description--icecream Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+          p.about__description.about__description--icecream
+           strong Качество:
+           |  Мы имеем собственную лабораторию - при несоответствии состава меда или другого товара заявленным данным, результаты наших анализов являются приоритетными. Мы предлагаем в продаже только эколгически чистый мед;
         li.about__item
-          p.about__description.about__description--ingredients Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+          p.about__description.about__description--icecream
+           strong Ассортимент:
+           |  Мы принимаем на реализацию мед со всех уголков страны. Ни одна региональная ярмарка не может предоставить продукцию в таком многообразии;
         li.about__item
-          p.about__description.about__description--leaf Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+          p.about__description.about__description--icecream
+           strong Всегда в наличии:
+           |  редкие сорта: дягилевый, каштановый, таежный, кипрейный, лавандовый, мед джантак и дикий;
         li.about__item
-          p.about__description.about__description--temperature Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+          p.about__description.about__description--icecream
+           strong Цена:
+           |  благодаря собственной пасеке и многолетнему сотрудничеству с пчеловодами мы предлагаем высококачественный мед по низкой цене!
     section.news
       h2.visually-hidden Новости
       article.news__item.news__item--news
         h3.news__heading Новое в нашем блоге
-        a.news__link(href="#") 10 способов сервировки фруктовых щербетов к столу
+        a.news__link(href="#") Кленовый сахар
+        p.news__link-description Из чего делают кленовый сахар, Состав кленового сахара, Где и как используют кленовый сахар
       article.news__item.news__item--subscription
-        p.news__description Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+        p.news__description Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. 
         form.news__form(action="#" method="post")
           input(type="email" placeholder="email@example.com")
           button.button(type="submit") Отправить

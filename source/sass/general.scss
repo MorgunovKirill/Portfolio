@@ -40,14 +40,17 @@ img {
   text-decoration: none;
   color: inherit;
   padding: 12px 24px 11px 22px;
-  cursor: pointer;
+  cursor: pointer;  
+  outline: none;
 
   box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
   background-image: linear-gradient(to top, #e74a35, #f26843);
   border-radius: 28px;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
-.button:hover {
+.button:hover, 
+.button:focus {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(to top, #e74a35, #f26843);
   box-shadow: 0 2px 2px 0 #ac1000;
   // background-image: linear-gradient(90deg, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
