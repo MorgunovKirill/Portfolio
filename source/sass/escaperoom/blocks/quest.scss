@@ -15,7 +15,8 @@
     padding-bottom: 58px;
   }
 
-  &--mansion {
+  &--mansion { 
+
     @media (max-width: $mobile-width) {
       padding-top: 232px;
     }

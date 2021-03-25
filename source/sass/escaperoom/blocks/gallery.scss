@@ -127,13 +127,24 @@
     }
   }
 
+  &--available {
+    outline: 1px solid #ffffff;
+  }
+
   &--mansion {
+    
     a {
       padding-top: 100px;
     }
   }
 
-  &--experiment {
+  &--experiment {   
+
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+
     a {
       padding-top: 100px;
     }

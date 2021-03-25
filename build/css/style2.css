@@ -1061,8 +1061,14 @@ input[type="checkbox"]:checked + label::before {
     @media (max-width: 767px) {
       .gallery__item a {
         width: 328px; } }
+  .gallery__item--available {
+    outline: 1px solid #ffffff; }
   .gallery__item--mansion a {
     padding-top: 100px; }
+  .gallery__item--experiment img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
   .gallery__item--experiment a {
     padding-top: 100px; }
 

@@ -31,7 +31,7 @@ html(lang="ru")
 
     link(rel="stylesheet", href="css/style2.min.css")
 
-  body
+  body.allquests
     include ../../../build/img/sprite2_auto.svg
     header.page-header.page-header--index.page-header--nojs.page-header--closed
         .page-header__logo
@@ -94,8 +94,8 @@ html(lang="ru")
                                 span 2–5 чел
                             .gallery__dificulty
                                 span сложный       
-                li.gallery__item.gallery__item--hit
-                    a(href="maniack.html")
+                li.gallery__item.gallery__item--hit.gallery__item--available
+                    a(href="escaperoom-maniack.html")
                         img(src="img/maniack-list.jpg" alt="Маньяк")
                         h3 Маньяк
                         p Верхнетецкая, 32
@@ -104,8 +104,8 @@ html(lang="ru")
                                 span 3–6 чел
                             .gallery__dificulty
                                 span средний
-                li.gallery__item
-                    a(href="ritual.html")
+                li.gallery__item.gallery__item--available
+                    a(href="escaperoom-ritual.html")
                         img(src="img/ritual-list.jpg" alt="Ритуал")
                         h3 Ритуал
                         p пр. Ленина, 37
@@ -124,8 +124,8 @@ html(lang="ru")
                                 span 5-6 чел
                             .gallery__dificulty
                                 span легкий 
-                li.gallery__item
-                    a(href="mansion.html")
+                li.gallery__item.gallery__item--mansion.gallery__item--available
+                    a(href="escaperoom-mansion.html")
                         img(src="img/mansion-list.jpg" alt="Тайны старого особняка")
                         h3 Тайны старого особняка
                         p пр. Ленина, 37
@@ -144,8 +144,8 @@ html(lang="ru")
                                 span 4-7 чел
                             .gallery__dificulty
                                 span средний 
-                li.gallery__item.gallery__item--hit
-                    a(href="experiment.html")
+                li.gallery__item.gallery__item--experiment.gallery__item--hit.gallery__item--available
+                    a(href="escaperoom-experiment.html")
                         img(src="img/experiment.jpg" alt="Фатальный эксперимент")
                         h3 Фатальный эксперимент
                         p Верхнетецкая, 32
