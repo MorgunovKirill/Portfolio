@@ -1,0 +1,177 @@
+.select {
+  margin: 0 auto;
+  margin-top: 48px;
+  width: 1104px;
+  padding-right: 24px;
+
+  @media (max-width: 1150px) {
+    width: 712px;
+    padding-right: initial;
+    margin: 0 auto;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    margin: 0;
+    margin-top: 13px;
+    padding: 0 16px;
+  }
+
+  h1 {
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 110%;
+    color: #ffffff;
+
+    margin: 0 0 52px 0;
+
+    @media (max-width: $mobile-width) {
+      font-size: 36px;
+      margin: 0 0 45px 0;
+    }
+  }
+
+  > p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 144%;
+    color: $primary-color;
+    margin: 0 0 8px 0;
+
+    @media (max-width: $mobile-width) {
+      margin: 0 0 11px 0;
+    }
+  }
+}
+
+.select__list {
+  @include list-reset();
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+
+  @media (max-width: $mobile-width) {
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+  }
+}
+
+.select__item {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: #e6e6e6;
+  padding: 0 40px 0 0;
+  margin-right: 40px;
+  border-right: 1px solid rgba(255, 255, 255, 0.16);
+  margin-bottom: 15px;
+
+  &:last-of-type {
+    border: none;
+    margin-right: initial;
+    margin-bottom: initial;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-right: 16px;
+    margin-right: 16px;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-left: 12px;
+    }
+  }
+
+  &--active {
+    a {
+      span {
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: -5px;
+          border-bottom: 2px solid #f2890f;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &--allquests {
+    span {
+      min-width: 76px;
+    }
+
+    svg {
+      @media (max-width: $mobile-width) {
+        width: 21px;
+        height: 24px;
+      }
+    }
+  }
+
+  &--adventures {
+    svg {
+      @media (max-width: $mobile-width) {
+        width: 29px;
+        height: 24px;
+      }
+    }
+  }
+
+  &--horror {
+    svg {
+      @media (max-width: $mobile-width) {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  &--mysticism {
+    svg {
+      @media (max-width: $mobile-width) {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  &--detective {
+    svg {
+      @media (max-width: $mobile-width) {
+        width: 32px;
+        height: 24px;
+      }
+    }
+  }
+
+  &--sci-fi {
+    span {
+      @media (max-width: $mobile-width) {
+        min-width: 76px;
+      }
+    }
+
+    svg {
+      @media (max-width: $mobile-width) {
+        width: 23px;
+        height: 24px;
+      }
+    }
+  }
+}
+
+.select__item:not(.select__item--active) a:hover,
+.select__item:not(.select__item--active) a:focus {
+  outline: none;
+  opacity: 0.5;
+}
