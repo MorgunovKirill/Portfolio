@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Escaperoom — Главная</title>
+    <title>Escaperoom — Выбор квеста</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -14,7 +14,7 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/style2.min.css">
   </head>
-  <body class="index"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
+  <body><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
 <clipPath id="clip0">
 <rect width="11" height="14" fill="white"/>
 </clipPath>
@@ -103,9 +103,114 @@
       </nav>
     </header>
     <main>
-      <section class="intro">
-        <h1>Лучшие квесты<br> в Новосибирске</h1>
-        <p>Надоело проводить свободное время лёжа на диване? Игровые площадки questroom на целый час погружают вас в мир незабываемых авантюр. Ищите подсказки, решайте головоломки и находите выход из комнаты!</p><a class="button" href="escaperoom-selectQuest.html">Выбрать квест</a>
+      <section class="select">
+        <p>квесты в Новосибирске</p>
+        <h1>Выберите тематику</h1>
+        <ul class="select__list">
+          <li class="select__item select__item--active select__item--allquests"><a href="#">
+              <svg width="26" height="30" aria-hidden="true">
+                <use xlink:href="#icon-allquests"></use>
+              </svg><span>Все квесты</span></a></li>
+          <li class="select__item select__item--active select__item--adventures"><a href="#">
+              <svg width="36" height="30" aria-hidden="true">
+                <use xlink:href="#icon-adventures"></use>
+              </svg><span>Приключения</span></a></li>
+          <li class="select__item select__item--active select__item--horror"><a href="#">
+              <svg width="30" height="30" aria-hidden="true">
+                <use xlink:href="#icon-horror"></use>
+              </svg><span>Ужасы            </span></a></li>
+          <li class="select__item select__item--active select__item--mysticism"><a href="#">
+              <svg width="30" height="30" aria-hidden="true">
+                <use xlink:href="#icon-mysticism"></use>
+              </svg><span>Мистика           </span></a></li>
+          <li class="select__item select__item--active select__item--detective"><a href="#">
+              <svg width="40" height="30" aria-hidden="true">
+                <use xlink:href="#icon-detective"></use>
+              </svg><span>Детектив          </span></a></li>
+          <li class="select__item select__item--active select__item--sci-fi"><a href="#">
+              <svg width="28" height="30" aria-hidden="true">
+                <use xlink:href="#icon-sci-fi"></use>
+              </svg><span>Sci-fi             </span></a></li>
+        </ul>
+        <ul class="gallery">
+          <li class="gallery__item gallery__item--hit"><a href="#"><img src="img/crypt-list.jpg" alt="Склеп">
+              <h3>Склеп</h3>
+              <p>пр. Ленина, 37</p>
+              <div> 
+                <div class="gallery__quantity"><span>2–5 чел</span></div>
+                <div class="gallery__dificulty"><span>сложный       </span></div>
+              </div></a></li>
+          <li class="gallery__item gallery__item--hit"><a href="maniack.html"><img src="img/maniack-list.jpg" alt="Маньяк">
+              <h3>Маньяк</h3>
+              <p>Верхнетецкая, 32</p>
+              <div>
+                <div class="gallery__quantity"><span>3–6 чел</span></div>
+                <div class="gallery__dificulty"><span>средний</span></div>
+              </div></a></li>
+          <li class="gallery__item"><a href="ritual.html"><img src="img/ritual-list.jpg" alt="Ритуал">
+              <h3>Ритуал</h3>
+              <p>пр. Ленина, 37</p>
+              <div>
+                <div class="gallery__quantity"><span>3–5 чел</span></div>
+                <div class="gallery__dificulty"><span>сложный</span></div>
+              </div></a></li>
+          <li class="gallery__item"><a href="#"><img src="img/ghosts-list.jpg" alt="История призраков">
+              <h3>История призраков</h3>
+              <p>Новослободская, 2а</p>
+              <div>
+                <div class="gallery__quantity"><span>5-6 чел</span></div>
+                <div class="gallery__dificulty"><span>легкий </span></div>
+              </div></a></li>
+          <li class="gallery__item"><a href="mansion.html"><img src="img/mansion-list.jpg" alt="Тайны старого особняка">
+              <h3>Тайны старого особняка</h3>
+              <p>пр. Ленина, 37</p>
+              <div>
+                <div class="gallery__quantity"><span>2-5 чел</span></div>
+                <div class="gallery__dificulty"><span>легкий </span></div>
+              </div></a></li>
+          <li class="gallery__item gallery__item--cabin gallery__item--hit"><a href="#"><img src="img/cabin-list.jpg" alt="Хижина в лесу">
+              <h3>Хижина в лесу</h3>
+              <p>Верхнетецкая, 32</p>
+              <div>
+                <div class="gallery__quantity"><span>4-7 чел</span></div>
+                <div class="gallery__dificulty"><span>средний </span></div>
+              </div></a></li>
+          <li class="gallery__item gallery__item--hit"><a href="experiment.html"><img src="img/experiment.jpg" alt="Фатальный эксперимент">
+              <h3>Фатальный эксперимент</h3>
+              <p>Верхнетецкая, 32</p>
+              <div>
+                <div class="gallery__quantity"><span>5-8 чел</span></div>
+                <div class="gallery__dificulty"><span>сложный</span></div>
+              </div></a></li>
+          <li class="gallery__item"><a href="#"><img src="img/metro-list.jpg" alt="Метро 2033">
+              <h3>Метро 2033</h3>
+              <p>Новослободская, 2а</p>
+              <div>
+                <div class="gallery__quantity"><span>6-8 чел</span></div>
+                <div class="gallery__dificulty"><span>средний</span></div>
+              </div></a></li>
+          <li class="gallery__item"><a href="#"><img src="img/attic-list.jpg" alt="Старый чердак">
+              <h3>Старый чердак</h3>
+              <p>Новослободская, 2а</p>
+              <div>
+                <div class="gallery__quantity"><span>2-3 чел</span></div>
+                <div class="gallery__dificulty"><span>легкий</span></div>
+              </div></a></li>
+          <li class="gallery__item gallery__item--boundary"><a href="#"><img class="boundary" src="img/boundary-list.jpg" alt="Последний рубеж">
+              <h3>Последний рубеж</h3>
+              <p>Верхнетецкая, 32</p>
+              <div>
+                <div class="gallery__quantity"><span>4-7 чел</span></div>
+                <div class="gallery__dificulty"><span>средний</span></div>
+              </div></a></li>
+          <li class="gallery__item"><a href="#"><img src="img/mars-list.jpg" alt="Марс-2056">
+              <h3>Марс-2056</h3>
+              <p>пр. Ленина, 37</p>
+              <div>
+                <div class="gallery__quantity"><span>2-4 чел</span></div>
+                <div class="gallery__dificulty"><span>легкий  </span></div>
+              </div></a></li>
+        </ul>
       </section>
     </main>
     <footer class="page-footer">
