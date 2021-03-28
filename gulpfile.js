@@ -17,7 +17,7 @@ const pug = require('gulp-pug');
 const cached = require('gulp-cached');
 
 const pugToHtml = () => {
-  return gulp.src('source/pug/pages/*.pug')
+  return gulp.src('source/pug/pages/**/*.pug')
       .pipe(plumber())
       .pipe(pug({ pretty: true }))
       .pipe(cached('pug'))

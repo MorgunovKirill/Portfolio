@@ -9,6 +9,8 @@ module.exports = {
   context: path.resolve(__dirname, 'source'),
   mode: 'development',
   entry: {
+    'honey': './js/honey.js',
+    'escaperoom': './js/escaperoom.js',
     main: './js/main.js',
     vendor: './js/vendor.js',
   },
