@@ -1,6 +1,6 @@
-include ../base/mixins
-include ../base/header
-include ../base/footer
+include ../../base/mixins
+include ../../base/header
+include ../../base/footer
 
 block data
 
@@ -24,15 +24,15 @@ html(lang="ru")
 
     link(rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png")
     link(rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png")
-    link(rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png") 
+    link(rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png")
     link(rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#ffcf55")
     meta(name="msapplication-TileColor" content="#ffcf55")
     meta(name="theme-color" content="#ffffff")
 
-    link(rel="stylesheet", href="css/style2.min.css")
+    link(rel="stylesheet", href="../css/style2.min.css")
 
   body.allquests
-    include ../../../build/img/sprite2_auto.svg
+    include ../../../../build/img/sprite2_auto.svg
     header.page-header.page-header--index.page-header--nojs.page-header--closed
         .page-header__logo
             a
@@ -48,12 +48,12 @@ html(lang="ru")
                 li.main-navigation__item
                     a(href="escaperoom-selectQuest.html") Акции
                 li.main-navigation__item
-                    a(href="escaperoom-selectQuest.html") Контакты          
+                    a(href="escaperoom-selectQuest.html") Контакты
             ul.user-navigation
                 li.user-navigation__item.user-navigation__item--city
                     a.jsCity(href="#") Новосибирск
                 li.user-navigation__item
-                    a.jsCity(href="tel:+73832840160") 8 (383) 284 01 60             
+                    a.jsCity(href="tel:+73832840160") 8 (383) 284 01 60
     main
         section.select
             p квесты в Новосибирске
@@ -61,39 +61,39 @@ html(lang="ru")
             ul.select__list
                 li.select__item.select__item--active.select__item--allquests
                     a(href="#")
-                        +icon("icon-allquests", "26", "30")                        
+                        +icon("icon-allquests", "26", "30")
                         span Все квесты
                 li.select__item.select__item--active.select__item--adventures
                     a(href="#")
-                        +icon("icon-adventures", "36", "30")                        
+                        +icon("icon-adventures", "36", "30")
                         span Приключения
                 li.select__item.select__item--active.select__item--horror
                     a(href="#")
-                        +icon("icon-horror", "30", "30")                        
-                        span Ужасы            
+                        +icon("icon-horror", "30", "30")
+                        span Ужасы
                 li.select__item.select__item--active.select__item--mysticism
                     a(href="#")
-                        +icon("icon-mysticism", "30", "30")                        
-                        span Мистика           
+                        +icon("icon-mysticism", "30", "30")
+                        span Мистика
                 li.select__item.select__item--active.select__item--detective
                     a(href="#")
-                        +icon("icon-detective", "40", "30")                        
-                        span Детектив          
+                        +icon("icon-detective", "40", "30")
+                        span Детектив
                 li.select__item.select__item--active.select__item--sci-fi
                     a(href="#")
-                        +icon("icon-sci-fi", "28", "30")                        
-                        span Sci-fi             
+                        +icon("icon-sci-fi", "28", "30")
+                        span Sci-fi
             ul.gallery
                 li.gallery__item.gallery__item--hit
                     a(href="#")
-                        img(src="img/crypt-list.jpg" alt="Склеп") 
+                        img(src="img/crypt-list.jpg" alt="Склеп")
                         h3 Склеп
                         p пр. Ленина, 37
-                        div 
+                        div
                             .gallery__quantity
                                 span 2–5 чел
                             .gallery__dificulty
-                                span сложный       
+                                span сложный
                 li.gallery__item.gallery__item--hit.gallery__item--available
                     a(href="escaperoom-maniack.html")
                         img(src="img/maniack-list.jpg" alt="Маньяк")
@@ -123,7 +123,7 @@ html(lang="ru")
                             .gallery__quantity
                                 span 5-6 чел
                             .gallery__dificulty
-                                span легкий 
+                                span легкий
                 li.gallery__item.gallery__item--mansion.gallery__item--available
                     a(href="escaperoom-mansion.html")
                         img(src="img/mansion-list.jpg" alt="Тайны старого особняка")
@@ -133,7 +133,7 @@ html(lang="ru")
                             .gallery__quantity
                                 span 2-5 чел
                             .gallery__dificulty
-                                span легкий 
+                                span легкий
                 li.gallery__item.gallery__item--cabin.gallery__item--hit
                     a(href="#")
                         img(src="img/cabin-list.jpg" alt="Хижина в лесу")
@@ -143,7 +143,7 @@ html(lang="ru")
                             .gallery__quantity
                                 span 4-7 чел
                             .gallery__dificulty
-                                span средний 
+                                span средний
                 li.gallery__item.gallery__item--experiment.gallery__item--hit.gallery__item--available
                     a(href="escaperoom-experiment.html")
                         img(src="img/experiment.jpg" alt="Фатальный эксперимент")
@@ -193,16 +193,16 @@ html(lang="ru")
                             .gallery__quantity
                                 span 2-4 чел
                             .gallery__dificulty
-                                span легкий  
+                                span легкий
     footer.page-footer
       ul.socials
         li.socials__item.socials__item--instagram
-            a(href="#")       
+            a(href="#")
         li.socials__item.socials__item--vk
-            a(href="#")      
-      a.page-footer__question.jsQuestion(href="#") Задать вопрос    
+            a(href="#")
+      a.page-footer__question.jsQuestion(href="#") Задать вопрос
 
     block modals
 
-    script(src="js/vendor.min.js")
-    script(src="js/main.min.js")    
+    script(src="../js/vendor.min.js")
+    script(src="../js/main.min.js")

@@ -1,7 +1,7 @@
-extends ../base/layout
+extends ../../base/layout
 
 block data
-  include ../data/catalog-data
+  include ../../data/catalog-data
 
 block variables
   - var title = "Honey — Каталог"
@@ -18,7 +18,7 @@ block main
       ul.content__list
         each item in catalogItems
           li.content__item
-            img(src="img/" + "/" + item.img.src + "." + item.img.ext, width= item.img.width, height= item.img.height, alt= item.img.alt)
+            img(src="../img/" + "/" + item.img.src + "." + item.img.ext, width= item.img.width, height= item.img.height, alt= item.img.alt)
             p.content__info
               span.content__price= item.price
               | ₽

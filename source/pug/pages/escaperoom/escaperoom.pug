@@ -1,17 +1,17 @@
-include ../base/mixins
-include ../base/header
-include ../base/footer
+include ../../base/mixins
+include ../../base/header
+include ../../base/footer
 
 block data
 
 block variables
-  - var title = "Escaperoom — Квест Тайна особняка"
+  - var title = "Escaperoom — Главная"
   - var wrapperMod = ""
   - var hasHeader = false
   - var headerMod = ""
   - var hasFooter = false
   - var footerMod = ""
-  - var currentPage = "" //- для остальных страниц пишем либо пустую строку, либо индекс
+  - var currentPage = "main" //- для остальных страниц пишем либо пустую строку, либо индекс
 
 doctype html
 html(lang="ru")
@@ -24,15 +24,15 @@ html(lang="ru")
 
     link(rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png")
     link(rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png")
-    link(rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png") 
+    link(rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png")
     link(rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#ffcf55")
     meta(name="msapplication-TileColor" content="#ffcf55")
     meta(name="theme-color" content="#ffffff")
 
-    link(rel="stylesheet", href="css/style2.min.css")
+    link(rel="stylesheet", href="../css/style2.min.css")
 
-  body.mansion
-    include ../../../build/img/sprite2_auto.svg
+  body.index
+    include ../../../../build/img/sprite2_auto.svg
     header.page-header.page-header--index.page-header--nojs.page-header--closed
         .page-header__logo
             a
@@ -48,32 +48,26 @@ html(lang="ru")
                 li.main-navigation__item
                     a(href="escaperoom-selectQuest.html") Акции
                 li.main-navigation__item
-                    a(href="escaperoom-selectQuest.html") Контакты          
+                    a(href="escaperoom-selectQuest.html") Контакты
             ul.user-navigation
                 li.user-navigation__item.user-navigation__item--city
                     a.jsCity(href="#") Новосибирск
                 li.user-navigation__item
-                    a.jsCity(href="tel:+73832840160") 8 (383) 284 01 60             
+                    a.jsCity(href="tel:+73832840160") 8 (383) 284 01 60
     main
-         section.quest.quest--mansion
-            a.quest__home(href="escaperoom-selectQuest.html") Все квесты
-            p.quest__type приключение, детектив
-            h1 Тайны старого особняка
-            .quest__info
-                span.quest__time 60 мин
-                span.quest__quantity 2–5 чел
-                span.quest__dificulty легкий квест           
-            p Погрузитесь в атмосферу служебных помещений закулисья, которые хранят множество тайн и загадок. Вы окажитесь в старом особняке и увидите все, что скрывают его запутанные коридоры.
-            a.button(href="escaperoom-book.html") Забронировать  
+        section.intro
+            h1 Лучшие квесты<br> в Новосибирске
+            p Надоело проводить свободное время лёжа на диване? Игровые площадки questroom на целый час погружают вас в мир незабываемых авантюр. Ищите подсказки, решайте головоломки и находите выход из комнаты!
+            a.button(href="escaperoom-selectQuest.html") Выбрать квест
     footer.page-footer
       ul.socials
         li.socials__item.socials__item--instagram
-            a(href="#")       
+            a(href="#")
         li.socials__item.socials__item--vk
-            a(href="#")      
-      a.page-footer__question.jsQuestion(href="#") Задать вопрос    
+            a(href="#")
+      a.page-footer__question.jsQuestion(href="#") Задать вопрос
 
     block modals
 
-    script(src="js/vendor.min.js")
-    script(src="js/main.min.js")    
+    script(src="../js/vendor.min.js")
+    script(src="../js/main.min.js")
