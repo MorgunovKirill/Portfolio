@@ -74,6 +74,49 @@ html(lang="ru")
       a.page-footer__question.jsQuestion(href="#") Задать вопрос
 
     block modals
+        .overlay 
+        .overlay-menu
+        .modal.modal--city
+            button.modal__close(aria-label="закрыть")
+                +icon('icon-close', 16, 16)
+            h2 Ваш город
+            a.location(href="#")
+                span Определить местоположение
+            p ... или выберите вручную
+            ul.modal__list
+                li.modal__list-item.modal__list-item--active
+                    a(href="#") Новосибирск 
+                li.modal__list-item.modal__list-item--active
+                    a(href="#") Иркутск 
+                li.modal__list-item.modal__list-item--active
+                    a(href="#") Смоленск 
+                li.modal__list-item.modal__list-item--active
+                    a(href="#") Волгоград 
+                li.modal__list-item.modal__list-item--active
+                    a(href="#") Комсомольск-на-Амуре 
+        .modal.modal--question 
+            button.modal__close(aria-label="закрыть")
+                +icon('icon-close', 16, 16)  
+            h2 Задайте вопрос
+            form(action="#" method="POST")  
+                .wrapper 
+                    label
+                        | Чтобы мы смогли обращаться к вам, оставьте ваше имя
+                        span.input-title Имя
+                        input(type="text" name="user-name" id="user-name" placeholder="Имя")
+                    label
+                        | Чтобы мы смогли обращаться к вам, оставьте ваше имя
+                        span.input-title E-mail
+                        input(type="text" name="user-email" id="user-email" placeholder="E-mail")
+                        span.error-message Введён некорректный e-mail, попробуйте заново
+                    label(for="user-question") Ваш вопрос:
+                    textarea#user-question(name="user-question" cols="30" rows="4" placeholder="Начните вводить ...")
+                    button.button(type="submit") Отправить вопрос
+                input#agreement(type="checkbox")
+                label.agreement(for="agreement")
+                    | Я согласен с 
+                    a(href="#") правилами обработки персональных данных
+                    | и пользовательским соглашением
 
     script(src="../js/vendor.min.js")
     script(src="../js/escaperoom.min.js")

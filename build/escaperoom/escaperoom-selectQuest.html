@@ -184,6 +184,47 @@
         <li class="socials__item socials__item--vk"><a href="#"></a></li>
       </ul><a class="page-footer__question jsQuestion" href="#">Задать вопрос</a>
     </footer>
+    <div class="overlay"> </div>
+    <div class="overlay-menu"></div>
+    <div class="modal modal--city">
+      <button class="modal__close" aria-label="закрыть">
+        <svg width="16" height="16" aria-hidden="true">
+          <use xlink:href="#icon-close"></use>
+        </svg>
+      </button>
+      <h2>Ваш город</h2><a class="location" href="#"><span>Определить местоположение</span></a>
+      <p>... или выберите вручную</p>
+      <ul class="modal__list">
+        <li class="modal__list-item modal__list-item--active"><a href="#">Новосибирск </a></li>
+        <li class="modal__list-item modal__list-item--active"><a href="#">Иркутск </a></li>
+        <li class="modal__list-item modal__list-item--active"><a href="#">Смоленск </a></li>
+        <li class="modal__list-item modal__list-item--active"><a href="#">Волгоград </a></li>
+        <li class="modal__list-item modal__list-item--active"><a href="#">Комсомольск-на-Амуре </a></li>
+      </ul>
+    </div>
+    <div class="modal modal--question"> 
+      <button class="modal__close" aria-label="закрыть">
+        <svg width="16" height="16" aria-hidden="true">
+          <use xlink:href="#icon-close"></use>
+        </svg>
+      </button>
+      <h2>Задайте вопрос</h2>
+      <form action="#" method="POST"> 
+        <div class="wrapper"> 
+          <label>Чтобы мы смогли обращаться к вам, оставьте ваше имя<span class="input-title">Имя</span>
+            <input type="text" name="user-name" id="user-name" placeholder="Имя">
+          </label>
+          <label>Чтобы мы смогли обращаться к вам, оставьте ваше имя<span class="input-title">E-mail</span>
+            <input type="text" name="user-email" id="user-email" placeholder="E-mail"><span class="error-message">Введён некорректный e-mail, попробуйте заново</span>
+          </label>
+          <label for="user-question">Ваш вопрос:</label>
+          <textarea id="user-question" name="user-question" cols="30" rows="4" placeholder="Начните вводить ..."></textarea>
+          <button class="button" type="submit">Отправить вопрос</button>
+        </div>
+        <input id="agreement" type="checkbox">
+        <label class="agreement" for="agreement">Я согласен с <a href="#">правилами обработки персональных данных</a>и пользовательским соглашением</label>
+      </form>
+    </div>
     <script src="../js/vendor.min.js"></script>
     <script src="../js/escaperoom.min.js"></script>
   </body>
