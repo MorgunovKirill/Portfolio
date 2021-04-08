@@ -16,12 +16,12 @@
 
   &--instagram {
     a {
-      background-image: url("../img/instagram-default.svg");
+      background-image: url("../img2/instagram-default.svg");
 
       &::before {
         content: "";
         position: absolute;
-        background-image: url("../img/instagram-hover.svg");
+        background-image: url("../img2/instagram-hover.svg");
         border-radius: 50%;
         width: 28px;
         height: 28px;
@@ -32,12 +32,12 @@
 
   &--vk {
     a {
-      background-image: url("../img/vk-default.svg");
+      background-image: url("../img2/vk-default.svg");
 
       &::before {
         content: "";
         position: absolute;
-        background-image: url("../img/vk-hover.svg");
+        background-image: url("../img2/vk-hover.svg");
         border-radius: 50%;
         width: 28px;
         height: 28px;

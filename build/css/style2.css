@@ -67,61 +67,61 @@ body {
   font-style: normal;
   letter-spacing: normal; }
   body.index {
-    background: url("../img/mainBg.jpg") no-repeat;
+    background: url("../img2/mainBg.jpg") no-repeat;
     background-size: cover;
     height: 100vh; }
     @media (max-width: 767px) {
       body.index {
-        background: linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%) no-repeat, url("../img/mainBg-mobile.jpg") no-repeat center 0;
+        background: linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%) no-repeat, url("../img2/mainBg-mobile.jpg") no-repeat center 0;
         background-size: cover, cover;
         min-height: 640px; } }
   body.maniack {
-    background: url("../img/maniack.jpg") no-repeat;
+    background: url("../img2/maniack.jpg") no-repeat;
     background-size: cover;
     height: 100vh; }
     @media (max-width: 767px) {
       body.maniack {
-        background: linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%) no-repeat, url("../img/maniack-mobile.jpg") no-repeat center 0;
+        background: linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%) no-repeat, url("../img2/maniack-mobile.jpg") no-repeat center 0;
         background-color: #1a140d;
         background-size: cover, contain;
         height: 100%; } }
   body.mansion {
-    background: url("../img/mansion.jpg") no-repeat;
+    background: url("../img2/mansion.jpg") no-repeat;
     background-size: cover;
     height: 100vh; }
     @media (max-width: 767px) {
       body.mansion {
-        background: linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%) no-repeat, url("../img/mansion-mobile.jpg") no-repeat center 0;
+        background: linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%) no-repeat, url("../img2/mansion-mobile.jpg") no-repeat center 0;
         background-color: #1a140d;
         background-size: cover, contain;
         height: 100%; } }
   body.ritual {
-    background: url("../img/ritual.jpg") no-repeat;
+    background: url("../img2/ritual.jpg") no-repeat;
     background-size: cover;
     height: 100vh; }
     @media (max-width: 767px) {
       body.ritual {
-        background: linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%) no-repeat, url("../img/ritual-mobile.jpg") no-repeat center 0;
+        background: linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%) no-repeat, url("../img2/ritual-mobile.jpg") no-repeat center 0;
         background-color: #1a140d;
         background-size: cover, contain;
         height: 100%; } }
   body.experiment {
-    background: url("../img/experiment.jpg") no-repeat;
+    background: url("../img2/experiment.jpg") no-repeat;
     background-size: cover;
     height: 100vh; }
     @media (max-width: 767px) {
       body.experiment {
-        background: linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%) no-repeat, url("../img/experiment-mobile.jpg") no-repeat center 0;
+        background: linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%) no-repeat, url("../img2/experiment-mobile.jpg") no-repeat center 0;
         background-color: #1a140d;
         background-size: cover, contain;
         height: 100%; } }
   body.bodybook {
-    background: url("../img/orderBg.jpg") no-repeat;
+    background: url("../img2/orderBg.jpg") no-repeat;
     background-size: cover;
     height: 100vh; }
     @media (max-width: 767px) {
       body.bodybook {
-        background: linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/orderBg-mobile.png") no-repeat center 0;
+        background: linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img2/orderBg-mobile.png") no-repeat center 0;
         background-color: #1a140d;
         background-size: cover, cover;
         height: 100%; } }
@@ -189,21 +189,21 @@ img {
     width: 28px;
     height: 28px; }
   .socials__item--instagram a {
-    background-image: url("../img/instagram-default.svg"); }
+    background-image: url("../img2/instagram-default.svg"); }
     .socials__item--instagram a::before {
       content: "";
       position: absolute;
-      background-image: url("../img/instagram-hover.svg");
+      background-image: url("../img2/instagram-hover.svg");
       border-radius: 50%;
       width: 28px;
       height: 28px;
       opacity: 0; }
   .socials__item--vk a {
-    background-image: url("../img/vk-default.svg"); }
+    background-image: url("../img2/vk-default.svg"); }
     .socials__item--vk a::before {
       content: "";
       position: absolute;
-      background-image: url("../img/vk-hover.svg");
+      background-image: url("../img2/vk-hover.svg");
       border-radius: 50%;
       width: 28px;
       height: 28px;
@@ -241,7 +241,7 @@ img {
 .page-header__logo {
   width: 134px;
   height: 52px;
-  background: url("../img/logo-group.svg") no-repeat;
+  background: url("../img2/logo-group.svg") no-repeat;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
@@ -270,7 +270,7 @@ img {
   padding-right: 30px;
   position: relative;
   text-decoration: none;
-  background: url("../img/burger.svg") no-repeat 100% 0; }
+  background: url("../img2/burger.svg") no-repeat 100% 0; }
   @media (max-width: 1023px) {
     .page-header__toggle {
       display: block;
@@ -297,7 +297,7 @@ img {
 
 @media (max-width: 1023px) {
   .page-header--opened.page-header::after {
-    background: url("../img/menuOpenBg.jpg") no-repeat;
+    background: url("../img2/menuOpenBg.jpg") no-repeat;
     background-size: cover; } }
 
 .main-menu {
@@ -422,7 +422,7 @@ img {
       position: absolute;
       width: 16px;
       height: 21px;
-      background: url("../img/location.svg") no-repeat;
+      background: url("../img2/location.svg") no-repeat;
       left: -24px;
       top: -5px; }
       @media (max-width: 1023px) {
@@ -509,7 +509,7 @@ img {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url("../img/overlayBg.png"); }
+  background-image: url("../img2/overlayBg.png"); }
 
 .overlay-menu {
   display: none;
@@ -519,7 +519,7 @@ img {
   left: 0;
   width: 100vw;
   height: 100%;
-  background-image: url("../img/menuOpenBg.jpg");
+  background-image: url("../img2/menuOpenBg.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -561,7 +561,7 @@ img {
       display: block;
       margin: 0 0 40px 0;
       padding-left: 32px;
-      background-image: url("../img/gps.svg");
+      background-image: url("../img2/gps.svg");
       background-repeat: no-repeat;
       color: inherit;
       text-decoration: none; }
@@ -786,7 +786,7 @@ input[type="checkbox"]:focus + label::before {
 
 input[type="checkbox"]:checked + label::before {
   opacity: 1;
-  background: url("../img/checkboxActive.svg"); }
+  background: url("../img2/checkboxActive.svg"); }
 
 .modal__list {
   list-style: none;
@@ -1015,7 +1015,7 @@ input[type="checkbox"]:checked + label::before {
     padding: 3px 12px 3px 30px;
     border: 2px solid rgba(242, 137, 15, 0.74);
     border-radius: 25px;
-    background-image: url("../img/Star.svg");
+    background-image: url("../img2/Star.svg");
     background-repeat: no-repeat;
     background-position: 12px 4px;
     z-index: 5; }
@@ -1046,7 +1046,7 @@ input[type="checkbox"]:checked + label::before {
       height: 14px;
       top: 0;
       left: 0;
-      background-image: url("../img/location-small.svg");
+      background-image: url("../img2/location-small.svg");
       opacity: 1; }
   .gallery__item a {
     display: block;
@@ -1088,7 +1088,7 @@ input[type="checkbox"]:checked + label::before {
     height: 16px;
     top: 0;
     left: 0;
-    background-image: url("../img/person.svg"); }
+    background-image: url("../img2/person.svg"); }
   .gallery__quantity span {
     opacity: 0.8; }
 
@@ -1105,7 +1105,7 @@ input[type="checkbox"]:checked + label::before {
     height: 16px;
     top: 0;
     left: 0;
-    background-image: url("../img/puzzle.svg"); }
+    background-image: url("../img2/puzzle.svg"); }
   .gallery__dificulty span {
     opacity: 0.8; }
 
@@ -1222,7 +1222,7 @@ p.quest__type {
     height: 10px;
     left: -14px;
     top: 1px;
-    background-image: url("../img/arrow-left.svg"); }
+    background-image: url("../img2/arrow-left.svg"); }
 
 .quest__time {
   display: -webkit-inline-box;
@@ -1246,7 +1246,7 @@ p.quest__type {
     height: 20px;
     top: 0;
     left: 0;
-    background-image: url("../img/clock.svg");
+    background-image: url("../img2/clock.svg");
     background-repeat: no-repeat;
     background-size: cover; }
     @media (max-width: 767px) {
@@ -1274,7 +1274,7 @@ p.quest__type {
     height: 21px;
     top: 0;
     left: 0;
-    background-image: url("../img/person.svg");
+    background-image: url("../img2/person.svg");
     background-repeat: no-repeat;
     background-size: cover; }
     @media (max-width: 767px) {
@@ -1299,7 +1299,7 @@ p.quest__type {
     height: 21px;
     top: 0;
     left: 0;
-    background-image: url("../img/puzzle.svg");
+    background-image: url("../img2/puzzle.svg");
     background-repeat: no-repeat;
     background-size: cover; }
     @media (max-width: 767px) {
@@ -1381,7 +1381,7 @@ p.quest__type {
     position: absolute;
     width: 5px;
     height: 7px;
-    background-image: url("../../img/arrow-right.svg");
+    background-image: url("../img2/arrow-right.svg");
     top: 6px;
     right: 0; }
 
@@ -1563,7 +1563,7 @@ p.quest__type {
       position: absolute;
       width: 5px;
       height: 7px;
-      background-image: url("../../img/arrow-right.svg");
+      background-image: url("../img2/arrow-right.svg");
       top: 6px;
       right: 0; }
 
@@ -1604,7 +1604,7 @@ p.quest__type {
     height: 10px;
     left: -14px;
     top: 1px;
-    background-image: url("../img/arrow-left.svg"); }
+    background-image: url("../img2/arrow-left.svg"); }
 
 input[type="radio"]:disabled + .book__time {
   border: none;

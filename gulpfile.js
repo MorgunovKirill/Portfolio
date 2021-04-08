@@ -77,17 +77,17 @@ const svgo = () => {
 };
 
 const sprite = () => {
-  return gulp.src('source/img/sprite/*.svg')
+  return gulp.src('source/img1/sprite/*.svg')
       .pipe(svgstore({inlineSvg: true}))
       .pipe(rename('sprite_auto.svg'))
-      .pipe(gulp.dest('build/img'));
+      .pipe(gulp.dest('build/img1'));
 };
 
 const sprite2 = () => {
-  return gulp.src('source/img/sprite2/*.svg')
+  return gulp.src('source/img2/sprite/*.svg')
       .pipe(svgstore({inlineSvg: true}))
-      .pipe(rename('sprite2_auto.svg'))
-      .pipe(gulp.dest('build/img'));
+      .pipe(rename('sprite_auto.svg'))
+      .pipe(gulp.dest('build/img2'));
 };
 
 const syncserver = () => {
@@ -127,11 +127,12 @@ const copy = () => {
   return gulp.src([
     'source/fonts/**',
     'source/favicon/**',
-    'source/img/**',
+    'source/img1/**',
+    'source/img2/**',
     'source/data/**',
     'source/file/**',
     'source/*.php',
-    'source/video/**', // учтите, что иногда git искажает видеофайлы, некоторые шрифты, pdf и gif - проверяйте и если обнаруживаете баги - скидывайте тестировщику такие файлы напрямую
+    'source/video/**', 
     'source/downloads/**',
   ], {
     base: 'source',

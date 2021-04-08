@@ -42,7 +42,7 @@
       display: block;
       margin: 0 0 40px 0;
       padding-left: 32px;
-      background-image: url("../img/gps.svg");
+      background-image: url("../img2/gps.svg");
       background-repeat: no-repeat;
       color: inherit;
       text-decoration: none;
@@ -273,7 +273,7 @@ input[type="checkbox"]:focus + label::before {
 
 input[type="checkbox"]:checked + label::before {
   opacity: 1;
-  background: url("../img/checkboxActive.svg");
+  background: url("../img2/checkboxActive.svg");
 }
 
 .modal__list {
