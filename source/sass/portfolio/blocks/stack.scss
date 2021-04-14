@@ -1,0 +1,32 @@
+.stack {
+    background-color: #ffffff;
+    padding-top: 90px;
+
+    &__title {
+        font-size: 24px;
+        font-family: $font-family-primary;
+        color: rgb(0, 0, 0);
+        line-height: 1.417; 
+        text-align: center;
+        margin: 0 0 40px 0;
+    }
+
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;    
+        justify-content: space-between;    
+    }
+
+    &__item {
+        width: calc(33.3% - 33px);
+        min-height: 225px;
+        box-shadow: 0 0 9px 0 rgba(73, 73, 73, 0.4);
+        margin-bottom: 50px;
+        padding: 30px;
+    }  
+}
+

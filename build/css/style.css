@@ -91,7 +91,8 @@ img {
     text-decoration: none; }
 
 .intro {
-  padding-top: 347px; }
+  padding-top: 347px;
+  padding-bottom: 325px; }
   .intro__title {
     font-size: 60px;
     font-family: "Rubik", "Arial", sans-serif;
@@ -105,3 +106,84 @@ img {
     color: white;
     line-height: 1.75;
     margin: 0 0 40px 0; }
+
+.stack {
+  background-color: #ffffff;
+  padding-top: 90px; }
+  .stack__title {
+    font-size: 24px;
+    font-family: "Rubik", "Arial", sans-serif;
+    color: black;
+    line-height: 1.417;
+    text-align: center;
+    margin: 0 0 40px 0; }
+  .stack__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .stack__item {
+    width: calc(33.3% - 33px);
+    min-height: 225px;
+    -webkit-box-shadow: 0 0 9px 0 rgba(73, 73, 73, 0.4);
+            box-shadow: 0 0 9px 0 rgba(73, 73, 73, 0.4);
+    margin-bottom: 50px;
+    padding: 30px; }
+
+.projects {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .projects__title {
+    font-size: 36px;
+    font-weight: 500;
+    font-family: "Rubik", "Arial", sans-serif;
+    color: white;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 0 35px 0; }
+  .projects__description {
+    font-size: 16px;
+    font-family: "MyriadPro", "Arial", sans-serif;
+    color: white;
+    line-height: 1.625;
+    text-align: center;
+    margin: 0 0 65px 0; }
+  .projects__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px; }
+  .projects__item {
+    outline: 1px solid red;
+    min-height: 295px; }
+    .projects__item--big {
+      -ms-grid-column-span: 2;
+      grid-column: span 2; }
+  .projects__link {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 30px; }
+
+.footer {
+  padding: 28px 0; }
+  .footer__text {
+    font-size: 16px;
+    font-family: "Rubik", "Arial", sans-serif;
+    color: #b7b7b7;
+    line-height: 1.25;
+    margin: 0;
+    text-align: center; }

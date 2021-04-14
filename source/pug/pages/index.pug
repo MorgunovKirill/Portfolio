@@ -7,18 +7,41 @@ block variables
   - var wrapperMod = ""
   - var hasHeader = true
   - var headerMod = ""
-  - var hasFooter = false
+  - var hasFooter = true
   - var footerMod = ""
   - var currentPage = "main"
 
 block main
-  main
-    .container
-      .intro 
+  main    
+    .intro 
+      .container
         h1.intro__title Кирилл Моргунов
-        p.intro__description Веб-разработчик
-        button.btn.intro__btn Скачать резюме
-      h2
-        a(href="honey/honey.html") Honey - мёд на любой вкус!(без адаптива - 2 страницы)
-      h2
-        a(href="escaperoom/escaperoom.html") Escaperoom - страница квестов в реальности(адаптив мобильная, планшетная, десктопная версии - несколько страниц)
+        p.intro__description Фронтенд-разработчик
+        button.btn.intro__btn Скачать резюме         
+    .stack 
+      .container 
+        h2.stack__title Мой стек
+        ul.stack__list 
+          li.stack__item Html 5
+          li.stack__item CSS 3
+          li.stack__item Pug
+          li.stack__item Javascript
+          li.stack__item React
+          li.stack__item Git
+          li.stack__item Gulp
+          li.stack__item Webpack
+    .projects 
+      .container 
+        h2.projects__title Мои проекты
+        p.projects__description Несколько выполненных работ для демострации навыков
+        ul.projects__list 
+          li.projects__item.projects__item--big 
+            a.projects__link(href="#") Denim
+          li.projects__item 
+            a.projects__link(href="#") Veles
+          li.projects__item 
+            a.projects__link(href="honey/honey.html") Honey - мёд на любой вкус! (без адаптива - 2 страницы)
+          li.projects__item.projects__item--big 
+            a.projects__link(href="escaperoom/escaperoom.html") Escaperoom - страница квестов в реальности (адаптив мобильная, планшетная, десктопная версии - несколько страниц)   
+         
+

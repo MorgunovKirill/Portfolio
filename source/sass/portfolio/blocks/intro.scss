@@ -1,9 +1,10 @@
 .intro {
     padding-top: 347px;
+    padding-bottom: 325px;
 
     &__title {      
             font-size: 60px;
-            font-family: "Rubik", "Arial", sans-serif;
+            font-family: $font-family-primary;
             font-weight: 700;
             color: rgb(255, 255, 255);
             line-height: 1.083;
@@ -12,7 +13,7 @@
 
     &__description {      
             font-size: 16px;
-            font-family: "Rubik", "Arial", sans-serif;
+            font-family: $font-family-primary;
             color: rgb(255, 255, 255);
             line-height: 1.75;  
             margin: 0 0 40px 0;        
