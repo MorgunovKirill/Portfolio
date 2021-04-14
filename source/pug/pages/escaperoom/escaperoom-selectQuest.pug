@@ -1,6 +1,4 @@
 include ../../base/mixins
-include ../../base/header
-include ../../base/footer
 
 block data
 
@@ -11,7 +9,7 @@ block variables
   - var headerMod = ""
   - var hasFooter = false
   - var footerMod = ""
-  - var currentPage = "" //- для остальных страниц пишем либо пустую строку, либо индекс
+  - var currentPage = "" 
 
 doctype html
 html(lang="ru")
@@ -32,7 +30,8 @@ html(lang="ru")
     link(rel="stylesheet", href="../css/style2.min.css")
 
   body.allquests
-    include ../../../../build/img2/sprite_auto.svg
+    div(style="display:none")
+        include ../../../../build/img2/sprite_auto.svg
     header.page-header.page-header--index.page-header--nojs.page-header--closed
         .page-header__logo
             a(href="escaperoom.html" aria-label="на главную")

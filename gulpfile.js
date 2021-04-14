@@ -25,7 +25,7 @@ const pugToHtml = () => {
 };
 
 const css = () => {
-  return gulp.src('source/sass/honey/style.scss')
+  return gulp.src('source/sass/portfolio/style.scss')
       .pipe(plumber())
       .pipe(sourcemap.init())
       .pipe(sass())
@@ -35,6 +35,23 @@ const css = () => {
       .pipe(gulp.dest('build/css'))
       .pipe(csso())
       .pipe(rename('style.min.css'))
+      .pipe(sourcemap.write('.'))
+      .pipe(gulp.dest('build/css'))
+      .pipe(server.stream());
+};
+
+
+const css1 = () => {
+  return gulp.src('source/sass/honey/style1.scss')
+      .pipe(plumber())
+      .pipe(sourcemap.init())
+      .pipe(sass())
+      .pipe(postcss([autoprefixer({
+        grid: true,
+      })]))
+      .pipe(gulp.dest('build/css'))
+      .pipe(csso())
+      .pipe(rename('style1.min.css'))
       .pipe(sourcemap.write('.'))
       .pipe(gulp.dest('build/css'))
       .pipe(server.stream());
@@ -101,6 +118,7 @@ const syncserver = () => {
 
   gulp.watch('source/pug/**/*.pug', gulp.series(pugToHtml, refresh));
   gulp.watch('source/sass/**/*.{scss,sass}', gulp.series(css));
+  gulp.watch('source/sass/**/*.{scss,sass}', gulp.series(css1));
   gulp.watch('source/sass/**/*.{scss,sass}', gulp.series(css2));
   gulp.watch('source/js/**/*.{js,json}', gulp.series(js, refresh));
   gulp.watch('source/data/**/*.{js,json}', gulp.series(copy, refresh));
@@ -144,7 +162,7 @@ const clean = () => {
   return del('build');
 };
 
-const build = gulp.series(clean, svgo, copy, css, css2, sprite, sprite2, js, pugToHtml);
+const build = gulp.series(clean, svgo, copy, css, css1, css2, sprite, sprite2, js, pugToHtml);
 
 const start = gulp.series(build, syncserver);
 

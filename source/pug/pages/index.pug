@@ -5,15 +5,16 @@ block data
 block variables
   - var title = "Навигационная страница"
   - var wrapperMod = ""
-  - var hasHeader = false
+  - var hasHeader = true
   - var headerMod = ""
   - var hasFooter = false
   - var footerMod = ""
-  - var currentPage = ""
+  - var currentPage = "main"
 
 block main
   main
-    h2
-      a(href="honey/honey.html") Honey - мёд на любой вкус!(без адаптива - 2 страницы)
-    h2
-      a(href="escaperoom/escaperoom.html") Escaperoom - страница квестов в реальности(адаптив мобильная, планшетная, десктопная версии - несколько страниц)
+    .container
+      h2
+        a(href="honey/honey.html") Honey - мёд на любой вкус!(без адаптива - 2 страницы)
+      h2
+        a(href="escaperoom/escaperoom.html") Escaperoom - страница квестов в реальности(адаптив мобильная, планшетная, десктопная версии - несколько страниц)
