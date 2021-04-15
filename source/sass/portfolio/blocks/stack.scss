@@ -1,14 +1,16 @@
 .stack {
     background-color: #ffffff;
-    padding-top: 90px;
+    padding-top: 30px;
+    
 
-    &__title {
+    &__title {  
+        position: relative;      
         font-size: 50px;
         font-family: $font-family-primary;
         color: rgb(0, 0, 0);
         line-height: 1.417; 
         text-align: center;
-        margin: 0 0 90px 0;
+        margin: 0 0 90px 0;           
     }
 
 
@@ -22,6 +24,7 @@
     
 
     &__item {
+        position: relative;
         $gutter: 50px;
         $card-count: 3;
         width: calc(100% / #{$card-count} - #{$gutter} * (#{$card-count} - 1) / #{$card-count});
@@ -52,6 +55,25 @@
         font-size: 36px;
         margin: 0 0 20px 0;
         color: #ffffff;
+    }
+
+    &__btn {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+
+        svg {
+            transform: rotate(90deg);
+            margin-top: 3px;
+        }
     }
 }
 
