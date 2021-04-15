@@ -17,7 +17,24 @@ block main
       .container
         h1.intro__title Кирилл Моргунов
         p.intro__description Фронтенд-разработчик
-        button.btn.intro__btn Скачать резюме         
+        button.btn.intro__btn Скачать резюме
+        ul.socials 
+          li.socials__item 
+            a.socials__link(href="#")
+              +icon('icon-vk', 31, 19)
+              span Vkontakte 
+          li.socials__item 
+            a.socials__link(href="#")
+              +icon('icon-instagram', 20, 20)
+              span Instagram
+          li.socials__item 
+            a.socials__link(href="#")
+              +icon('icon-facebook', 12, 20)
+              span Facebook 
+          li.socials__item 
+            a.socials__link(href="#")
+              +icon('icon-twitter', 26, 22)
+              span Twitter 
     .stack#stack 
       .container 
         h2.stack__title Мой стек
@@ -68,13 +85,21 @@ block main
         p.projects__description Несколько выполненных работ для демострации навыков
         ul.projects__list 
           li.projects__item.projects__item--big 
-            a.projects__link(href="#") Denim
+            a.projects__link(href="#")             
+              span Denim
+              img(src="img/denim.jpg" width=770 height=295 alt="denim")
           li.projects__item 
-            a.projects__link(href="#") Veles
+            a.projects__link(href="#")
+              span Veles
+              img(src="img/veles.jpg" width=370 height=295 alt="veles")
           li.projects__item 
-            a.projects__link(href="honey/honey.html") Honey - мёд на любой вкус! (без адаптива - 2 страницы)
+            a.projects__link(href="honey/honey.html")
+              span Honey - мёд на любой вкус! (без адаптива - 2 страницы)
+              img(src="img/honey.jpg" width=370 height=295 alt="honey")
           li.projects__item.projects__item--big 
-            a.projects__link(href="escaperoom/escaperoom.html") Escaperoom - страница квестов в реальности (адаптив мобильная, планшетная, десктопная версии - несколько страниц) 
+            a.projects__link(href="escaperoom/escaperoom.html") 
+              span Escaperoom - страница квестов в реальности (адаптив мобильная, планшетная, десктопная версии - несколько страниц) 
+              img(src="img/escaperoom.jpg" width=770 height=295 alt="escaperoom")
     .about#about 
       .container 
         h2.projects__title Обо мне

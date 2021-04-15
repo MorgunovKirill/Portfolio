@@ -103,6 +103,8 @@ img {
 .intro {
   padding-top: 347px;
   padding-bottom: 325px; }
+  .intro .container {
+    position: relative; }
   .intro__title {
     font-size: 60px;
     font-family: "Rubik", "Arial", sans-serif;
@@ -201,18 +203,43 @@ img {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px; }
   .projects__item {
-    outline: 1px solid red;
     min-height: 295px; }
     .projects__item--big {
       -ms-grid-column-span: 2;
       grid-column: span 2; }
   .projects__link {
+    position: relative;
     color: #ffffff;
     text-decoration: none;
     display: block;
     width: 100%;
     height: 100%;
-    padding: 30px; }
+    padding: 30px;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+    border-radius: 20px;
+    outline: none; }
+    .projects__link span {
+      position: relative;
+      z-index: 1; }
+    .projects__link img {
+      border-radius: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+    .projects__link:focus {
+      outline: 1px solid red; }
+    .projects__link:hover {
+      position: relative;
+      z-index: 2;
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
 
 .footer {
   padding: 28px 0; }
@@ -223,3 +250,48 @@ img {
     line-height: 1.25;
     margin: 0;
     text-align: center; }
+
+.socials {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  top: 0;
+  right: 100px; }
+  .socials__item {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-width: 30px;
+    margin-bottom: 20px; }
+  .socials__link {
+    color: #ffffff;
+    text-decoration: none;
+    outline: none; }
+    .socials__link svg {
+      -webkit-transition: -webkit-transform 0.3s ease;
+      transition: -webkit-transform 0.3s ease;
+      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, -webkit-transform 0.3s ease; }
+    .socials__link:focus svg, .socials__link:hover svg {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2); }
+    .socials__link:focus span, .socials__link:hover span {
+      opacity: 1;
+      visibility: visible; }
+  .socials span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    right: -120px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.3s ease, visibility 0.3s ease;
+    transition: opacity 0.3s ease, visibility 0.3s ease; }

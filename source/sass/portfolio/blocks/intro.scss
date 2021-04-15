@@ -1,21 +1,25 @@
-.intro {
-    padding-top: 347px;
-    padding-bottom: 325px;
+.intro {     
+        padding-top: 347px;
+        padding-bottom: 325px;
 
-    &__title {      
-            font-size: 60px;
-            font-family: $font-family-primary;
-            font-weight: 700;
-            color: rgb(255, 255, 255);
-            line-height: 1.083;
-            margin: 0 0 50px 0;
-    }
+        .container {
+                position: relative;
+        }
 
-    &__description {      
-            font-size: 16px;
-            font-family: $font-family-primary;
-            color: rgb(255, 255, 255);
-            line-height: 1.75;  
-            margin: 0 0 40px 0;        
-    }
+        &__title {      
+                font-size: 60px;
+                font-family: $font-family-primary;
+                font-weight: 700;
+                color: rgb(255, 255, 255);
+                line-height: 1.083;
+                margin: 0 0 50px 0;
+        }
+
+        &__description {      
+                font-size: 16px;
+                font-family: $font-family-primary;
+                color: rgb(255, 255, 255);
+                line-height: 1.75;  
+                margin: 0 0 40px 0;        
+        }
 }

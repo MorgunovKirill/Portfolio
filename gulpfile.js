@@ -94,6 +94,13 @@ const svgo = () => {
 };
 
 const sprite = () => {
+  return gulp.src('source/img/sprite/*.svg')
+      .pipe(svgstore({inlineSvg: true}))
+      .pipe(rename('sprite_auto.svg'))
+      .pipe(gulp.dest('build/img'));
+};
+
+const sprite1 = () => {
   return gulp.src('source/img1/sprite/*.svg')
       .pipe(svgstore({inlineSvg: true}))
       .pipe(rename('sprite_auto.svg'))
@@ -122,7 +129,7 @@ const syncserver = () => {
   gulp.watch('source/sass/**/*.{scss,sass}', gulp.series(css2));
   gulp.watch('source/js/**/*.{js,json}', gulp.series(js, refresh));
   gulp.watch('source/data/**/*.{js,json}', gulp.series(copy, refresh));
-  gulp.watch('source/img/**/*.svg', gulp.series(copysvg, sprite, sprite2, pugToHtml, refresh));
+  gulp.watch('source/img/**/*.svg', gulp.series(copysvg, sprite, sprite1, sprite2, pugToHtml, refresh));
   gulp.watch('source/img/**/*.{png,jpg}', gulp.series(copypngjpg, pugToHtml, refresh));
 };
 
@@ -145,6 +152,7 @@ const copy = () => {
   return gulp.src([
     'source/fonts/**',
     'source/favicon/**',
+    'source/img/**',
     'source/img1/**',
     'source/img2/**',
     'source/data/**',
@@ -162,7 +170,7 @@ const clean = () => {
   return del('build');
 };
 
-const build = gulp.series(clean, svgo, copy, css, css1, css2, sprite, sprite2, js, pugToHtml);
+const build = gulp.series(clean, svgo, copy, css, css1, css2, sprite, sprite1, sprite2, js, pugToHtml);
 
 const start = gulp.series(build, syncserver);
 
