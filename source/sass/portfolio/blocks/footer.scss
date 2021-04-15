@@ -1,0 +1,13 @@
+.footer {
+    padding: 28px 0;
+    background-color: #000000;
+
+    &__text {   
+        font-size: 16px;
+        font-family: $font-family-primary;
+        color: rgb(183, 183, 183);
+        line-height: 1.25;  
+        margin: 0;   
+        text-align: center;
+    }
+}

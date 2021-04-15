@@ -25,7 +25,7 @@ const pugToHtml = () => {
 };
 
 const css = () => {
-  return gulp.src('source/sass/honey/style.scss')
+  return gulp.src('source/sass/portfolio/style.scss')
       .pipe(plumber())
       .pipe(sourcemap.init())
       .pipe(sass())
@@ -35,6 +35,23 @@ const css = () => {
       .pipe(gulp.dest('build/css'))
       .pipe(csso())
       .pipe(rename('style.min.css'))
+      .pipe(sourcemap.write('.'))
+      .pipe(gulp.dest('build/css'))
+      .pipe(server.stream());
+};
+
+
+const css1 = () => {
+  return gulp.src('source/sass/honey/style1.scss')
+      .pipe(plumber())
+      .pipe(sourcemap.init())
+      .pipe(sass())
+      .pipe(postcss([autoprefixer({
+        grid: true,
+      })]))
+      .pipe(gulp.dest('build/css'))
+      .pipe(csso())
+      .pipe(rename('style1.min.css'))
       .pipe(sourcemap.write('.'))
       .pipe(gulp.dest('build/css'))
       .pipe(server.stream());
@@ -83,11 +100,18 @@ const sprite = () => {
       .pipe(gulp.dest('build/img'));
 };
 
-const sprite2 = () => {
-  return gulp.src('source/img/sprite2/*.svg')
+const sprite1 = () => {
+  return gulp.src('source/img1/sprite/*.svg')
       .pipe(svgstore({inlineSvg: true}))
-      .pipe(rename('sprite2_auto.svg'))
-      .pipe(gulp.dest('build/img'));
+      .pipe(rename('sprite_auto.svg'))
+      .pipe(gulp.dest('build/img1'));
+};
+
+const sprite2 = () => {
+  return gulp.src('source/img2/sprite/*.svg')
+      .pipe(svgstore({inlineSvg: true}))
+      .pipe(rename('sprite_auto.svg'))
+      .pipe(gulp.dest('build/img2'));
 };
 
 const syncserver = () => {
@@ -101,10 +125,11 @@ const syncserver = () => {
 
   gulp.watch('source/pug/**/*.pug', gulp.series(pugToHtml, refresh));
   gulp.watch('source/sass/**/*.{scss,sass}', gulp.series(css));
+  gulp.watch('source/sass/**/*.{scss,sass}', gulp.series(css1));
   gulp.watch('source/sass/**/*.{scss,sass}', gulp.series(css2));
   gulp.watch('source/js/**/*.{js,json}', gulp.series(js, refresh));
   gulp.watch('source/data/**/*.{js,json}', gulp.series(copy, refresh));
-  gulp.watch('source/img/**/*.svg', gulp.series(copysvg, sprite, sprite2, pugToHtml, refresh));
+  gulp.watch('source/img/**/*.svg', gulp.series(copysvg, sprite, sprite1, sprite2, pugToHtml, refresh));
   gulp.watch('source/img/**/*.{png,jpg}', gulp.series(copypngjpg, pugToHtml, refresh));
 };
 
@@ -128,10 +153,12 @@ const copy = () => {
     'source/fonts/**',
     'source/favicon/**',
     'source/img/**',
+    'source/img1/**',
+    'source/img2/**',
     'source/data/**',
     'source/file/**',
     'source/*.php',
-    'source/video/**', // учтите, что иногда git искажает видеофайлы, некоторые шрифты, pdf и gif - проверяйте и если обнаруживаете баги - скидывайте тестировщику такие файлы напрямую
+    'source/video/**', 
     'source/downloads/**',
   ], {
     base: 'source',
@@ -143,7 +170,7 @@ const clean = () => {
   return del('build');
 };
 
-const build = gulp.series(clean, svgo, copy, css, css2, sprite, sprite2, js, pugToHtml);
+const build = gulp.series(clean, svgo, copy, css, css1, css2, sprite, sprite1, sprite2, js, pugToHtml);
 
 const start = gulp.series(build, syncserver);
 

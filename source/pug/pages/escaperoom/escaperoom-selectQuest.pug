@@ -1,6 +1,4 @@
 include ../../base/mixins
-include ../../base/header
-include ../../base/footer
 
 block data
 
@@ -11,7 +9,7 @@ block variables
   - var headerMod = ""
   - var hasFooter = false
   - var footerMod = ""
-  - var currentPage = "" //- для остальных страниц пишем либо пустую строку, либо индекс
+  - var currentPage = "" 
 
 doctype html
 html(lang="ru")
@@ -22,17 +20,18 @@ html(lang="ru")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     meta(name="description", content="Мёд - оптом и в розницу")
 
-    link(rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png")
-    link(rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png")
-    link(rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png")
-    link(rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#ffcf55")
+    link(rel="apple-touch-icon" sizes="180x180" href="img2/favicon/apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="img2/favicon/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="img2/favicon/favicon-16x16.png")
+    link(rel="mask-icon" href="img2/favicon/safari-pinned-tab.svg" color="#ffcf55")
     meta(name="msapplication-TileColor" content="#ffcf55")
     meta(name="theme-color" content="#ffffff")
 
     link(rel="stylesheet", href="../css/style2.min.css")
 
   body.allquests
-    include ../../../../build/img/sprite2_auto.svg
+    div(style="display:none")
+        include ../../../../build/img2/sprite_auto.svg
     header.page-header.page-header--index.page-header--nojs.page-header--closed
         .page-header__logo
             a(href="escaperoom.html" aria-label="на главную")
@@ -86,7 +85,7 @@ html(lang="ru")
             ul.gallery
                 li.gallery__item.gallery__item--hit
                     a(href="#")
-                        img(src="../img/crypt-list.jpg" alt="Склеп")
+                        img(src="../img2/crypt-list.jpg" alt="Склеп")
                         h3 Склеп
                         p пр. Ленина, 37
                         div
@@ -96,7 +95,7 @@ html(lang="ru")
                                 span сложный
                 li.gallery__item.gallery__item--hit.gallery__item--available
                     a(href="escaperoom-maniack.html")
-                        img(src="../img/maniack-list.jpg" alt="Маньяк")
+                        img(src="../img2/maniack-list.jpg" alt="Маньяк")
                         h3 Маньяк
                         p Верхнетецкая, 32
                         div
@@ -106,7 +105,7 @@ html(lang="ru")
                                 span средний
                 li.gallery__item.gallery__item--available
                     a(href="escaperoom-ritual.html")
-                        img(src="../img/ritual-list.jpg" alt="Ритуал")
+                        img(src="../img2/ritual-list.jpg" alt="Ритуал")
                         h3 Ритуал
                         p пр. Ленина, 37
                         div
@@ -116,7 +115,7 @@ html(lang="ru")
                                 span сложный
                 li.gallery__item
                     a(href="#")
-                        img(src="../img/ghosts-list.jpg" alt="История призраков")
+                        img(src="../img2/ghosts-list.jpg" alt="История призраков")
                         h3 История призраков
                         p Новослободская, 2а
                         div
@@ -126,7 +125,7 @@ html(lang="ru")
                                 span легкий
                 li.gallery__item.gallery__item--mansion.gallery__item--available
                     a(href="escaperoom-mansion.html")
-                        img(src="../img/mansion-list.jpg" alt="Тайны старого особняка")
+                        img(src="../img2/mansion-list.jpg" alt="Тайны старого особняка")
                         h3 Тайны старого особняка
                         p пр. Ленина, 37
                         div
@@ -136,7 +135,7 @@ html(lang="ru")
                                 span легкий
                 li.gallery__item.gallery__item--cabin.gallery__item--hit
                     a(href="#")
-                        img(src="../img/cabin-list.jpg" alt="Хижина в лесу")
+                        img(src="../img2/cabin-list.jpg" alt="Хижина в лесу")
                         h3 Хижина в лесу
                         p Верхнетецкая, 32
                         div
@@ -146,7 +145,7 @@ html(lang="ru")
                                 span средний
                 li.gallery__item.gallery__item--experiment.gallery__item--hit.gallery__item--available
                     a(href="escaperoom-experiment.html")
-                        img(src="../img/experiment.jpg" alt="Фатальный эксперимент")
+                        img(src="../img2/experiment.jpg" alt="Фатальный эксперимент")
                         h3 Фатальный эксперимент
                         p Верхнетецкая, 32
                         div
@@ -156,7 +155,7 @@ html(lang="ru")
                                 span сложный
                 li.gallery__item
                     a(href="#")
-                        img(src="../img/metro-list.jpg" alt="Метро 2033")
+                        img(src="../img2/metro-list.jpg" alt="Метро 2033")
                         h3 Метро 2033
                         p Новослободская, 2а
                         div
@@ -166,7 +165,7 @@ html(lang="ru")
                                 span средний
                 li.gallery__item
                     a(href="#")
-                        img(src="../img/attic-list.jpg" alt="Старый чердак")
+                        img(src="../img2/attic-list.jpg" alt="Старый чердак")
                         h3 Старый чердак
                         p Новослободская, 2а
                         div
@@ -176,7 +175,7 @@ html(lang="ru")
                                 span легкий
                 li.gallery__item.gallery__item--boundary
                     a(href="#")
-                        img(class="boundary" src="../img/boundary-list.jpg" alt="Последний рубеж")
+                        img(class="boundary" src="../img2/boundary-list.jpg" alt="Последний рубеж")
                         h3 Последний рубеж
                         p Верхнетецкая, 32
                         div
@@ -186,7 +185,7 @@ html(lang="ru")
                                 span средний
                 li.gallery__item
                     a(href="#")
-                        img(src="../img/mars-list.jpg" alt="Марс-2056")
+                        img(src="../img2/mars-list.jpg" alt="Марс-2056")
                         h3 Марс-2056
                         p пр. Ленина, 37
                         div
@@ -203,6 +202,49 @@ html(lang="ru")
       a.page-footer__question.jsQuestion(href="#") Задать вопрос
 
     block modals
+        .overlay 
+        .overlay-menu
+        .modal.modal--city
+            button.modal__close(aria-label="закрыть")
+                +icon('icon-close', 16, 16)
+            h2 Ваш город
+            a.location(href="#")
+                span Определить местоположение
+            p ... или выберите вручную
+            ul.modal__list
+                li.modal__list-item.modal__list-item--active
+                    a(href="#") Новосибирск 
+                li.modal__list-item.modal__list-item--active
+                    a(href="#") Иркутск 
+                li.modal__list-item.modal__list-item--active
+                    a(href="#") Смоленск 
+                li.modal__list-item.modal__list-item--active
+                    a(href="#") Волгоград 
+                li.modal__list-item.modal__list-item--active
+                    a(href="#") Комсомольск-на-Амуре 
+        .modal.modal--question 
+            button.modal__close(aria-label="закрыть")
+                +icon('icon-close', 16, 16)  
+            h2 Задайте вопрос
+            form(action="#" method="POST")  
+                .wrapper 
+                    label
+                        | Чтобы мы смогли обращаться к вам, оставьте ваше имя
+                        span.input-title Имя
+                        input(type="text" name="user-name" id="user-name" placeholder="Имя")
+                    label
+                        | Чтобы мы смогли обращаться к вам, оставьте ваше имя
+                        span.input-title E-mail
+                        input(type="text" name="user-email" id="user-email" placeholder="E-mail")
+                        span.error-message Введён некорректный e-mail, попробуйте заново
+                    label(for="user-question") Ваш вопрос:
+                    textarea#user-question(name="user-question" cols="30" rows="4" placeholder="Начните вводить ...")
+                    button.button(type="submit") Отправить вопрос
+                input#agreement(type="checkbox")
+                label.agreement(for="agreement")
+                    | Я согласен с 
+                    a(href="#") правилами обработки персональных данных
+                    | и пользовательским соглашением
 
     script(src="../js/vendor.min.js")
     script(src="../js/escaperoom.min.js")

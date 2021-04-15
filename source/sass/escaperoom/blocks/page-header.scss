@@ -21,7 +21,7 @@
 .page-header__logo {
   width: 134px;
   height: 52px;
-  background: url("../img/logo-group.svg") no-repeat;
+  background: url("../img2/logo-group.svg") no-repeat;
   flex: 0 0 auto;
   margin-right: auto;
 
@@ -49,7 +49,7 @@
   padding-right: 30px;
   position: relative;
   text-decoration: none;
-  background: url("../img/burger.svg") no-repeat 100% 0;
+  background: url("../img2/burger.svg") no-repeat 100% 0;
 
   @media (max-width: $tablet-width) {
     display: block;
@@ -78,7 +78,7 @@
 
 .page-header--opened.page-header::after {
   @media (max-width: $tablet-width) {
-    background: url("../img/menuOpenBg.jpg") no-repeat;
+    background: url("../img2/menuOpenBg.jpg") no-repeat;
     background-size: cover;
   }
 }

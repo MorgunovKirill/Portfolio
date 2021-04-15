@@ -5,15 +5,127 @@ block data
 block variables
   - var title = "Навигационная страница"
   - var wrapperMod = ""
-  - var hasHeader = false
+  - var hasHeader = true
   - var headerMod = ""
-  - var hasFooter = false
+  - var hasFooter = true
   - var footerMod = ""
-  - var currentPage = ""
+  - var currentPage = "main"
 
 block main
-  main
-    h2
-      a(href="honey/honey.html") Honey - мёд на любой вкус!(без адаптива - 2 страницы)
-    h2
-      a(href="escaperoom/escaperoom.html") Escaperoom - страница квестов в реальности(адаптив мобильная, планшетная, десктопная версии - несколько страниц)
+  main    
+    .intro 
+      .container
+        h1.intro__title Кирилл Моргунов
+        p.intro__description Фронтенд-разработчик
+        button.btn.intro__btn Скачать резюме
+        ul.socials 
+          li.socials__item 
+            a.socials__link(href="#")
+              +icon('icon-vk', 31, 19)
+              span Vkontakte 
+          li.socials__item 
+            a.socials__link(href="#")
+              +icon('icon-instagram', 20, 20)
+              span Instagram
+          li.socials__item 
+            a.socials__link(href="#")
+              +icon('icon-facebook', 12, 20)
+              span Facebook 
+          li.socials__item 
+            a.socials__link(href="#")
+              +icon('icon-twitter', 26, 22)
+              span Twitter 
+    .stack#stack 
+      .container 
+        h2.stack__title Мой стек
+        ul.stack__list 
+          li.stack__item
+            h3.stack__heading Html 5
+            .stack__image
+              img(src="img/html5.png" width=200 height=300 alt="html5")
+            button.stack__btn(type="button" aria-label="раскрыть дополнительную информацию")
+              +icon("icon-arrowsmall", 25, 25)
+          li.stack__item 
+            h3.stack__heading CSS 3
+            .stack__image
+              img(src="img/css3.png" width=200 height=300 alt="css")
+            button.stack__btn(type="button" aria-label="раскрыть дополнительную информацию")
+              +icon("icon-arrowsmall", 25, 25)
+          li.stack__item 
+            h3.stack__heading Pug
+            .stack__image
+              img(src="img/pug.png" width=200 height=300 alt="pug")
+            button.stack__btn(type="button" aria-label="раскрыть дополнительную информацию")
+              +icon("icon-arrowsmall", 25, 25)
+          li.stack__item 
+            h3.stack__heading Javascript
+            .stack__image
+              img(src="img/js.png" width=200 height=300 alt="js")
+            button.stack__btn(type="button" aria-label="раскрыть дополнительную информацию")
+              +icon("icon-arrowsmall", 25, 25)
+          li.stack__item 
+            h3.stack__heading React
+            .stack__image
+              img(src="img/react.png" width=200 height=300 alt="react")
+            button.stack__btn(type="button" aria-label="раскрыть дополнительную информацию")
+              +icon("icon-arrowsmall", 25, 25)
+          li.stack__item 
+            h3.stack__heading Git
+            .stack__image
+              img(src="img/git2.png" width=200 height=300 alt="git")
+            button.stack__btn(type="button" aria-label="раскрыть дополнительную информацию")
+              +icon("icon-arrowsmall", 25, 25)
+          li.stack__item 
+            h3.stack__heading Gulp
+            .stack__image
+              img(src="img/gulp.png" width=200 height=300 alt="gulp")
+            button.stack__btn(type="button" aria-label="раскрыть дополнительную информацию")
+              +icon("icon-arrowsmall", 25, 25)
+          li.stack__item 
+            h3.stack__heading Webpack
+            .stack__image
+              img(src="img/webpack.png" width=200 height=300 alt="webpack")
+            button.stack__btn(type="button" aria-label="раскрыть дополнительную информацию")
+              +icon("icon-arrowsmall", 25, 25)
+          li.stack__item 
+            h3.stack__heading Photoshop
+            .stack__image
+              img(src="img/photoshop.jpg" width=200 height=300 alt="photoshop")
+            button.stack__btn(type="button" aria-label="раскрыть дополнительную информацию")
+              +icon("icon-arrowsmall", 25, 25)
+          li.stack__item 
+            h3.stack__heading Figma
+            .stack__image
+              img(src="img/figma.png" width=200 height=300 alt="figma")
+            button.stack__btn(type="button" aria-label="раскрыть дополнительную информацию")
+              +icon("icon-arrowsmall", 25, 25)
+    .projects#projects  
+      .container 
+        h2.projects__title Мои проекты
+        p.projects__description Несколько выполненных работ для демострации навыков
+        ul.projects__list 
+          li.projects__item.projects__item--big 
+            a.projects__link(href="#")             
+              span Denim
+              img(src="img/denim.jpg" width=770 height=295 alt="denim")
+          li.projects__item 
+            a.projects__link(href="#")
+              span Veles
+              img(src="img/veles.jpg" width=370 height=295 alt="veles")
+          li.projects__item 
+            a.projects__link(href="honey/honey.html")
+              span Honey - мёд на любой вкус! (без адаптива - 2 страницы)
+              img(src="img/honey.jpg" width=370 height=295 alt="honey")
+          li.projects__item.projects__item--big 
+            a.projects__link(href="escaperoom/escaperoom.html") 
+              span Escaperoom - страница квестов в реальности (адаптив мобильная, планшетная, десктопная версии - несколько страниц) 
+              img(src="img/escaperoom.jpg" width=770 height=295 alt="escaperoom")
+    .about#about 
+      .container 
+        h2.projects__title Обо мне
+    .contacts#contacts 
+      .container 
+        h2.projects__title Контакты
+
+         
+

@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local("Rubik Regular"),
+    local("Rubik-Regular"),
+    url("../fonts/Rubik/rubik-regular.woff2") format("woff2"),
+    url("../fonts/Rubik/rubik-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: local("Rubik Medium"),
+    local("Rubik-Medium"),
+    url("../fonts/Rubik/rubik-500.woff2") format("woff2"),
+    url("../fonts/Rubik/rubik-500.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: local("Rubik Bold"),
+    local("Rubik-Bold"),
+    url("../fonts/Rubik/rubik-700.woff2") format("woff2"),
+    url("../fonts/Rubik/rubik-700.woff") format("woff");
+}
+
+@font-face {
+  font-family: "MyriadPro";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local("MyriadPro Regular"),
+    local("MyriadPro-Regular"),
+    url("../fonts/MyriadPro/MyriadPro-Regular.woff2") format("woff2"),
+    url("../fonts/MyriadPro/MyriadPro-Regular.woff") format("woff");
+}

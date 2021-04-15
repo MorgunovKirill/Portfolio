@@ -1,33 +1,13 @@
 mixin header(headerMod, currentPage)
-  header.page-header
-    .page-header__logo  
-    nav.main-navigation
-      ul.main-navigation__list
-        li.main-navigation__item
-           a.main-navigation__link(href="honey.html") Главная
-        li.main-navigation__item
-          a.main-navigation__link(href="honey-catalog.html")
-            span Каталог
-          ul.main-navigation__submenu
-            li Новинки
-            li
-              a(href="#") Сливочное
-            li
-              a(href="#") Щербеты
-            li
-              a(href="#") Фруктовый лед
-            li
-              a(href="#") Мелорин
-        li.main-navigation__item
-          a.main-navigation__link(href="#")
-            span Доставка и оплата
-        li.main-navigation__item
-          a.main-navigation__link(href="#")
-            span О Компании
-    nav.user-navigation
-      ul.user-navigation__list
-        li.user-navigation__item
-          a.user-navigation__link.user-navigation__link--search(href="#")
-            +icon("icon-search", 17, 17)
-          .user-navigation__sub-search
-            input(type="text" placeholder="Липовый")
+  header.header
+    .container
+      ul.header__list      
+        li.header__item 
+          a.header__link(href="#stack") Мой стек  
+        li.header__item 
+          a.header__link(href="#projects") Проекты    
+        li.header__item 
+          a.header__link(href="#about") Обо мне 
+        li.header__item 
+          a.header__link(href="#contacts") Контакты
+      

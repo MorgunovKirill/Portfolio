@@ -1,0 +1,79 @@
+.stack {
+    background-color: #ffffff;
+    padding-top: 30px;
+    
+
+    &__title {  
+        position: relative;      
+        font-size: 50px;
+        font-family: $font-family-primary;
+        color: rgb(0, 0, 0);
+        line-height: 1.417; 
+        text-align: center;
+        margin: 0 0 90px 0;           
+    }
+
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;           
+    }
+    
+
+    &__item {
+        position: relative;
+        $gutter: 50px;
+        $card-count: 3;
+        width: calc(100% / #{$card-count} - #{$gutter} * (#{$card-count} - 1) / #{$card-count});
+        margin-right: $gutter;
+        text-align: center;
+        background-color: #000000;
+        display: flex;
+        flex-direction: column;
+    
+        &:nth-of-type(#{$card-count}n) {
+          margin-right: 0;
+        }
+        
+        min-height: 225px;
+        box-shadow: 0 0 9px 0 rgba(73, 73, 73, 0.4);
+        margin-bottom: 50px;
+        padding: 30px;
+    }  
+
+    &__image {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__heading {
+        font-size: 36px;
+        margin: 0 0 20px 0;
+        color: #ffffff;
+    }
+
+    &__btn {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+
+        svg {
+            transform: rotate(90deg);
+            margin-top: 3px;
+        }
+    }
+}
+
