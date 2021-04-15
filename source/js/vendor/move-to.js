@@ -1,114 +1,3 @@
-/******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// define getter function for harmony exports
-/******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
-/******/ 		}
-/******/ 	};
-/******/
-/******/ 	// define __esModule on exports
-/******/ 	__webpack_require__.r = function(exports) {
-/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 		}
-/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 	};
-/******/
-/******/ 	// create a fake namespace object
-/******/ 	// mode & 1: value is a module id, require it
-/******/ 	// mode & 2: merge all properties of value into the ns
-/******/ 	// mode & 4: return value when already ns object
-/******/ 	// mode & 8|1: behave like require
-/******/ 	__webpack_require__.t = function(value, mode) {
-/******/ 		if(mode & 1) value = __webpack_require__(value);
-/******/ 		if(mode & 8) return value;
-/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
-/******/ 		var ns = Object.create(null);
-/******/ 		__webpack_require__.r(ns);
-/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
-/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
-/******/ 		return ns;
-/******/ 	};
-/******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
-/******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
-/******/
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./js/vendor.js");
-/******/ })
-/************************************************************************/
-/******/ ({
-
-/***/ "./js/vendor.js":
-/*!**********************!*\
-  !*** ./js/vendor.js ***!
-  \**********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _vendor_move_to__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./vendor/move-to */ "./js/vendor/move-to.js");
-/* harmony import */ var _vendor_move_to__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_vendor_move_to__WEBPACK_IMPORTED_MODULE_0__);
-
-
-/***/ }),
-
-/***/ "./js/vendor/move-to.js":
-/*!******************************!*\
-  !*** ./js/vendor/move-to.js ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
 /*!
 * MoveTo - A lightweight scroll animation javascript library without any dependency.
 * Version 1.8.3 (21-07-2019 00:32)
@@ -116,8 +5,9 @@ __webpack_require__.r(__webpack_exports__);
 * Copyright 2019 Hasan Aydoğdu <hsnaydd@gmail.com>
 */
 
+'use strict';
 
-var MoveTo = function () {
+var MoveTo = function() {
   /**
    * Defaults
    * @type {object}
@@ -154,10 +44,10 @@ var MoveTo = function () {
 
   function mergeObject(obj1, obj2) {
     var obj3 = {};
-    Object.keys(obj1).forEach(function (propertyName) {
+    Object.keys(obj1).forEach(function(propertyName) {
       obj3[propertyName] = obj1[propertyName];
     });
-    Object.keys(obj2).forEach(function (propertyName) {
+    Object.keys(obj2).forEach(function(propertyName) {
       obj3[propertyName] = obj2[propertyName];
     });
     return obj3;
@@ -171,7 +61,7 @@ var MoveTo = function () {
    */
 
   function kebabCase(val) {
-    return val.replace(/([A-Z])/g, function ($1) {
+    return val.replace(/([A-Z])/g, function($1) {
       return '-' + $1.toLowerCase();
     });
   }
@@ -214,7 +104,7 @@ var MoveTo = function () {
    */
 
 
-  MoveTo.prototype.registerTrigger = function (dom, callback) {
+  MoveTo.prototype.registerTrigger = function(dom, callback) {
     var _this = this;
 
     if (!dom) {
@@ -237,7 +127,7 @@ var MoveTo = function () {
     };
 
     dom.addEventListener('click', listener, false);
-    return function () {
+    return function() {
       return dom.removeEventListener('click', listener, false);
     };
   };
@@ -249,7 +139,7 @@ var MoveTo = function () {
    */
 
 
-  MoveTo.prototype.move = function (target) {
+  MoveTo.prototype.move = function(target) {
     var _this2 = this;
 
     var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
@@ -306,7 +196,7 @@ var MoveTo = function () {
    */
 
 
-  MoveTo.prototype.addEaseFunction = function (name, fn) {
+  MoveTo.prototype.addEaseFunction = function(name, fn) {
     this.easeFunctions[name] = fn;
   };
   /**
@@ -319,7 +209,7 @@ var MoveTo = function () {
 
   function _getOptionsFromTriggerDom(dom, options) {
     var domOptions = {};
-    Object.keys(options).forEach(function (key) {
+    Object.keys(options).forEach(function(key) {
       var value = dom.getAttribute("data-mt-".concat(kebabCase(key)));
 
       if (value) {
@@ -332,11 +222,8 @@ var MoveTo = function () {
   return MoveTo;
 }();
 
-if (true) {
+if (typeof module !== 'undefined') {
   module.exports = MoveTo;
-} else {}
-
-/***/ })
-
-/******/ });
-//# sourceMappingURL=vendor.min.js.map
+} else {
+  window.MoveTo = MoveTo;
+}

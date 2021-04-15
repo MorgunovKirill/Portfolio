@@ -2,6 +2,11 @@
 @import "fonts";
 @import "mixins";
 @import "general";
+
+// components
+@import "components/btn";
+
+// blocks
 @import "blocks/header";
 @import "blocks/intro";
 @import "blocks/stack";

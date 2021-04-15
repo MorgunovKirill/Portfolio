@@ -82,10 +82,10 @@
     <header class="header">
       <div class="container">
         <ul class="header__list">     
-          <li class="header__item"> <a class="header__link" href="#">Мой стек  </a></li>
-          <li class="header__item"> <a class="header__link" href="#">Проекты    </a></li>
-          <li class="header__item"> <a class="header__link" href="#">Обо мне </a></li>
-          <li class="header__item"> <a class="header__link" href="#">Контакты</a></li>
+          <li class="header__item"> <a class="header__link" href="#stack">Мой стек  </a></li>
+          <li class="header__item"> <a class="header__link" href="#projects">Проекты    </a></li>
+          <li class="header__item"> <a class="header__link" href="#about">Обо мне </a></li>
+          <li class="header__item"> <a class="header__link" href="#contacts">Контакты</a></li>
         </ul>
       </div>
     </header>
@@ -97,22 +97,54 @@
           <button class="btn intro__btn">Скачать резюме         </button>
         </div>
       </div>
-      <div class="stack"> 
+      <div class="stack" id="stack"> 
         <div class="container"> 
           <h2 class="stack__title">Мой стек</h2>
           <ul class="stack__list"> 
-            <li class="stack__item">Html 5</li>
-            <li class="stack__item">CSS 3</li>
-            <li class="stack__item">Pug</li>
-            <li class="stack__item">Javascript</li>
-            <li class="stack__item">React</li>
-            <li class="stack__item">Git</li>
-            <li class="stack__item">Gulp</li>
-            <li class="stack__item">Webpack</li>
+            <li class="stack__item">
+              <h3 class="stack__heading">Html 5</h3>
+              <div class="stack__image"><img src="img/html5.png" width="200" height="300" alt="html5"></div>
+            </li>
+            <li class="stack__item"> 
+              <h3 class="stack__heading">CSS 3</h3>
+              <div class="stack__image"><img src="img/css3.png" width="200" height="300" alt="css"></div>
+            </li>
+            <li class="stack__item"> 
+              <h3 class="stack__heading">Pug</h3>
+              <div class="stack__image"><img src="img/pug.png" width="200" height="300" alt="pug"></div>
+            </li>
+            <li class="stack__item"> 
+              <h3 class="stack__heading">Javascript</h3>
+              <div class="stack__image"><img src="img/js.png" width="200" height="300" alt="js"></div>
+            </li>
+            <li class="stack__item"> 
+              <h3 class="stack__heading">React</h3>
+              <div class="stack__image"><img src="img/react.png" width="200" height="300" alt="react"></div>
+            </li>
+            <li class="stack__item"> 
+              <h3 class="stack__heading">Git</h3>
+              <div class="stack__image"><img src="img/git2.png" width="200" height="300" alt="git"></div>
+            </li>
+            <li class="stack__item"> 
+              <h3 class="stack__heading">Gulp</h3>
+              <div class="stack__image"><img src="img/gulp.png" width="200" height="300" alt="gulp"></div>
+            </li>
+            <li class="stack__item"> 
+              <h3 class="stack__heading">Webpack</h3>
+              <div class="stack__image"><img src="img/webpack.png" width="200" height="300" alt="webpack"></div>
+            </li>
+            <li class="stack__item"> 
+              <h3 class="stack__heading">Photoshop</h3>
+              <div class="stack__image"><img src="img/photoshop.jpg" width="200" height="300" alt="photoshop"></div>
+            </li>
+            <li class="stack__item"> 
+              <h3 class="stack__heading">Figma</h3>
+              <div class="stack__image"><img src="img/figma.png" width="200" height="300" alt="figma"></div>
+            </li>
           </ul>
         </div>
       </div>
-      <div class="projects"> 
+      <div class="projects" id="projects"> 
         <div class="container"> 
           <h2 class="projects__title">Мои проекты</h2>
           <p class="projects__description">Несколько выполненных работ для демострации навыков</p>
@@ -120,8 +152,18 @@
             <li class="projects__item projects__item--big"> <a class="projects__link" href="#">Denim</a></li>
             <li class="projects__item"> <a class="projects__link" href="#">Veles</a></li>
             <li class="projects__item"> <a class="projects__link" href="honey/honey.html">Honey - мёд на любой вкус! (без адаптива - 2 страницы)</a></li>
-            <li class="projects__item projects__item--big"> <a class="projects__link" href="escaperoom/escaperoom.html">Escaperoom - страница квестов в реальности (адаптив мобильная, планшетная, десктопная версии - несколько страниц)   </a></li>
+            <li class="projects__item projects__item--big"> <a class="projects__link" href="escaperoom/escaperoom.html">Escaperoom - страница квестов в реальности (адаптив мобильная, планшетная, десктопная версии - несколько страниц) </a></li>
           </ul>
+        </div>
+      </div>
+      <div class="about" id="about"> 
+        <div class="container"> 
+          <h2 class="projects__title">Обо мне</h2>
+        </div>
+      </div>
+      <div class="contacts" id="contacts"> 
+        <div class="container"> 
+          <h2 class="projects__title">Контакты</h2>
         </div>
       </div>
     </main>
@@ -131,6 +173,6 @@
       </div>
     </footer>
     <script src="../js/vendor.min.js"></script>
-    <script src="../js/honey.min.js"></script>
+    <script src="../js/main.min.js"></script>
   </body>
 </html>

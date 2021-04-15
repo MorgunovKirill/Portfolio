@@ -1,9 +1,9 @@
 .projects {
-    padding-top: 100px;
+    padding-top: 90px;
     padding-bottom: 100px;
 
     &__title {       
-            font-size: 36px;
+            font-size: 50px;
             font-weight: 500;
             font-family: $font-family-primary;
             color: rgb(255, 255, 255);
@@ -13,7 +13,7 @@
     }
 
     &__description {        
-            font-size: 16px;
+            font-size: 22px;
             font-family: $font-family-secondary;
             color: rgb(255, 255, 255);
             line-height: 1.625;
