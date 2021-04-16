@@ -20,21 +20,21 @@ block main
         button.btn.intro__btn Скачать резюме
         ul.socials 
           li.socials__item 
-            a.socials__link(href="#")
+            a.socials__link(href="https://vk.com/id8596842" target="_blank" rel="noopener noreferrer")
               +icon('icon-vk', 31, 19)
               span Vkontakte 
           li.socials__item 
-            a.socials__link(href="#")
+            a.socials__link(href="#" target="_blank" rel="noopener noreferrer")
               +icon('icon-instagram', 20, 20)
               span Instagram
           li.socials__item 
-            a.socials__link(href="#")
+            a.socials__link(href="#" target="_blank" rel="noopener noreferrer")
               +icon('icon-facebook', 12, 20)
               span Facebook 
           li.socials__item 
-            a.socials__link(href="#")
+            a.socials__link(href="https://twitter.com/R0bur" target="_blank" rel="noopener noreferrer")
               +icon('icon-twitter', 26, 22)
-              span Twitter 
+              span Twitter  
     .stack#stack 
       .container 
         h2.stack__title Мой стек
@@ -120,12 +120,21 @@ block main
             a.projects__link(href="escaperoom/escaperoom.html") 
               span Escaperoom - страница квестов в реальности (адаптив мобильная, планшетная, десктопная версии - несколько страниц) 
               img(src="img/escaperoom.jpg" width=770 height=295 alt="escaperoom")
-    .about#about 
-      .container 
-        h2.projects__title Обо мне
     .contacts#contacts 
       .container 
-        h2.projects__title Контакты
+        h2.contacts__title Контакты
+        p.contacts__phone
+          span 
+            +icon("icon-phone", 20, 20)
+          a(href="tel:+79876467121") +79876467121
+        p.contacts__email
+          span 
+            +icon("icon-mail", 22, 18)
+          a(href="mailto:kirillmorgunov@mail.ru") kirillmorgunov@mail.ru
+        p.contacts__skype 
+          span
+             +icon("icon-skype", 30, 30)
+          a(href="skype:kirillmorgunov@mail.ru") kirillmorgunov@mail.ru
 
          
 

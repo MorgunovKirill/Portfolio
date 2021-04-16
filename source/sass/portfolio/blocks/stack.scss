@@ -1,12 +1,13 @@
 .stack {
     background-color: #ffffff;
-    padding-top: 30px;
+    padding-top: 90px;
     
 
     &__title {  
         position: relative;      
         font-size: 50px;
         font-family: $font-family-primary;
+        font-weight: 500;
         color: rgb(0, 0, 0);
         line-height: 1.417; 
         text-align: center;
