@@ -16,8 +16,8 @@ block main
     .intro 
       .container
         h1.intro__title Кирилл Моргунов
-        p.intro__description Фронтенд-разработчик
-        button.btn.intro__btn Скачать резюме
+        p.intro__description Фронтенд-разработчик       
+        a.btn.intro__btn(href="file.pdf" download) Скачать резюме
         ul.socials 
           li.socials__item 
             a.socials__link(href="https://vk.com/id8596842" target="_blank" rel="noopener noreferrer")
@@ -45,6 +45,14 @@ block main
               img(src="img/html5.png" width=200 height=300 alt="html5")
             button.stack__btn(type="button" aria-label="раскрыть дополнительную информацию")
               +icon("icon-arrowsmall", 25, 25)
+            div.stack__info
+              ul.stack__features
+                li.stack__feature Использую семантические теги
+                li.stack__feature Верстаю адаптивные дизайны, responsive-дизайны
+                li.stack__feature mobile-first или desktop-first
+                li.stack__feature Использую БЭМ
+                li.stack__feature Уделаю внимание доступности, использую best practices
+                li.stack__feature Проверяю производительность (lighthouse) для максимального performance                 
           li.stack__item 
             h3.stack__heading CSS 3
             .stack__image

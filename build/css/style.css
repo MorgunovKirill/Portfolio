@@ -120,6 +120,8 @@ img {
     color: white;
     line-height: 1.75;
     margin: 0 0 40px 0; }
+  .intro__btn {
+    text-decoration: none; }
 
 .stack {
   background-color: #ffffff;
@@ -201,6 +203,34 @@ img {
       -webkit-transform: rotate(90deg);
               transform: rotate(90deg);
       margin-top: 3px; }
+  .stack__info {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    z-index: 1;
+    max-height: 0;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.4);
+            box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.4);
+    -webkit-transition: max-height 0.3s ease, overflow 0.3s ease;
+    transition: max-height 0.3s ease, overflow 0.3s ease; }
+    .stack__info.active {
+      overflow: visible; }
+      .stack__info.active .stack__features {
+        opacity: 1; }
+    .stack__info .stack__features {
+      opacity: 0;
+      -webkit-transition: opacity 0.3s ease;
+      transition: opacity 0.3s ease; }
+  .stack__features {
+    margin: 0;
+    padding: 25px 25px 25px 40px;
+    text-align: left;
+    opacity: 0; }
+  .stack__feature {
+    margin-bottom: 10px; }
 
 .projects {
   padding-top: 90px;

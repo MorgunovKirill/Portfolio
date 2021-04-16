@@ -76,5 +76,43 @@
             margin-top: 3px;
         }
     }
+
+    &__info {
+        position: absolute;       
+        left: 0;
+        top: 100%;
+        background-color: #000000;
+        color: #ffffff;
+        z-index: 1;     
+        max-height: 0;
+        overflow: hidden;
+        box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.4);
+
+        transition: max-height $default-transition-settings, overflow $default-transition-settings;
+
+        &.active {
+          overflow: visible;
+
+          .stack__features {
+            opacity: 1;
+          }
+        }
+
+        .stack__features {
+            opacity: 0;
+            transition: opacity $default-transition-settings;
+        }
+    }
+
+    &__features {
+        margin: 0;
+        padding: 25px 25px 25px 40px;          
+        text-align: left;
+        opacity: 0;
+    }
+
+    &__feature {
+        margin-bottom: 10px;
+    }
 }
 
