@@ -202,7 +202,15 @@ img {
     .stack__btn svg {
       -webkit-transform: rotate(90deg);
               transform: rotate(90deg);
-      margin-top: 3px; }
+      margin-top: 3px;
+      -webkit-transition: margin 0.3s ease, -webkit-transform 0.3s ease;
+      transition: margin 0.3s ease, -webkit-transform 0.3s ease;
+      transition: transform 0.3s ease, margin 0.3s ease;
+      transition: transform 0.3s ease, margin 0.3s ease, -webkit-transform 0.3s ease; }
+    .stack__btn.active svg {
+      margin-top: 0;
+      -webkit-transform: rotate(270deg);
+              transform: rotate(270deg); }
   .stack__info {
     position: absolute;
     left: 0;

@@ -69,11 +69,19 @@
         height: 40px;
         border: none;
         border-radius: 50%;
-        cursor: pointer;
+        cursor: pointer;       
 
         svg {
             transform: rotate(90deg);
             margin-top: 3px;
+            transition: transform $default-transition-settings, margin $default-transition-settings;
+        }
+
+        &.active {
+            svg {
+                margin-top: 0;
+                transform: rotate(270deg);
+            }
         }
     }
 
