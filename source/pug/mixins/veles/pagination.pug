@@ -1,0 +1,23 @@
+mixin pagination(settings)
+  .pagination
+    a(href="#" aria-label="переход на предыдущую страницу").pagination__btn.pagination__btn--first
+      +icon("icon-arrowright", 13, 13)
+    a.pagination__btn.pagination__btn--prev
+      +icon("icon-bar", 2, 28)
+    ul.pagination__list
+      - for (var x = 1; x <= settings.pages; x++)
+        if (x <= 4)
+          if (x === 4)
+            li.pagination__item
+              a(href="#").pagination__link ...
+          else
+            li.pagination__item
+              a(class= (settings.activePage === x) ? 'pagination__link pagination__link--active' : 'pagination__link', href="#")= x
+        else if (x === settings.pages)
+          li.pagination__item
+            a(href="#").pagination__link= settings.pages
+    a.pagination__btn.pagination__btn--next
+      +icon("icon-bar", 2, 28)
+    a(href="#" aria-label="переход на следующую страницу").pagination__btn.pagination__btn--last
+      +icon("icon-arrowright", 13, 13)
+

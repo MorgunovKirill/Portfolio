@@ -1,0 +1,131 @@
+.intro {    
+    margin-bottom: 99px;
+
+    @media (max-width: 768px) {
+        padding-top: 25px;
+        margin-bottom: 30px;
+        min-height: 372px;
+      }
+
+    &__new {
+        display: block;
+        max-width: 99px;
+        margin: 0 auto 44px auto;
+        padding: 4px 15px 4px 15px;
+        background-color: #FF7931;
+        font-family: $font-family-primary;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+
+        @media (max-width: 768px) {
+            margin-bottom: 30px;
+          }
+    }
+
+    &__title {
+        font-family: $font-family-primary;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 72px;
+        line-height: 85px;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin: 0 0 42px 0;
+
+        @media (max-width: 768px) {
+            font-weight: 300;
+            font-size: 30px;
+            line-height: 150%;
+          }
+    }
+
+    &__description {
+        font-family: $font-family-primary;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 150%;
+        color: #FFFFFF;
+        max-width: 462px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 55px;       
+
+   
+        @media (max-width: 768px) {
+           display: none;
+        }
+    }
+
+    &__controls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            fill: transparent;
+            margin-right: 20px;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__delimiter {
+        display: inline-block;
+        width: 1px;
+        min-height: 42px;
+        height: 100%;
+        margin-right: 20px;
+        background-color: #ffffff;
+    }
+
+    &__before,
+    &__after {
+        font-family: $font-family-primary;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 15px;
+        color: #FFFFFF;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 64px;
+            height: 1px;
+            position: absolute;
+            top: 0;
+            bottom: 0;    
+            margin: auto; 
+            background-color: #ffffff;       
+        }
+    }
+
+    &__before {
+        &::before {
+            right: -74px;
+        }
+    }
+    
+    &__after {
+        &::before {
+            left: -74px;
+        }
+    }
+}

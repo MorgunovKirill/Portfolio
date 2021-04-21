@@ -1,0 +1,51 @@
+.slider-pagination {     
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+    justify-content: center;
+    max-width: 80%;  
+    flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+      display: flex;
+      text-align: center;
+      transform: translate3d(0, 0, 0);       
+      border-radius: 100px;
+      overflow: hidden;
+      z-index: 1;        
+    }
+    
+    .swiper-pagination-bullet {
+      position: relative;
+      display: block;
+      width: 10px;
+      height: 10px;
+      margin-right: 10px;       
+      cursor: pointer;
+      transition: width $default-transition-settings;
+  
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+        opacity: 0.2;
+      }
+  
+      &-active {
+        cursor: default;  
+  
+        &::before {          
+          opacity: 1;
+        }
+      }
+    }
+  }

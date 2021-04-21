@@ -73,6 +73,22 @@ const css2 = () => {
       .pipe(server.stream());
 };
 
+const css3 = () => {
+  return gulp.src('source/sass/veles/style3.scss')
+      .pipe(plumber())
+      .pipe(sourcemap.init())
+      .pipe(sass())
+      .pipe(postcss([autoprefixer({
+        grid: true,
+      })]))
+      .pipe(gulp.dest('build/css'))
+      .pipe(csso())
+      .pipe(rename('style3.min.css'))
+      .pipe(sourcemap.write('.'))
+      .pipe(gulp.dest('build/css'))
+      .pipe(server.stream());
+};
+
 const js = () => {
   return gulp.src(['source/js/main.js'])
       .pipe(webpackStream(webpackConfig))
@@ -114,6 +130,13 @@ const sprite2 = () => {
       .pipe(gulp.dest('build/img2'));
 };
 
+const sprite3 = () => {
+  return gulp.src('source/img3/sprite/*.svg')
+      .pipe(svgstore({inlineSvg: true}))
+      .pipe(rename('sprite_auto.svg'))
+      .pipe(gulp.dest('build/img3'));
+};
+
 const syncserver = () => {
   server.init({
     server: 'build/',
@@ -127,9 +150,10 @@ const syncserver = () => {
   gulp.watch('source/sass/**/*.{scss,sass}', gulp.series(css));
   gulp.watch('source/sass/**/*.{scss,sass}', gulp.series(css1));
   gulp.watch('source/sass/**/*.{scss,sass}', gulp.series(css2));
+  gulp.watch('source/sass/**/*.{scss,sass}', gulp.series(css3));
   gulp.watch('source/js/**/*.{js,json}', gulp.series(js, refresh));
   gulp.watch('source/data/**/*.{js,json}', gulp.series(copy, refresh));
-  gulp.watch('source/img/**/*.svg', gulp.series(copysvg, sprite, sprite1, sprite2, pugToHtml, refresh));
+  gulp.watch('source/img/**/*.svg', gulp.series(copysvg, sprite, sprite1, sprite2, sprite3, pugToHtml, refresh));
   gulp.watch('source/img/**/*.{png,jpg}', gulp.series(copypngjpg, pugToHtml, refresh));
 };
 
@@ -155,6 +179,7 @@ const copy = () => {
     'source/img/**',
     'source/img1/**',
     'source/img2/**',
+    'source/img3/**',
     'source/data/**',
     'source/file/**',
     'source/*.php',
@@ -170,7 +195,7 @@ const clean = () => {
   return del('build');
 };
 
-const build = gulp.series(clean, svgo, copy, css, css1, css2, sprite, sprite1, sprite2, js, pugToHtml);
+const build = gulp.series(clean, svgo, copy, css, css1, css2, css3, sprite, sprite1, sprite2, sprite3, js, pugToHtml);
 
 const start = gulp.series(build, syncserver);
 

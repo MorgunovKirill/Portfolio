@@ -1,0 +1,231 @@
+include ../../base/mixins
+
+block data
+block variables
+
+block variables
+  - var title = "Veles - главная"
+  - var wrapperMod = ""
+  - var hasHeader = false
+  - var headerMod = ""
+  - var hasFooter = false
+  - var footerMod = ""
+  - var currentPage = ""
+
+doctype html
+html(lang="ru")
+  head
+    title= title
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(name="description", content="Veles - новости культуры")
+    link(rel="stylesheet", href="../css/style3.min.css")  
+
+  body
+    div(style="display:none")
+      include ../../../../build/img3/sprite_auto.svg
+    header.header.container
+      h1.header__title Новости культуры
+      button.header__toggle(type="button") 
+        +icon('icon-menu', 30, 30)
+      nav.main-navigation
+        button.main-navigation__close(type="button") 
+          +icon('icon-close', 30, 30)
+        ul.main-navigation__list
+          li.main-navigation__item
+            a.main-navigation__link(href="#") НОВОСТИ
+          li.main-navigation__item
+            a.main-navigation__link(href="#") ОБЗОРЫ
+          li.main-navigation__item
+            a.main-navigation__link(href="#") МУЗЫКА
+          li.main-navigation__item
+            a.main-navigation__link(href="#") АРХИТЕКТУРА
+          li.main-navigation__item
+            a.main-navigation__link(href="#") КИНО
+          li.main-navigation__item
+            a.main-navigation__link(href="#") ТЕАТР
+          li.main-navigation__item
+            a.main-navigation__link(href="#") ЛИТЕРАТУРА
+          li.main-navigation__item
+            a.main-navigation__link(href="#") РЕЛИГИЯ
+          li.main-navigation__item
+            a.main-navigation__link(href="#") ЖИВОПИСЬ
+    main
+      section.intro
+        .hotel-slider  
+          .hotel-slider__container
+            .hotel-slider__list
+              ul.hotel-slider__wrap 
+                li.hotel-slider__item    
+                  img(src="../img3/intro-bg.jpg" width="1440" height="464" alt="фотография номера отеля")  
+                  .container
+                    span.intro__new новое
+                    h2.intro__title Подводный отель
+                    .intro__nav
+                      span.intro__before Предыдущая
+                      p.intro__controls
+                        +icon('icon-arrowleft', 13, 13)
+                        span.intro__delimiter
+                        +icon('icon-arrowright', 13, 13)
+                      span.intro__after Следущая
+                    p.intro__description Как известно, Дубай – город контрастов. Самые революционные и&nbsp;фантастические мечты архитекторов способен воплотить в&nbsp;жизнь этот мегаполис, построенный на нефти и за счет нефти
+                li.hotel-slider__item  
+                  img(src="../img3/intro-bg-2.jpg" width="1440" height="464" alt="фотография номера отеля")      
+                  .container
+                    span.intro__new новое
+                    h2.intro__title Подводный отель
+                    .intro__nav
+                      span.intro__before Предыдущая
+                      p.intro__controls
+                        +icon('icon-arrowleft', 13, 13)
+                        span.intro__delimiter
+                        +icon('icon-arrowright', 13, 13)
+                      span.intro__after Следущая
+                    p.intro__description Как известно, Дубай – город контрастов. Самые революционные и&nbsp;фантастические мечты архитекторов способен воплотить в&nbsp;жизнь этот мегаполис, построенный на нефти и за счет нефти
+                li.hotel-slider__item      
+                  img(src="../img3/intro-bg-3.jpg" width="1440" height="464" alt="фотография номера отеля")  
+                  .container
+                    span.intro__new новое
+                    h2.intro__title Подводный отель
+                    .intro__nav
+                      span.intro__before Предыдущая
+                      p.intro__controls
+                        +icon('icon-arrowleft', 13, 13)
+                        span.intro__delimiter
+                        +icon('icon-arrowright', 13, 13)
+                      span.intro__after Следущая
+                    p.intro__description Как известно, Дубай – город контрастов. Самые революционные и&nbsp;фантастические мечты архитекторов способен воплотить в&nbsp;жизнь этот мегаполис, построенный на нефти и за счет нефти
+              .slider-pagination
+      section.content.container
+        .content__main
+          .content__section.content__section--news
+            h2.content__title НОВОСТИ
+            .content__news
+              .content__news-main
+                img(src="../img3/birds.jpg" width="470" height="334" alt="изображение птиц")
+                a.content__news-link(href="#")
+                  h3.content__heading Новости культуры России и всего мира
+                  p.content__description В минувшие выходные в Москве на фестивале «Оберег» вручили первую премию Russian World Music Awards
+              ul.content__news-list
+                li.content__news-item
+                  .content__small-img
+                    img(src="../img3/leonov.jpg" width="127" height="91" alt="фотография памятника Евгению Леонову")
+                  a.content__news-link(href="#")
+                    h3.content__heading Открытие нового памятника Евгению&nbsp;Леонову
+                    p.content__description 10 сентября в 15:00 был открыт памятник писателю
+                li.content__news-item
+                  .content__small-img
+                    img(src="../img3/boss.jpg" width="127" height="91" alt="фотография двух людей, мужчины и женщины - героев статьи")
+                  a.content__news-link(href="#")
+                    h3.content__heading Беседы с писателями
+                    p.content__description Русские писатели говорят о важности искусства
+                li.content__news-item
+                  .content__small-img
+                    img(src="../img3/stpatrick.jpg" width="127" height="91" alt="изображение ирландского мужчины в шляпе с четырехлистным клевером - символа дня святого патрика")
+                  a.content__news-link(href="#")
+                    h3.content__heading День и ночь св. Патрика: встреча старых друзей
+                    p.content__description Не Джойсом единым живет Ирландия!
+          .content__section.content__section--reviews
+            h2.content__title ОБЗОРЫ
+            ul.content__reviews
+              li.content__reviews-item
+                .content__img
+                  button(type="button").content__bookmark
+                    +icon("icon-bookmark", 14, 18)
+                  img(class="mask" src="../img3/mask.png" width="370" height="203" alt="серый фон")
+                  img(src="../img3/monparnas.jpg" width="370" height="203" alt="картина Монпрарнаса")
+                a.content__reviews-link(href="#")
+                  h3.content__heading «Шальные годы» Монпарнаса
+                  p.content__description В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка «Шальные годы Монпарнаса»
+              li.content__reviews-item.content__reviews-item--active
+                .content__img
+                  button(type="button").content__bookmark
+                    +icon("icon-bookmark", 14, 18)
+                  button(type="button").content__views
+                    +icon("icon-eye", 24, 16)
+                    span 37
+                  button(type="button").content__comments
+                    +icon("icon-quote", 18, 16)
+                    span 2
+                  img(class="mask" src="../img3/mask.png" width="370" height="203" alt="серый фон")
+                  img(src="../img3/anatomy1.jpg" width="370" height="203" alt="фотография камня формой как человеческие ступни в руках")
+                a.content__reviews-link(href="#")
+                  h3.content__heading Анатомия за 30 секунд
+                  p.content__description Сейчас, когда мир открыт нараспашку для человека и его познавательных изысканий, интерес к научно-популярной литературе заметно вырос
+              li.content__reviews-item
+                .content__img
+                  button(type="button").content__bookmark
+                    +icon("icon-bookmark", 14, 18)
+                  img(class="mask" src="../img3/mask.png" width="370" height="203" alt="серый фон")
+                  img(src="../img3/balet.jpg" width="370" height="203" alt="фотография женщины танцующей балет")
+                a.content__reviews-link(href="#")
+                  h3.content__heading Русские балетные сезоны
+                  p.content__description В Новом Иерусалиме стартовал необычный культурно-развлекательный спектакль, который покажут в новом театре
+              li.content__reviews-item
+                .content__img
+                  button(type="button").content__bookmark
+                    +icon("icon-bookmark", 14, 18)
+                  img(class="mask" src="../img3/mask.png" width="370" height="203" alt="серый фон")
+                  img(src="../img3/eccentric.jpg" width="370" height="203" alt="фотография двух людей, мужчины и женщины")
+                a.content__reviews-link(href="#")
+                  h3.content__heading Сферические чудаки
+                  p.content__description Корреспондентам «Культурного обозревателя» посчастливилось побывать в театре «Сфера» на премьере спектакля «Чудаки и зануды»
+            +pagination({pages: 35, activePage: 1, title: 'новостей'})
+          .content__section.content__section--footer
+            img(src="../img3/balet2.jpg" width="770" height="176" alt="фотография балерины, сидящей на шпагате")
+            h2.content__title Ох, уж этот балет
+            a.content__btn.btn.btn--dark(href="#")
+              span Cмотреть
+              +icon("icon-arrowforward", 24, 25)
+        .content__aside
+          .content__article
+             img(src="../img3/baloons.jpg" alt="Фотография воздушных шаров")
+             h2.content__title ВОЗДУШНЫЕ ШАРЫ
+             a.content__btn.btn.btn--light(href="#")
+              span Cмотреть
+              +icon("icon-arrowforward", 24, 25)
+          .content__article
+             img(src="../img3/jeremy-bishop.jpg" alt="Фотография женщины под водой")
+             h2.content__title.content__title--light НЕОБЫЧНАЯ ФОТОСЕССИЯ
+             a.content__btn.btn.btn--dark(href="#")
+              span Cмотреть
+              +icon("icon-arrowforward", 24, 25)
+          .content__article
+             img(src="../img3/bogdan-pasca.jpg" alt="Фотография цапли")
+             h2.content__title.content__title--light Выставка птиц
+             a.content__btn.btn.btn--dark(href="#")
+              span Cмотреть
+              +icon("icon-arrowforward", 24, 25)
+        +slider()
+    footer.footer
+      .container
+        h1.footer__title Новости культуры
+        nav.main-navigation
+          .main-navigation__list
+            li.main-navigation__item
+              a.main-navigation__link(href="#") НОВОСТИ
+            li.main-navigation__item
+              a.main-navigation__link(href="#") ОБЗОРЫ
+            li.main-navigation__item
+              a.main-navigation__link(href="#") МУЗЫКА
+            li.main-navigation__item
+              a.main-navigation__link(href="#") АРХИТЕКТУРА
+            li.main-navigation__item
+              a.main-navigation__link(href="#") КИНО
+            li.main-navigation__item
+              a.main-navigation__link(href="#") ТЕАТР
+            li.main-navigation__item
+              a.main-navigation__link(href="#") ЛИТЕРАТУРА
+            li.main-navigation__item
+              a.main-navigation__link(href="#") РЕЛИГИЯ
+            li.main-navigation__item
+              a.main-navigation__link(href="#") ЖИВОПИСЬ
+        .copyright
+          p.copyright__text © 2018 Новости культуры. Все права защищены.
+
+    block modals
+
+    script(src="../js/vendor.min.js")
+    script(src="../js/veles.min.js")
+

@@ -1,0 +1,12 @@
+.copyright {
+  text-align: right;
+
+  &__text {
+    margin: 0;
+    padding: 8px 0;
+    font-family: $font-family-primary;
+    font-size: 10px;
+    line-height: 15px;
+    color: rgba(#000000, 0.5);
+  }
+}
