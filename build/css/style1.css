@@ -32,6 +32,7 @@ html {
           box-sizing: inherit; }
 
 body {
+  position: relative;
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -42,6 +43,46 @@ body {
   font-style: normal;
   letter-spacing: normal;
   background-color: #849d8f; }
+
+.return-btn {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #ff7931;
+  border-radius: 50%;
+  top: 50px;
+  left: 50px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 30px;
+  line-height: 1;
+  z-index: 100;
+  outline: none;
+  -webkit-transition: background 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: background 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  transition: background 0.3s ease, box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease; }
+  .return-btn svg {
+    fill: #ffffff;
+    stroke: #ffffff;
+    -webkit-transition: fill 0.3s ease, stroke 0.3s ease;
+    transition: fill 0.3s ease, stroke 0.3s ease; }
+  .return-btn:hover, .return-btn:focus {
+    background: #ffffff;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+    .return-btn:hover svg, .return-btn:focus svg {
+      fill: #ff7931;
+      stroke: #ff7931; }
 
 img {
   max-width: 100%;

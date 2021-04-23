@@ -11,6 +11,7 @@ html {
 }
 
 body {
+  position: relative;
   margin: 0;
   padding: 74px 0 0 0;
   height: 100%;
@@ -121,6 +122,45 @@ body {
     height: 100vh;
   }
 }
+
+.return-btn {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #ff7931;
+  border-radius: 50%;
+  top: 100px;
+  left: 50px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 30px;
+  line-height: 1;
+  z-index: 100;
+  outline: none;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+
+  svg {
+    fill: #ffffff;
+    stroke: #ffffff;
+
+    transition: fill 0.3s ease, stroke 0.3s ease;
+  }
+
+  &:hover,
+  &:focus {
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+    svg {
+      fill: #ff7931;
+      stroke: #ff7931;
+    }
+  }
+}
+
 
 img {
   max-width: 100%;
