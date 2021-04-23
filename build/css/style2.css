@@ -972,9 +972,14 @@ input[type="checkbox"]:checked + label::before {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+  @media (max-width: 767px) {
+    .gallery {
+      display: block; } }
 
 .gallery__item {
   position: relative;
+  width: calc(100% / 3 - 24px * (3 - 1) / 3);
+  margin-right: 24px;
   margin-bottom: 32px;
   margin-right: 24px;
   -webkit-font-feature-settings: "pnum" on, "lnum" on;
@@ -984,24 +989,29 @@ input[type="checkbox"]:checked + label::before {
   line-height: 144%;
   color: #e6e6e6;
   text-align: center; }
-  .gallery__item:nth-child(3n) {
-    margin-right: initial; }
+  .gallery__item:nth-of-type(3n) {
+    margin-right: 0; }
     @media (max-width: 1150px) {
-      .gallery__item:nth-child(3n) {
+      .gallery__item:nth-of-type(3n) {
         margin-right: 24px; } }
     @media (max-width: 767px) {
-      .gallery__item:nth-child(3n) {
-        margin-right: auto;
-        margin-bottom: 18px; } }
+      .gallery__item:nth-of-type(3n) {
+        max-width: 344px;
+        width: auto;
+        margin: 0 auto 24px auto; } }
   @media (max-width: 1150px) {
-    .gallery__item:nth-child(2n) {
-      margin-right: initial; } }
-  @media (max-width: 767px) {
-    .gallery__item:nth-child(2n) {
-      margin-right: auto; } }
+    .gallery__item {
+      width: calc(100% / 2 - 24px * (2 - 1) / 2);
+      margin-right: 24px; }
+      .gallery__item:nth-of-type(2n) {
+        margin-right: 0; } }
   @media (max-width: 767px) {
     .gallery__item {
-      margin: 0 auto; } }
+      max-width: 344px;
+      width: auto;
+      margin: 0 auto 24px auto; }
+      .gallery__item:nth-of-type(2n) {
+        margin: 0 auto 24px auto; } }
   .gallery__item--hit a::before {
     content: "Хит";
     font-weight: 500;
