@@ -66,6 +66,8 @@ body {
   font-stretch: normal;
   font-style: normal;
   letter-spacing: normal; }
+  body.internal {
+    height: 100vh; }
   body.index {
     background: url("../img2/mainBg.jpg") no-repeat;
     background-size: cover;

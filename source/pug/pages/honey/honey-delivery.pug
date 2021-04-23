@@ -1,10 +1,9 @@
 include ../../base/mixins
 
 block data
-  include ../../data/catalog-data
 
 block variables
-  - var title = "Honey — Каталог"
+  - var title = "Honey — Доставка и оплата"
   - var wrapperMod = ""
   - var hasHeader = true
   - var headerMod = ""
@@ -68,14 +67,7 @@ html(lang="ru")
 
     block main
       main
-        section.content
-          ul.content__list
-            each item in catalogItems
-              li.content__item
-                img(src="../img1/" + "/" + item.img.src + "." + item.img.ext, width= item.img.width, height= item.img.height, alt= item.img.alt)
-                p.content__info
-                  span.content__price= item.price
-                  | ₽
-                  span.content__price-measure /кг
-                  h3.content__heading= item.name
-                  a.button(href="#") Быстрый просмотр
+        h1.title Доставка и оплата
+      
+    script(src="../js/vendor.min.js")
+    script(src="../js/honey.min.js")

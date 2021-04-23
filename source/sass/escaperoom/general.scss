@@ -23,6 +23,10 @@ body {
   font-style: normal;
   letter-spacing: normal;
 
+  &.internal {
+    height: 100vh;
+  }
+
   &.index {
     background: url("../img2/mainBg.jpg") no-repeat;
     background-size: cover;

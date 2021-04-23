@@ -3,13 +3,13 @@ include ../../base/mixins
 block data
 
 block variables
-  - var title = "Escaperoom — Квест эксперимент"
+  - var title = "Escaperoom"
   - var wrapperMod = ""
   - var hasHeader = false
   - var headerMod = ""
   - var hasFooter = false
   - var footerMod = ""
-  - var currentPage = "" //- для остальных страниц пишем либо пустую строку, либо индекс
+  - var currentPage = "main" 
 
 doctype html
 html(lang="ru")
@@ -18,7 +18,7 @@ html(lang="ru")
     meta(charset="utf-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    meta(name="description", content="Мёд - оптом и в розницу")
+    meta(name="description", content="Escaperoom - квесты в реальности")
 
     link(rel="apple-touch-icon" sizes="180x180" href="img2/favicon/apple-touch-icon.png")
     link(rel="icon" type="image/png" sizes="32x32" href="img2/favicon/favicon-32x32.png")
@@ -29,7 +29,7 @@ html(lang="ru")
 
     link(rel="stylesheet", href="../css/style2.min.css")
 
-  body.bodybook
+  body.internal
     div(style="display:none")
         include ../../../../build/img2/sprite_auto.svg
     header.page-header.page-header--index.page-header--nojs.page-header--closed
@@ -54,73 +54,8 @@ html(lang="ru")
                 li.user-navigation__item
                     a.jsCity(href="tel:+73832840160") 8 (383) 284 01 60
     main
-        section.book
-            a.book__home(href="maniack.html") Описание
-            p.book__description-desktop выбранный квест
-            p.book__description-mobile хоррор, триллер
-            h1 Маньяк
-            .book__payment
-                p
-                    span Вы выбрали игру
-                    span 22 марта в 16:00.
-                    span К оплате 1500 рублей.
-                a(href="#") Перейти к оплате
-            .book__container
-                a.book__date(href="#") Выберите дату
-                span.book__date-selected 22 марта
-            ul.book__options
-                li.book__options-item — свободно
-                li.book__options-item — занято
-                li.book__options-item — выбрано вами
-            form.book__list(action="#" method="get")
-                label
-                    input(type="radio" name="booktime")
-                    span.book__time 9:45
-                    span.book__price 1400 ₽
-                label
-                    input(type="radio" name="booktime")
-                    span.book__time 11:00
-                    span.book__price 1400 ₽
-                label
-                    input(type="radio" name="booktime" disabled)
-                    span.book__time 12:15
-                    span.book__price 1400 ₽
-                label
-                    input(type="radio" name="booktime" disabled)
-                    span.book__time 13:30
-                    span.book__price 1400 ₽
-                label
-                    input(type="radio" name="booktime")
-                    span.book__time 14:45
-                    span.book__price 1400 ₽
-                label
-                    input(type="radio" name="booktime")
-                    span.book__time 16:00
-                    span.book__price 1500 ₽
-                label
-                    input(type="radio" name="booktime")
-                    span.book__time 17:15
-                    span.book__price 1500 ₽
-                label
-                    input(type="radio" name="booktime")
-                    span.book__time 18:30
-                    span.book__price 1500 ₽
-                label
-                    input(type="radio" name="booktime")
-                    span.book__time 19:45
-                    span.book__price 1500 ₽
-                label
-                    input(type="radio" name="booktime")
-                    span.book__time 21:00
-                    span.book__price 1800 ₽
-                label
-                    input(type="radio" name="booktime" disabled)
-                    span.book__time 22:15
-                    span.book__price 1800 ₽
-                label
-                    input(type="radio" name="booktime" disabled)
-                    span.book__time 23:30
-                    span.book__price 2000 ₽
+        section.intro
+            h1.title Новичкам        
     footer.page-footer
       ul.socials
         li.socials__item.socials__item--instagram

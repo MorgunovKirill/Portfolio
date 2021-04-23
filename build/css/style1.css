@@ -92,6 +92,12 @@ img {
   margin: -1px;
   font-size: 0; }
 
+.title {
+  font-size: 70px;
+  text-align: center;
+  color: #ffffff;
+  margin: 150px 0 0 0; }
+
 .page-header {
   width: 1146px;
   margin: 0 auto;
