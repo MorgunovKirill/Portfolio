@@ -1,0 +1,75 @@
+include ../../base/mixins
+
+block data
+
+block variables
+  - var title = "Honey — Доставка и оплата"
+  - var wrapperMod = ""
+  - var hasHeader = true
+  - var headerMod = ""
+  - var hasFooter = true
+  - var footerMod = ""
+  - var currentPage = "" 
+
+doctype html
+html(lang="ru")
+  head
+    title= title
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(name="description", content="Мёд - оптом и в розницу")
+
+    link(rel="apple-touch-icon" sizes="180x180" href="img1/favicon1/apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="img1/favicon1/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="img1/favicon1/favicon-16x16.png")
+    link(rel="mask-icon" href="img1/favicon1/safari-pinned-tab.svg" color="#ffcf55")
+    meta(name="msapplication-TileColor" content="#ffcf55")
+    meta(name="theme-color" content="#ffffff")
+
+    link(rel="stylesheet", href="../css/style1.min.css")
+
+  body
+    a.return-btn(href="../index.html" aria-label="Вернуться на навигационную страницу") 
+      +icon('icon-home', 32, 32)  
+    div(style="display:none")
+      include ../../../../build/img1/sprite_auto.svg
+    header.page-header
+      .page-header__logo  
+      nav.main-navigation
+        ul.main-navigation__list
+          li.main-navigation__item
+              a.main-navigation__link(href="honey.html") Главная
+          li.main-navigation__item
+            a.main-navigation__link(href="honey-catalog.html")
+              span Каталог
+            ul.main-navigation__submenu
+              li Новинки
+              li
+                a(href="#") Сливочное
+              li
+                a(href="#") Щербеты
+              li
+                a(href="#") Фруктовый лед
+              li
+                a(href="#") Мелорин
+          li.main-navigation__item
+            a.main-navigation__link(href="honey-delivery.html")
+              span Доставка и оплата
+          li.main-navigation__item
+            a.main-navigation__link(href="honey-about.html")
+              span О Компании
+      nav.user-navigation
+        ul.user-navigation__list
+          li.user-navigation__item
+            a.user-navigation__link.user-navigation__link--search(href="#")
+              +icon("icon-search", 17, 17)
+            .user-navigation__sub-search
+              input(type="text" placeholder="Липовый")
+
+    block main
+      main
+        h1.title Доставка и оплата
+      
+    script(src="../js/vendor.min.js")
+    script(src="../js/honey.min.js")

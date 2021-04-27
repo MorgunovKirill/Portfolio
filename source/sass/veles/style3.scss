@@ -1,0 +1,19 @@
+@import "fonts";
+@import "variables";
+@import "mixins";
+@import "general";
+
+//components
+@import "components/pagination";
+@import "components/slider-pagination";
+
+//blocks
+@import "blocks/header";
+@import "blocks/main-navigation";
+@import "blocks/intro";
+@import "blocks/footer";
+@import "blocks/content";
+@import "blocks/copyright";
+@import "blocks/slider";
+@import "blocks/hotel-slider";
+

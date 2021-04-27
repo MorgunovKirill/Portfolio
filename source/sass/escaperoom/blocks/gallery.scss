@@ -2,10 +2,35 @@
   @include list-reset();
   display: flex;
   flex-wrap: wrap;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
 }
 
 .gallery__item {
   position: relative;
+  $gutter: 24px;
+  $card-count: 3;
+  width: calc(100% / #{$card-count} - #{$gutter} * (#{$card-count} - 1) / #{$card-count});
+  margin-right: $gutter;
+
+  &:nth-of-type(#{$card-count}n) {
+    margin-right: 0;  
+
+    @media (max-width: 1150px) {
+      $gutter: 24px;
+      margin-right: $gutter;
+    }  
+
+    @media (max-width: $mobile-width) {
+      max-width: 344px;
+      width: auto;
+      margin: 0 auto 24px auto;
+    }
+  }
+
+  
   margin-bottom: 32px;
   margin-right: 24px;
   font-feature-settings: "pnum" on, "lnum" on;
@@ -14,32 +39,28 @@
   line-height: 144%;
   color: #e6e6e6;
   text-align: center;
+ 
+  @media (max-width: 1150px) {
+    $gutter: 24px;
+    $card-count: 2;
 
-  &:nth-child(3n) {
-    margin-right: initial;
+    width: calc(100% / #{$card-count} - #{$gutter} * (#{$card-count} - 1) / #{$card-count});
+    margin-right: $gutter;
 
-    @media (max-width: 1150px) {
-      margin-right: 24px;
+    &:nth-of-type(#{$card-count}n) {
+      margin-right: 0;
     }
+  } 
 
-    @media (max-width: $mobile-width) {
-      margin-right: auto;
-      margin-bottom: 18px;
-    }
-  }
-
-  &:nth-child(2n) {
-    @media (max-width: 1150px) {
-      margin-right: initial;
-    }
-
-    @media (max-width: $mobile-width) {
-      margin-right: auto;
-    }
-  }
 
   @media (max-width: $mobile-width) {
-    margin: 0 auto;
+    max-width: 344px;
+    width: auto;
+    margin: 0 auto 24px auto;
+
+    &:nth-of-type(#{$card-count}n) {
+      margin: 0 auto 24px auto;
+    }
   }
 
   &--hit {

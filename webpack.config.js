@@ -11,6 +11,7 @@ module.exports = {
   entry: {
     'honey': './js/honey.js',
     'escaperoom': './js/escaperoom.js',
+    'veles': './js/veles.js',
     main: './js/main.js',
     vendor: './js/vendor.js',
   },
