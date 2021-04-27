@@ -6,12 +6,23 @@
     top: 0;
     right: 100px;
 
+    @media (max-width: 768px) {
+        position: static;
+        display: flex;
+        margin-top: 50px;
+    }
+
     &__item {
         position: relative;
         display: flex;
         justify-content: center;
         min-width: 30px;
         margin-bottom: 20px;
+
+        @media (max-width: 768px) {           
+            margin-bottom: 0;
+            margin-right: 20px;
+        }
     }
 
     &__link {
@@ -32,6 +43,10 @@
             span {
                 opacity: 1;
                 visibility: visible;
+
+                @media (max-width: 768px) {           
+                   display: none;
+                }
             } 
         }
     }

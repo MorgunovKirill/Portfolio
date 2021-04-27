@@ -3,7 +3,11 @@
         padding-bottom: 325px;
         position: relative;
         background-color: #000000;
-      
+
+        @media (max-width: 768px) {
+                padding-top: 200px;
+                padding-bottom: 120px;
+            }
 
         .container {
                 position: relative;
