@@ -1,6 +1,10 @@
 .stack {
     background-color: #ffffff;
     padding-top: 90px;
+
+    @media (max-width: 768px) {
+        padding-top: 50px;
+    }
     
 
     &__title {  
@@ -11,7 +15,11 @@
         color: rgb(0, 0, 0);
         line-height: 1.417; 
         text-align: center;
-        margin: 0 0 90px 0;           
+        margin: 0 0 90px 0;     
+        
+        @media (max-width: 768px) {
+            margin: 0 0 50px 0; 
+        }
     }
 
 
@@ -20,7 +28,12 @@
         padding: 0;
         list-style: none;
         display: flex;
-        flex-wrap: wrap;           
+        flex-wrap: wrap;  
+
+         
+        @media (max-width: 768px) {
+            display: block;
+        }
     }
     
 
@@ -36,13 +49,37 @@
         flex-direction: column;
     
         &:nth-of-type(#{$card-count}n) {
-          margin-right: 0;
+          margin-right: 0;   
+          
+          @media (max-width: 1024px) {
+            margin-right: $gutter;
+          }
+
+          @media (max-width: 768px) {
+            margin-right: 0;   
+          }
         }
         
         min-height: 225px;
         box-shadow: 0 0 9px 0 rgba(73, 73, 73, 0.4);
         margin-bottom: 50px;
         padding: 30px;
+
+        @media (max-width: 1024px) {
+            $gutter: 50px;
+            $card-count: 2;
+            width: calc(100% / #{$card-count} - #{$gutter} * (#{$card-count} - 1) / #{$card-count});
+            margin-right: $gutter;
+
+            &:nth-of-type(#{$card-count}n) {
+                margin-right: 0;  
+              }
+        }
+
+        @media (max-width: 768px) {
+            width: auto;  
+            margin-right: 0;
+        }
     }  
 
     &__image {
@@ -86,7 +123,8 @@
     }
 
     &__info {
-        position: absolute;       
+        position: absolute;   
+        width: 100%;    
         left: 0;
         top: 100%;
         background-color: #000000;
@@ -112,7 +150,7 @@
         }
     }
 
-    &__features {
+    &__features {     
         margin: 0;
         padding: 25px 25px 25px 40px;          
         text-align: left;
