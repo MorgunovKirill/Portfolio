@@ -1,4 +1,4 @@
-var items = Array.prototype.slice.call(document.querySelectorAll(".select__item"));
+let items = Array.prototype.slice.call(document.querySelectorAll('.select__link'));
 
 const select = () => {
   if (!items.length) {
@@ -6,16 +6,16 @@ const select = () => {
   }
 
   if (items) {
-    items.forEach(function(el) {
-      el.addEventListener("click", function() {
-        items.forEach(function(elem) {
-          elem.classList.remove("select__item--active");
+    items.forEach(function (el) {
+      el.addEventListener('click', function () {
+        items.forEach(function (elem) {
+          elem.closest('.select__item').classList.remove('select__item--active');
         });
-        el.classList.add("select__item--active");
-      })
-    })
+        el.closest('.select__item').classList.add('select__item--active');
+      });
+    });
   }
-}
+};
 
 export {select};
 
