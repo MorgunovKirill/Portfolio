@@ -1,0 +1,33 @@
+.footer {
+  padding-top: 26px;
+  background-color: #f7f7f7;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  &__title {
+    font-family: $font-family-secondary;
+    font-weight: 900;
+    text-align: center;
+    margin: 0 0 46px 0;
+    font-size: 35px;
+    line-height: 47px;
+    color: #000000;
+
+    @media (max-width: 768px) {
+      font-size: 25px;
+      line-height: 33px;
+    }
+  }
+
+  .main-navigation {
+    margin-bottom: 0;
+    padding-bottom: 46px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+    @media (max-width: 1235px) {
+      display: none;
+    }
+  }
+}

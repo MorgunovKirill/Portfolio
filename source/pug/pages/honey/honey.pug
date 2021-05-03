@@ -30,6 +30,8 @@ html(lang="ru")
     link(rel="stylesheet", href="../css/style1.min.css")
 
   body
+    a.return-btn(href="../index.html" aria-label="Вернуться на навигационную страницу") 
+      +icon('icon-home', 32, 32)  
     div(style="display:none")
       include ../../../../build/img1/sprite_auto.svg
     header.page-header
@@ -52,10 +54,10 @@ html(lang="ru")
               li
                 a(href="#") Мелорин
           li.main-navigation__item
-            a.main-navigation__link(href="#")
+            a.main-navigation__link(href="honey-delivery.html")
               span Доставка и оплата
           li.main-navigation__item
-            a.main-navigation__link(href="#")
+            a.main-navigation__link(href="honey-about.html")
               span О Компании
       nav.user-navigation
         ul.user-navigation__list
@@ -159,3 +161,5 @@ html(lang="ru")
             form.news__form(action="#" method="post")
               input(type="email" placeholder="email@example.com")
               button.button(type="submit") Отправить
+    script(src="../js/vendor.min.js")
+    script(src="../js/honey.min.js")

@@ -30,6 +30,8 @@ html(lang="ru")
     link(rel="stylesheet", href="../css/style2.min.css")
 
   body.allquests
+    a.return-btn(href="../index.html" aria-label="Вернуться на навигационную страницу") 
+      +icon('icon-home', 32, 32)  
     div(style="display:none")
         include ../../../../build/img2/sprite_auto.svg
     header.page-header.page-header--index.page-header--nojs.page-header--closed
@@ -41,13 +43,13 @@ html(lang="ru")
                 li.main-navigation__item
                     a(href="escaperoom-selectQuest.html") Квесты
                 li.main-navigation__item
-                    a(href="escaperoom-selectQuest.html") Новичкам
+                    a(href="escaperoom-rookie.html") Новичкам
                 li.main-navigation__item
-                    a(href="escaperoom-selectQuest.html") Отзывы
+                    a(href="escaperoom-reviews.html") Отзывы
                 li.main-navigation__item
-                    a(href="escaperoom-selectQuest.html") Акции
+                    a(href="escaperoom-promo.html") Акции
                 li.main-navigation__item
-                    a(href="escaperoom-selectQuest.html") Контакты
+                    a(href="escaperoom-contacts.html") Контакты
             ul.user-navigation
                 li.user-navigation__item.user-navigation__item--city
                     a.jsCity(href="#") Новосибирск
@@ -62,37 +64,27 @@ html(lang="ru")
                     a(href="#")
                         +icon("icon-allquests", "26", "30")
                         span Все квесты
-                li.select__item.select__item--active.select__item--adventures
+                li.select__item.select__item--adventures
                     a(href="#")
                         +icon("icon-adventures", "36", "30")
                         span Приключения
-                li.select__item.select__item--active.select__item--horror
+                li.select__item.select__item--horror
                     a(href="#")
                         +icon("icon-horror", "30", "30")
                         span Ужасы
-                li.select__item.select__item--active.select__item--mysticism
+                li.select__item.select__item--mysticism
                     a(href="#")
                         +icon("icon-mysticism", "30", "30")
                         span Мистика
-                li.select__item.select__item--active.select__item--detective
+                li.select__item.select__item--detective
                     a(href="#")
                         +icon("icon-detective", "40", "30")
                         span Детектив
-                li.select__item.select__item--active.select__item--sci-fi
+                li.select__item.select__item--sci-fi
                     a(href="#")
                         +icon("icon-sci-fi", "28", "30")
                         span Sci-fi
             ul.gallery
-                li.gallery__item.gallery__item--hit
-                    a(href="#")
-                        img(src="../img2/crypt-list.jpg" alt="Склеп")
-                        h3 Склеп
-                        p пр. Ленина, 37
-                        div
-                            .gallery__quantity
-                                span 2–5 чел
-                            .gallery__dificulty
-                                span сложный
                 li.gallery__item.gallery__item--hit.gallery__item--available
                     a(href="escaperoom-maniack.html")
                         img(src="../img2/maniack-list.jpg" alt="Маньяк")
@@ -102,7 +94,7 @@ html(lang="ru")
                             .gallery__quantity
                                 span 3–6 чел
                             .gallery__dificulty
-                                span средний
+                                span средний                
                 li.gallery__item.gallery__item--available
                     a(href="escaperoom-ritual.html")
                         img(src="../img2/ritual-list.jpg" alt="Ритуал")
@@ -112,17 +104,7 @@ html(lang="ru")
                             .gallery__quantity
                                 span 3–5 чел
                             .gallery__dificulty
-                                span сложный
-                li.gallery__item
-                    a(href="#")
-                        img(src="../img2/ghosts-list.jpg" alt="История призраков")
-                        h3 История призраков
-                        p Новослободская, 2а
-                        div
-                            .gallery__quantity
-                                span 5-6 чел
-                            .gallery__dificulty
-                                span легкий
+                                span сложный               
                 li.gallery__item.gallery__item--mansion.gallery__item--available
                     a(href="escaperoom-mansion.html")
                         img(src="../img2/mansion-list.jpg" alt="Тайны старого особняка")
@@ -133,16 +115,6 @@ html(lang="ru")
                                 span 2-5 чел
                             .gallery__dificulty
                                 span легкий
-                li.gallery__item.gallery__item--cabin.gallery__item--hit
-                    a(href="#")
-                        img(src="../img2/cabin-list.jpg" alt="Хижина в лесу")
-                        h3 Хижина в лесу
-                        p Верхнетецкая, 32
-                        div
-                            .gallery__quantity
-                                span 4-7 чел
-                            .gallery__dificulty
-                                span средний
                 li.gallery__item.gallery__item--experiment.gallery__item--hit.gallery__item--available
                     a(href="escaperoom-experiment.html")
                         img(src="../img2/experiment.jpg" alt="Фатальный эксперимент")
@@ -153,6 +125,36 @@ html(lang="ru")
                                 span 5-8 чел
                             .gallery__dificulty
                                 span сложный
+                li.gallery__item.gallery__item--hit
+                    a(href="#")
+                        img(src="../img2/crypt-list.jpg" alt="Склеп")
+                        h3 Склеп
+                        p пр. Ленина, 37
+                        div
+                            .gallery__quantity
+                                span 2–5 чел
+                            .gallery__dificulty
+                                span сложный               
+                li.gallery__item.gallery__item--cabin.gallery__item--hit
+                    a(href="#")
+                        img(src="../img2/cabin-list.jpg" alt="Хижина в лесу")
+                        h3 Хижина в лесу
+                        p Верхнетецкая, 32
+                        div
+                            .gallery__quantity
+                                span 4-7 чел
+                            .gallery__dificulty
+                                span средний            
+                li.gallery__item
+                    a(href="#")
+                        img(src="../img2/ghosts-list.jpg" alt="История призраков")
+                        h3 История призраков
+                        p Новослободская, 2а
+                        div
+                            .gallery__quantity
+                                span 5-6 чел
+                            .gallery__dificulty
+                                span легкий
                 li.gallery__item
                     a(href="#")
                         img(src="../img2/metro-list.jpg" alt="Метро 2033")
@@ -214,13 +216,13 @@ html(lang="ru")
             ul.modal__list
                 li.modal__list-item.modal__list-item--active
                     a(href="#") Новосибирск 
-                li.modal__list-item.modal__list-item--active
+                li.modal__list-item
                     a(href="#") Иркутск 
-                li.modal__list-item.modal__list-item--active
+                li.modal__list-item
                     a(href="#") Смоленск 
-                li.modal__list-item.modal__list-item--active
+                li.modal__list-item
                     a(href="#") Волгоград 
-                li.modal__list-item.modal__list-item--active
+                li.modal__list-item
                     a(href="#") Комсомольск-на-Амуре 
         .modal.modal--question 
             button.modal__close(aria-label="закрыть")

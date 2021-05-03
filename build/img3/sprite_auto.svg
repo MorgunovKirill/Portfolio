@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-arrowforward" viewBox="0 0 24 25">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 4L10.6 5.4L16.2 11H4V13H16.2L10.6 18.6L12 20L20 12L12 4Z"/>
+</symbol><symbol id="icon-arrowleft" viewBox="0 0 13 13">
+<path d="M-7.39652e-06 6.33006L6.38905 -4.79765e-05L6.36184 5.87034L6.3301 12.7191L-7.39652e-06 6.33006Z" stroke="#ffffff" stroke-width="1"/>
+</symbol><symbol id="icon-arrowright" viewBox="0 0 13 13">
+<path d="M12.7191 6.33006L6.33007 -4.79765e-05L6.35727 5.87034L6.38901 12.7191L12.7191 6.33006Z" stroke="#ffffff" stroke-width="1"/>
+</symbol><symbol id="icon-arrowsmall" viewBox="0 0 25 25">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.59998 8.4L13.2 13L8.59998 17.6L9.99998 19L16 13L9.99998 7L8.59998 8.4Z" fill="#48494D" fill-opacity="0.5"/>
+</symbol><symbol id="icon-bar" viewBox="0 0 2 28">
+<path d="M1 0V27.5" stroke="black"/>
+</symbol><symbol id="icon-bookmark" viewBox="0 0 14 18">
+<path d="M1 1H13V16L7 11.1351L1 16V1Z" stroke="#FF7931" stroke-width="1.5"/>
+</symbol><symbol id="icon-close" viewBox="0 0 30 30">
+<path d="M29 29L1 1M1 29L29 1L1 29Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol><symbol id="icon-eye" viewBox="0 0 24 16">
+<path d="M12 7.46154C12.3197 7.46154 12.5789 7.22046 12.5789 6.92308C12.5789 6.62569 12.3197 6.38462 12 6.38462C11.6803 6.38462 11.4211 6.62569 11.4211 6.92308C11.4211 7.22046 11.6803 7.46154 12 7.46154Z" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 12.8462C14.8777 12.8462 17.2105 10.6765 17.2105 8C17.2105 5.32354 14.8777 3.15385 12 3.15385C9.12231 3.15385 6.78947 5.32354 6.78947 8C6.78947 10.6765 9.12231 12.8462 12 12.8462Z" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 8C1 8 4.92857 1 12 1C19.0714 1 23 8 23 8C23 8 19.0714 15 12 15C4.92857 15 1 8 1 8Z" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol><symbol id="icon-home" viewBox="0 0 32 32">
+    <path style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Bitstream Vera Sans" d="M 16 2.59375 L 15.28125 3.28125 L 2.28125 16.28125 L 3.71875 17.71875 L 5 16.4375 L 5 27 L 5 28 L 6 28 L 13 28 L 14 28 L 14 27 L 14 18 L 18 18 L 18 27 L 18 28 L 19 28 L 26 28 L 27 28 L 27 27 L 27 16.4375 L 28.28125 17.71875 L 29.71875 16.28125 L 16.71875 3.28125 L 16 2.59375 z M 16 5.4375 L 25 14.4375 L 25 26 L 20 26 L 20 17 L 20 16 L 19 16 L 13 16 L 12 16 L 12 17 L 12 26 L 7 26 L 7 14.4375 L 16 5.4375 z" color="#000" overflow="visible" font-family="Bitstream Vera Sans"/>
+</symbol><symbol id="icon-menu" viewBox="0 0 30 30">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 22.5H26.25V20H3.75V22.5ZM3.75 16.25H26.25V13.75H3.75V16.25ZM3.75 7.5V10H26.25V7.5H3.75Z" fill="white"/>
+</symbol><symbol id="icon-quote" viewBox="0 0 18 16">
+<path d="M9 13C13.4183 13 17 10.3137 17 7C17 3.68629 13.4183 1 9 1C4.58172 1 1 3.68629 1 7C1 9.23638 2.63138 11.187 5.05029 12.2189C5.10723 13.6066 4.56657 14.9449 3.28571 14.9449C4.27569 15.1239 6.68061 14.9618 8.70284 12.9959C8.80145 12.9986 8.90051 13 9 13Z" stroke-opacity="0.4"/>
+</symbol><symbol id="icon-slide" viewBox="0 0 68 42">
+<path d="M34 0V42" stroke="white"/>
+<path d="M67.1549 19.8578L58.6098 11.3915L58.6457 19.1501L58.6886 28.4029L67.1549 19.8578Z" stroke="white"/>
+<path d="M33.862 0V42" stroke="white"/>
+<path d="M0.707088 19.8578L9.25223 11.3915L9.21627 19.1501L9.17339 28.4029L0.707088 19.8578Z" stroke="white"/>
+</symbol></svg>

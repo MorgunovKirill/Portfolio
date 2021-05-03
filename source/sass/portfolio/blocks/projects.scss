@@ -3,6 +3,11 @@
     padding-bottom: 100px;
     background-color: #000000;
 
+    @media (max-width: 768px) {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
     &__title {       
             font-size: 50px;
             font-weight: 500;
@@ -29,6 +34,14 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 30px;
+
+            @media (max-width: 1024px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @media (max-width: 768px) {
+                grid-template-columns: 1fr;
+            }
     }
 
     &__item {          
@@ -37,6 +50,10 @@
 
         &--big {
                 grid-column: span 2;
+
+                @media (max-width: 1024px) {
+                        grid-column: initial;
+                }
         }
     }
 
@@ -72,9 +89,15 @@
         }
      
         &:hover {
-                position: relative;
-                z-index: 2;
-                transform: scale(1.1);
+                @media (min-width: 1024px) {
+                        position: relative;
+                        z-index: 2;
+                        transform: scale(1.1);
+                }
+
+                @media (max-width: 1023px) {
+                        box-shadow: 0 0 15px 0 rgba(255, 255, 255, 1);       
+                }
         }
     }
 }

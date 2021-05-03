@@ -30,6 +30,8 @@ html(lang="ru")
     link(rel="stylesheet", href="../css/style2.min.css")
 
   body.bodybook
+    a.return-btn(href="../index.html" aria-label="Вернуться на навигационную страницу") 
+      +icon('icon-home', 32, 32)  
     div(style="display:none")
         include ../../../../build/img2/sprite_auto.svg
     header.page-header.page-header--index.page-header--nojs.page-header--closed
@@ -41,13 +43,13 @@ html(lang="ru")
                 li.main-navigation__item
                     a(href="escaperoom-selectQuest.html") Квесты
                 li.main-navigation__item
-                    a(href="escaperoom-selectQuest.html") Новичкам
+                    a(href="escaperoom-rookie.html") Новичкам
                 li.main-navigation__item
-                    a(href="escaperoom-selectQuest.html") Отзывы
+                    a(href="escaperoom-reviews.html") Отзывы
                 li.main-navigation__item
-                    a(href="escaperoom-selectQuest.html") Акции
+                    a(href="escaperoom-promo.html") Акции
                 li.main-navigation__item
-                    a(href="escaperoom-selectQuest.html") Контакты
+                    a(href="escaperoom-contacts.html") Контакты
             ul.user-navigation
                 li.user-navigation__item.user-navigation__item--city
                     a.jsCity(href="#") Новосибирск
@@ -142,13 +144,13 @@ html(lang="ru")
             ul.modal__list
                 li.modal__list-item.modal__list-item--active
                     a(href="#") Новосибирск 
-                li.modal__list-item.modal__list-item--active
+                li.modal__list-item
                     a(href="#") Иркутск 
-                li.modal__list-item.modal__list-item--active
+                li.modal__list-item
                     a(href="#") Смоленск 
-                li.modal__list-item.modal__list-item--active
+                li.modal__list-item
                     a(href="#") Волгоград 
-                li.modal__list-item.modal__list-item--active
+                li.modal__list-item
                     a(href="#") Комсомольск-на-Амуре 
         .modal.modal--question 
             button.modal__close(aria-label="закрыть")
