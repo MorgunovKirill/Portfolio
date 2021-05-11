@@ -128,10 +128,12 @@ body {
         background-color: #1a140d;
         background-size: cover, cover;
         height: 100%; } }
-  body.allquests .page-header {
+  body.allquests {
     background: #1f1d1d; }
-    body.allquests .page-header--opened {
-      background-color: transparent; }
+    body.allquests .page-header {
+      background: #1f1d1d; }
+      body.allquests .page-header--opened {
+        background-color: transparent; }
   body.bodynavigation {
     background: -webkit-gradient(linear, left bottom, left top, from(#141414), to(#1f1d1d)) no-repeat;
     background: linear-gradient(0deg, #141414 0%, #1f1d1d 100%) no-repeat;

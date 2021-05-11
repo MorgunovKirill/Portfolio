@@ -12,37 +12,37 @@ block variables
   - var currentPage = "main"
 
 block main
-  main    
-    .intro 
+  main
+    .intro
       .container
         h1.intro__title Кирилл Моргунов
-        p.intro__description Фронтенд-разработчик       
-        a.btn.intro__btn(href="file.pdf" download) Скачать резюме
-        ul.socials 
-          li.socials__item 
+        p.intro__description Фронтенд-разработчик
+        a.btn.intro__btn(href="img/CV.pdf" download) Скачать резюме
+        ul.socials
+          li.socials__item
             a.socials__link(href="https://vk.com/id8596842" target="_blank" rel="noopener noreferrer")
               +icon('icon-vk', 31, 19)
-              span Vkontakte 
-          li.socials__item 
-            a.socials__link(href="#" target="_blank" rel="noopener noreferrer")
+              span Vkontakte
+          li.socials__item
+            a.socials__link(href="https://www.instagram.com/_r0bur/" target="_blank" rel="noopener noreferrer")
               +icon('icon-instagram', 20, 20)
               span Instagram
-          li.socials__item 
-            a.socials__link(href="#" target="_blank" rel="noopener noreferrer")
+          li.socials__item
+            a.socials__link(href="https://www.facebook.com/kirill.morgunov" target="_blank" rel="noopener noreferrer")
               +icon('icon-facebook', 12, 20)
-              span Facebook 
-          li.socials__item 
+              span Facebook
+          li.socials__item
             a.socials__link(href="https://twitter.com/R0bur" target="_blank" rel="noopener noreferrer")
               +icon('icon-twitter', 26, 22)
-              span Twitter       
-          li.socials__item 
+              span Twitter
+          li.socials__item
             a.socials__link(href="https://github.com/MorgunovKirill" target="_blank" rel="noopener noreferrer")
               +icon('icon-github', 30, 30)
-              span Github       
-    .stack#stack 
-      .container 
-        h2.stack__title Мой стек       
-        ul.stack__list 
+              span Github
+    .stack#stack
+      .container
+        h2.stack__title Мой стек
+        ul.stack__list
           li.stack__item
             h3.stack__heading Html 5
             .stack__image
@@ -56,8 +56,8 @@ block main
                 li.stack__feature mobile-first или desktop-first
                 li.stack__feature Использую БЭМ
                 li.stack__feature Уделаю внимание доступности, использую best practices
-                li.stack__feature Проверяю производительность (lighthouse) для максимального performance                 
-          li.stack__item 
+                li.stack__feature Проверяю производительность (lighthouse) для максимального performance
+          li.stack__item
             h3.stack__heading CSS 3
             .stack__image
               img(src="img/css3.png" width=200 height=300 alt="css")
@@ -70,9 +70,9 @@ block main
                 li.stack__feature Grid-layout
                 li.stack__feature Использую autoprefixer для поддержки разных браузеров
                 li.stack__feature Использую препроцессоры (в основном SASS)
-                li.stack__feature Переменные, миксины для ускорения верстки             
-                li.stack__feature Имею опыт работы с легаси кодом, если нужно могу использовать float и display table layouts         
-          li.stack__item 
+                li.stack__feature Переменные, миксины для ускорения верстки
+                li.stack__feature Имею опыт работы с легаси кодом, если нужно могу использовать float и display table layouts
+          li.stack__item
             h3.stack__heading Pug
             .stack__image
               img(src="img/pug.png" width=200 height=300 alt="pug")
@@ -83,8 +83,8 @@ block main
                 li.stack__feature Pug - мой основной инструмент верстки
                 li.stack__feature Использую формулы, data, миксины
                 li.stack__feature Использую БЭМ
-                li.stack__feature Использую include        
-          li.stack__item 
+                li.stack__feature Использую include
+          li.stack__item
             h3.stack__heading Javascript
             .stack__image
               img(src="img/js.png" width=200 height=300 alt="js")
@@ -96,10 +96,10 @@ block main
                 li.stack__feature Есть опыт работы с библиотеками (jQuery, lodash)
                 li.stack__feature Использую современный стандарт ES6
                 li.stack__feature Понимаю принцип модульности
-                li.stack__feature Придерживаюсть принципа DRY            
+                li.stack__feature Придерживаюсть принципа DRY
                 li.stack__feature Могу настроить фильтрацию (при получении данных через JSON)
-                li.stack__feature Хороший опыт настройки API карт (Yandex)         
-          li.stack__item 
+                li.stack__feature Хороший опыт настройки API карт (Yandex)
+          li.stack__item
             h3.stack__heading Git
             .stack__image
               img(src="img/git2.png" width=200 height=300 alt="git")
@@ -109,9 +109,9 @@ block main
               ul.stack__features
                 li.stack__feature Работаю с гитом через консоль
                 li.stack__feature Использую checkout, merge, pull, fetch, push, stash
-                li.stack__feature Имею опыт коммандной разработки нескольких проектов, с паралельным мерджем веток от нескольких разработчиков            
-                li.stack__feature Понимаю и знаю как исправлять конфликты веток      
-          li.stack__item 
+                li.stack__feature Имею опыт коммандной разработки нескольких проектов, с паралельным мерджем веток от нескольких разработчиков
+                li.stack__feature Понимаю и знаю как исправлять конфликты веток
+          li.stack__item
             h3.stack__heading Gulp
             .stack__image
               img(src="img/gulp.png" width=200 height=300 alt="gulp")
@@ -125,7 +125,7 @@ block main
                 li.stack__feature для оптимизации графики (imagemin, webp, svgo)
                 li.stack__feature для создания svg-спрайтов
                 li.stack__feature для разработки (browsersync)
-          li.stack__item 
+          li.stack__item
             h3.stack__heading Webpack
             .stack__image
               img(src="img/webpack.png" width=200 height=300 alt="webpack")
@@ -136,8 +136,8 @@ block main
                 li.stack__feature Использую в связке с gulp
                 li.stack__feature Могу создать несколько бандлов, модульно подключить к разным страницам разные бандлы
                 li.stack__feature Понимаю подключение plugins, modules, rules
-                li.stack__feature Режимы dev, prod              
-          li.stack__item 
+                li.stack__feature Режимы dev, prod
+          li.stack__item
             h3.stack__heading Photoshop
             .stack__image
               img(src="img/photoshop.jpg" width=200 height=300 alt="photoshop")
@@ -148,8 +148,8 @@ block main
                 li.stack__feature Импортирую графику из psd
                 li.stack__feature Оптимизация графики, изменение размера изображний
                 li.stack__feature Слои, наложение, группы слоев, импорт группы слоев
-                li.stack__feature Удаление фона, добавление прозрачности           
-          li.stack__item 
+                li.stack__feature Удаление фона, добавление прозрачности
+          li.stack__item
             h3.stack__heading Figma
             .stack__image
               img(src="img/figma.png" width=200 height=300 alt="figma")
@@ -159,8 +159,8 @@ block main
               ul.stack__features
                 li.stack__feature Figma - мой основной инструмент для макетов
                 li.stack__feature Импортирую графику из Figma
-                li.stack__feature Слои, наложение, группы слоев, импорт группы слоев               
-          li.stack__item 
+                li.stack__feature Слои, наложение, группы слоев, импорт группы слоев
+          li.stack__item
             h3.stack__heading React
             .stack__image
               img(src="img/react.png" width=200 height=300 alt="react")
@@ -169,47 +169,47 @@ block main
             div.stack__info
               ul.stack__features
                 li.stack__feature Базовые знания React
-                li.stack__feature Понимаю state, жизненные циклы компонентов (componentDidMount, componentWillMount и т.д.)        
-                li.stack__feature Использую routing(react-router-dom)       
+                li.stack__feature Понимаю state, жизненные циклы компонентов (componentDidMount, componentWillMount и т.д.)
+                li.stack__feature Использую routing(react-router-dom)
                 li.stack__feature Использую как фукциональные компоненты, так и классовые
                 li.stack__feature Небольшой опыт использования state-менеджера Redux
                 li.stack__feature Небольшой опыт использования React-hooks (useState, useEffect, useMemo, useContext)
-    .projects#projects  
-      .container 
+    .projects#projects
+      .container
         h2.projects__title Мои проекты
         p.projects__description Несколько выполненных работ для демострации навыков
-        ul.projects__list 
-          li.projects__item.projects__item--big 
-            a.projects__link(href="#")             
+        ul.projects__list
+          li.projects__item.projects__item--big
+            a.projects__link(href="#")
               span Denim
               img(src="img/denim.jpg" width=770 height=295 alt="denim")
-          li.projects__item 
+          li.projects__item
             a.projects__link(href="veles/veles.html")
               span Veles
               img(src="img/veles.jpg" width=370 height=295 alt="veles")
-          li.projects__item 
+          li.projects__item
             a.projects__link(href="honey/honey.html")
               span Honey - мёд на любой вкус! (без адаптива - 2 страницы)
               img(src="img/honey.jpg" width=370 height=295 alt="honey")
-          li.projects__item.projects__item--big 
-            a.projects__link(href="escaperoom/escaperoom.html") 
-              span Escaperoom - страница квестов в реальности (адаптив мобильная, планшетная, десктопная версии - несколько страниц) 
+          li.projects__item.projects__item--big
+            a.projects__link(href="escaperoom/escaperoom.html")
+              span Escaperoom - страница квестов в реальности (адаптив мобильная, планшетная, десктопная версии - несколько страниц)
               img(src="img/escaperoom.jpg" width=770 height=295 alt="escaperoom")
-    .contacts#contacts 
-      .container 
+    .contacts#contacts
+      .container
         h2.contacts__title Контакты
         p.contacts__phone
-          span 
+          span
             +icon("icon-phone", 20, 20)
           a(href="tel:+79876467121") +79876467121
         p.contacts__email
-          span 
+          span
             +icon("icon-mail", 22, 18)
           a(href="mailto:kirillmorgunov@mail.ru") kirillmorgunov@mail.ru
-        p.contacts__skype 
+        p.contacts__skype
           span
              +icon("icon-skype", 30, 30)
           a(href="skype:kirillmorgunov@mail.ru") kirillmorgunov@mail.ru
 
-         
+
 

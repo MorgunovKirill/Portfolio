@@ -9,7 +9,7 @@ block variables
   - var headerMod = ""
   - var hasFooter = false
   - var footerMod = ""
-  - var currentPage = "" 
+  - var currentPage = ""
 
 doctype html
 html(lang="ru")
@@ -20,18 +20,11 @@ html(lang="ru")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     meta(name="description", content="Мёд - оптом и в розницу")
 
-    link(rel="apple-touch-icon" sizes="180x180" href="img2/favicon/apple-touch-icon.png")
-    link(rel="icon" type="image/png" sizes="32x32" href="img2/favicon/favicon-32x32.png")
-    link(rel="icon" type="image/png" sizes="16x16" href="img2/favicon/favicon-16x16.png")
-    link(rel="mask-icon" href="img2/favicon/safari-pinned-tab.svg" color="#ffcf55")
-    meta(name="msapplication-TileColor" content="#ffcf55")
-    meta(name="theme-color" content="#ffffff")
-
     link(rel="stylesheet", href="../css/style2.min.css")
 
   body.experiment
-    a.return-btn(href="../index.html" aria-label="Вернуться на навигационную страницу") 
-      +icon('icon-home', 32, 32)  
+    a.return-btn(href="../index.html" aria-label="Вернуться на навигационную страницу")
+      +icon('icon-home', 32, 32)
     div(style="display:none")
         include ../../../../build/img2/sprite_auto.svg
     header.page-header.page-header--index.page-header--nojs.page-header--closed
@@ -75,7 +68,7 @@ html(lang="ru")
       a.page-footer__question.jsQuestion(href="#") Задать вопрос
 
     block modals
-        .overlay 
+        .overlay
         .overlay-menu
         .modal.modal--city
             button.modal__close(aria-label="закрыть")
@@ -86,21 +79,21 @@ html(lang="ru")
             p ... или выберите вручную
             ul.modal__list
                 li.modal__list-item.modal__list-item--active
-                    a(href="#") Новосибирск 
+                    a(href="#") Новосибирск
                 li.modal__list-item
-                    a(href="#") Иркутск 
+                    a(href="#") Иркутск
                 li.modal__list-item
-                    a(href="#") Смоленск 
+                    a(href="#") Смоленск
                 li.modal__list-item
-                    a(href="#") Волгоград 
+                    a(href="#") Волгоград
                 li.modal__list-item
-                    a(href="#") Комсомольск-на-Амуре 
-        .modal.modal--question 
+                    a(href="#") Комсомольск-на-Амуре
+        .modal.modal--question
             button.modal__close(aria-label="закрыть")
-                +icon('icon-close', 16, 16)  
+                +icon('icon-close', 16, 16)
             h2 Задайте вопрос
-            form(action="#" method="POST")  
-                .wrapper 
+            form(action="#" method="POST")
+                .wrapper
                     label
                         | Чтобы мы смогли обращаться к вам, оставьте ваше имя
                         span.input-title Имя
@@ -115,7 +108,7 @@ html(lang="ru")
                     button.button(type="submit") Отправить вопрос
                 input#agreement(type="checkbox")
                 label.agreement(for="agreement")
-                    | Я согласен с 
+                    | Я согласен с
                     a(href="#") правилами обработки персональных данных
                     | и пользовательским соглашением
 

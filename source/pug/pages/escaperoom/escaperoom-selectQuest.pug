@@ -9,7 +9,7 @@ block variables
   - var headerMod = ""
   - var hasFooter = false
   - var footerMod = ""
-  - var currentPage = "" 
+  - var currentPage = ""
 
 doctype html
 html(lang="ru")
@@ -20,18 +20,11 @@ html(lang="ru")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     meta(name="description", content="Мёд - оптом и в розницу")
 
-    link(rel="apple-touch-icon" sizes="180x180" href="img2/favicon/apple-touch-icon.png")
-    link(rel="icon" type="image/png" sizes="32x32" href="img2/favicon/favicon-32x32.png")
-    link(rel="icon" type="image/png" sizes="16x16" href="img2/favicon/favicon-16x16.png")
-    link(rel="mask-icon" href="img2/favicon/safari-pinned-tab.svg" color="#ffcf55")
-    meta(name="msapplication-TileColor" content="#ffcf55")
-    meta(name="theme-color" content="#ffffff")
-
     link(rel="stylesheet", href="../css/style2.min.css")
 
   body.allquests
-    a.return-btn(href="../index.html" aria-label="Вернуться на навигационную страницу") 
-      +icon('icon-home', 32, 32)  
+    a.return-btn(href="../index.html" aria-label="Вернуться на навигационную страницу")
+      +icon('icon-home', 32, 32)
     div(style="display:none")
         include ../../../../build/img2/sprite_auto.svg
     header.page-header.page-header--index.page-header--nojs.page-header--closed
@@ -60,32 +53,32 @@ html(lang="ru")
             p квесты в Новосибирске
             h1 Выберите тематику
             ul.select__list
-                li.select__item.select__item--active.select__item--allquests
-                    a(href="#")
+                li.select__item.select__item--active.select__item--allquests(data-type="all")
+                    a.select__link(href="#")
                         +icon("icon-allquests", "26", "30")
                         span Все квесты
-                li.select__item.select__item--adventures
-                    a(href="#")
+                li.select__item.select__item--adventures(data-type="adventure")
+                    a.select__link(href="#")
                         +icon("icon-adventures", "36", "30")
-                        span Приключения
-                li.select__item.select__item--horror
-                    a(href="#")
+                        span  Приключения
+                li.select__item.select__item--horror(data-type="horror")
+                    a.select__link(href="#")
                         +icon("icon-horror", "30", "30")
                         span Ужасы
-                li.select__item.select__item--mysticism
-                    a(href="#")
+                li.select__item.select__item--mysticism(data-type="mystics")
+                    a.select__link(href="#")
                         +icon("icon-mysticism", "30", "30")
                         span Мистика
-                li.select__item.select__item--detective
-                    a(href="#")
+                li.select__item.select__item--detective(data-type="detective")
+                    a.select__link(href="#")
                         +icon("icon-detective", "40", "30")
                         span Детектив
-                li.select__item.select__item--sci-fi
-                    a(href="#")
+                li.select__item.select__item--sci-fi(data-type="sci-fi")
+                    a.select__link(href="#")
                         +icon("icon-sci-fi", "28", "30")
                         span Sci-fi
             ul.gallery
-                li.gallery__item.gallery__item--hit.gallery__item--available
+                li.gallery__item.gallery__item--hit.gallery__item--available(data-type="horror")
                     a(href="escaperoom-maniack.html")
                         img(src="../img2/maniack-list.jpg" alt="Маньяк")
                         h3 Маньяк
@@ -94,8 +87,8 @@ html(lang="ru")
                             .gallery__quantity
                                 span 3–6 чел
                             .gallery__dificulty
-                                span средний                
-                li.gallery__item.gallery__item--available
+                                span средний
+                li.gallery__item.gallery__item--available(data-type="horror mystics")
                     a(href="escaperoom-ritual.html")
                         img(src="../img2/ritual-list.jpg" alt="Ритуал")
                         h3 Ритуал
@@ -104,8 +97,8 @@ html(lang="ru")
                             .gallery__quantity
                                 span 3–5 чел
                             .gallery__dificulty
-                                span сложный               
-                li.gallery__item.gallery__item--mansion.gallery__item--available
+                                span сложный
+                li.gallery__item.gallery__item--mansion.gallery__item--available(data-type="adventure detective")
                     a(href="escaperoom-mansion.html")
                         img(src="../img2/mansion-list.jpg" alt="Тайны старого особняка")
                         h3 Тайны старого особняка
@@ -115,7 +108,7 @@ html(lang="ru")
                                 span 2-5 чел
                             .gallery__dificulty
                                 span легкий
-                li.gallery__item.gallery__item--experiment.gallery__item--hit.gallery__item--available
+                li.gallery__item.gallery__item--experiment.gallery__item--hit.gallery__item--available(data-type="adventure detective")
                     a(href="escaperoom-experiment.html")
                         img(src="../img2/experiment.jpg" alt="Фатальный эксперимент")
                         h3 Фатальный эксперимент
@@ -125,7 +118,7 @@ html(lang="ru")
                                 span 5-8 чел
                             .gallery__dificulty
                                 span сложный
-                li.gallery__item.gallery__item--hit
+                li.gallery__item.gallery__item--hit(data-type="horror")
                     a(href="#")
                         img(src="../img2/crypt-list.jpg" alt="Склеп")
                         h3 Склеп
@@ -134,8 +127,8 @@ html(lang="ru")
                             .gallery__quantity
                                 span 2–5 чел
                             .gallery__dificulty
-                                span сложный               
-                li.gallery__item.gallery__item--cabin.gallery__item--hit
+                                span сложный
+                li.gallery__item.gallery__item--cabin.gallery__item--hit(data-type="horror mystics")
                     a(href="#")
                         img(src="../img2/cabin-list.jpg" alt="Хижина в лесу")
                         h3 Хижина в лесу
@@ -144,8 +137,8 @@ html(lang="ru")
                             .gallery__quantity
                                 span 4-7 чел
                             .gallery__dificulty
-                                span средний            
-                li.gallery__item
+                                span средний
+                li.gallery__item(data-type="detective mystics")
                     a(href="#")
                         img(src="../img2/ghosts-list.jpg" alt="История призраков")
                         h3 История призраков
@@ -155,7 +148,7 @@ html(lang="ru")
                                 span 5-6 чел
                             .gallery__dificulty
                                 span легкий
-                li.gallery__item
+                li.gallery__item(data-type="adventure")
                     a(href="#")
                         img(src="../img2/metro-list.jpg" alt="Метро 2033")
                         h3 Метро 2033
@@ -165,7 +158,7 @@ html(lang="ru")
                                 span 6-8 чел
                             .gallery__dificulty
                                 span средний
-                li.gallery__item
+                li.gallery__item(data-type="detective")
                     a(href="#")
                         img(src="../img2/attic-list.jpg" alt="Старый чердак")
                         h3 Старый чердак
@@ -175,7 +168,7 @@ html(lang="ru")
                                 span 2-3 чел
                             .gallery__dificulty
                                 span легкий
-                li.gallery__item.gallery__item--boundary
+                li.gallery__item.gallery__item--boundary(data-type="adventure")
                     a(href="#")
                         img(class="boundary" src="../img2/boundary-list.jpg" alt="Последний рубеж")
                         h3 Последний рубеж
@@ -185,7 +178,7 @@ html(lang="ru")
                                 span 4-7 чел
                             .gallery__dificulty
                                 span средний
-                li.gallery__item
+                li.gallery__item(data-type="sci-fi")
                     a(href="#")
                         img(src="../img2/mars-list.jpg" alt="Марс-2056")
                         h3 Марс-2056
@@ -204,7 +197,7 @@ html(lang="ru")
       a.page-footer__question.jsQuestion(href="#") Задать вопрос
 
     block modals
-        .overlay 
+        .overlay
         .overlay-menu
         .modal.modal--city
             button.modal__close(aria-label="закрыть")
@@ -215,21 +208,21 @@ html(lang="ru")
             p ... или выберите вручную
             ul.modal__list
                 li.modal__list-item.modal__list-item--active
-                    a(href="#") Новосибирск 
+                    a(href="#") Новосибирск
                 li.modal__list-item
-                    a(href="#") Иркутск 
+                    a(href="#") Иркутск
                 li.modal__list-item
-                    a(href="#") Смоленск 
+                    a(href="#") Смоленск
                 li.modal__list-item
-                    a(href="#") Волгоград 
+                    a(href="#") Волгоград
                 li.modal__list-item
-                    a(href="#") Комсомольск-на-Амуре 
-        .modal.modal--question 
+                    a(href="#") Комсомольск-на-Амуре
+        .modal.modal--question
             button.modal__close(aria-label="закрыть")
-                +icon('icon-close', 16, 16)  
+                +icon('icon-close', 16, 16)
             h2 Задайте вопрос
-            form(action="#" method="POST")  
-                .wrapper 
+            form(action="#" method="POST")
+                .wrapper
                     label
                         | Чтобы мы смогли обращаться к вам, оставьте ваше имя
                         span.input-title Имя
@@ -244,7 +237,7 @@ html(lang="ru")
                     button.button(type="submit") Отправить вопрос
                 input#agreement(type="checkbox")
                 label.agreement(for="agreement")
-                    | Я согласен с 
+                    | Я согласен с
                     a(href="#") правилами обработки персональных данных
                     | и пользовательским соглашением
 

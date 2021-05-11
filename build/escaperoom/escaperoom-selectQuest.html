@@ -6,15 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Мёд - оптом и в розницу">
-    <link rel="apple-touch-icon" sizes="180x180" href="img2/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img2/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img2/favicon/favicon-16x16.png">
-    <link rel="mask-icon" href="img2/favicon/safari-pinned-tab.svg" color="#ffcf55">
-    <meta name="msapplication-TileColor" content="#ffcf55">
-    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="../css/style2.min.css">
   </head>
-  <body class="allquests"><a class="return-btn" href="../index.html" aria-label="Вернуться на навигационную страницу"> 
+  <body class="allquests"><a class="return-btn" href="../index.html" aria-label="Вернуться на навигационную страницу">
       <svg width="32" height="32" aria-hidden="true">
         <use xlink:href="#icon-home"></use>
       </svg></a>
@@ -79,103 +73,103 @@
         <p>квесты в Новосибирске</p>
         <h1>Выберите тематику</h1>
         <ul class="select__list">
-          <li class="select__item select__item--active select__item--allquests"><a href="#">
+          <li class="select__item select__item--active select__item--allquests" data-type="all"><a class="select__link" href="#">
               <svg width="26" height="30" aria-hidden="true">
                 <use xlink:href="#icon-allquests"></use>
               </svg><span>Все квесты</span></a></li>
-          <li class="select__item select__item--adventures"><a href="#">
+          <li class="select__item select__item--adventures" data-type="adventure"><a class="select__link" href="#">
               <svg width="36" height="30" aria-hidden="true">
                 <use xlink:href="#icon-adventures"></use>
-              </svg><span>Приключения</span></a></li>
-          <li class="select__item select__item--horror"><a href="#">
+              </svg><span> Приключения</span></a></li>
+          <li class="select__item select__item--horror" data-type="horror"><a class="select__link" href="#">
               <svg width="30" height="30" aria-hidden="true">
                 <use xlink:href="#icon-horror"></use>
               </svg><span>Ужасы</span></a></li>
-          <li class="select__item select__item--mysticism"><a href="#">
+          <li class="select__item select__item--mysticism" data-type="mystics"><a class="select__link" href="#">
               <svg width="30" height="30" aria-hidden="true">
                 <use xlink:href="#icon-mysticism"></use>
               </svg><span>Мистика</span></a></li>
-          <li class="select__item select__item--detective"><a href="#">
+          <li class="select__item select__item--detective" data-type="detective"><a class="select__link" href="#">
               <svg width="40" height="30" aria-hidden="true">
                 <use xlink:href="#icon-detective"></use>
               </svg><span>Детектив</span></a></li>
-          <li class="select__item select__item--sci-fi"><a href="#">
+          <li class="select__item select__item--sci-fi" data-type="sci-fi"><a class="select__link" href="#">
               <svg width="28" height="30" aria-hidden="true">
                 <use xlink:href="#icon-sci-fi"></use>
               </svg><span>Sci-fi</span></a></li>
         </ul>
         <ul class="gallery">
-          <li class="gallery__item gallery__item--hit gallery__item--available"><a href="escaperoom-maniack.html"><img src="../img2/maniack-list.jpg" alt="Маньяк">
+          <li class="gallery__item gallery__item--hit gallery__item--available" data-type="horror"><a href="escaperoom-maniack.html"><img src="../img2/maniack-list.jpg" alt="Маньяк">
               <h3>Маньяк</h3>
               <p>Верхнетецкая, 32</p>
               <div>
                 <div class="gallery__quantity"><span>3–6 чел</span></div>
-                <div class="gallery__dificulty"><span>средний                </span></div>
+                <div class="gallery__dificulty"><span>средний</span></div>
               </div></a></li>
-          <li class="gallery__item gallery__item--available"><a href="escaperoom-ritual.html"><img src="../img2/ritual-list.jpg" alt="Ритуал">
+          <li class="gallery__item gallery__item--available" data-type="horror mystics"><a href="escaperoom-ritual.html"><img src="../img2/ritual-list.jpg" alt="Ритуал">
               <h3>Ритуал</h3>
               <p>пр. Ленина, 37</p>
               <div>
                 <div class="gallery__quantity"><span>3–5 чел</span></div>
-                <div class="gallery__dificulty"><span>сложный               </span></div>
+                <div class="gallery__dificulty"><span>сложный</span></div>
               </div></a></li>
-          <li class="gallery__item gallery__item--mansion gallery__item--available"><a href="escaperoom-mansion.html"><img src="../img2/mansion-list.jpg" alt="Тайны старого особняка">
+          <li class="gallery__item gallery__item--mansion gallery__item--available" data-type="adventure detective"><a href="escaperoom-mansion.html"><img src="../img2/mansion-list.jpg" alt="Тайны старого особняка">
               <h3>Тайны старого особняка</h3>
               <p>пр. Ленина, 37</p>
               <div>
                 <div class="gallery__quantity"><span>2-5 чел</span></div>
                 <div class="gallery__dificulty"><span>легкий</span></div>
               </div></a></li>
-          <li class="gallery__item gallery__item--experiment gallery__item--hit gallery__item--available"><a href="escaperoom-experiment.html"><img src="../img2/experiment.jpg" alt="Фатальный эксперимент">
+          <li class="gallery__item gallery__item--experiment gallery__item--hit gallery__item--available" data-type="adventure detective"><a href="escaperoom-experiment.html"><img src="../img2/experiment.jpg" alt="Фатальный эксперимент">
               <h3>Фатальный эксперимент</h3>
               <p>Верхнетецкая, 32</p>
               <div>
                 <div class="gallery__quantity"><span>5-8 чел</span></div>
                 <div class="gallery__dificulty"><span>сложный</span></div>
               </div></a></li>
-          <li class="gallery__item gallery__item--hit"><a href="#"><img src="../img2/crypt-list.jpg" alt="Склеп">
+          <li class="gallery__item gallery__item--hit" data-type="horror"><a href="#"><img src="../img2/crypt-list.jpg" alt="Склеп">
               <h3>Склеп</h3>
               <p>пр. Ленина, 37</p>
               <div>
                 <div class="gallery__quantity"><span>2–5 чел</span></div>
-                <div class="gallery__dificulty"><span>сложный               </span></div>
+                <div class="gallery__dificulty"><span>сложный</span></div>
               </div></a></li>
-          <li class="gallery__item gallery__item--cabin gallery__item--hit"><a href="#"><img src="../img2/cabin-list.jpg" alt="Хижина в лесу">
+          <li class="gallery__item gallery__item--cabin gallery__item--hit" data-type="horror mystics"><a href="#"><img src="../img2/cabin-list.jpg" alt="Хижина в лесу">
               <h3>Хижина в лесу</h3>
               <p>Верхнетецкая, 32</p>
               <div>
                 <div class="gallery__quantity"><span>4-7 чел</span></div>
-                <div class="gallery__dificulty"><span>средний            </span></div>
+                <div class="gallery__dificulty"><span>средний</span></div>
               </div></a></li>
-          <li class="gallery__item"><a href="#"><img src="../img2/ghosts-list.jpg" alt="История призраков">
+          <li class="gallery__item" data-type="detective mystics"><a href="#"><img src="../img2/ghosts-list.jpg" alt="История призраков">
               <h3>История призраков</h3>
               <p>Новослободская, 2а</p>
               <div>
                 <div class="gallery__quantity"><span>5-6 чел</span></div>
                 <div class="gallery__dificulty"><span>легкий</span></div>
               </div></a></li>
-          <li class="gallery__item"><a href="#"><img src="../img2/metro-list.jpg" alt="Метро 2033">
+          <li class="gallery__item" data-type="adventure"><a href="#"><img src="../img2/metro-list.jpg" alt="Метро 2033">
               <h3>Метро 2033</h3>
               <p>Новослободская, 2а</p>
               <div>
                 <div class="gallery__quantity"><span>6-8 чел</span></div>
                 <div class="gallery__dificulty"><span>средний</span></div>
               </div></a></li>
-          <li class="gallery__item"><a href="#"><img src="../img2/attic-list.jpg" alt="Старый чердак">
+          <li class="gallery__item" data-type="detective"><a href="#"><img src="../img2/attic-list.jpg" alt="Старый чердак">
               <h3>Старый чердак</h3>
               <p>Новослободская, 2а</p>
               <div>
                 <div class="gallery__quantity"><span>2-3 чел</span></div>
                 <div class="gallery__dificulty"><span>легкий</span></div>
               </div></a></li>
-          <li class="gallery__item gallery__item--boundary"><a href="#"><img class="boundary" src="../img2/boundary-list.jpg" alt="Последний рубеж">
+          <li class="gallery__item gallery__item--boundary" data-type="adventure"><a href="#"><img class="boundary" src="../img2/boundary-list.jpg" alt="Последний рубеж">
               <h3>Последний рубеж</h3>
               <p>Верхнетецкая, 32</p>
               <div>
                 <div class="gallery__quantity"><span>4-7 чел</span></div>
                 <div class="gallery__dificulty"><span>средний</span></div>
               </div></a></li>
-          <li class="gallery__item"><a href="#"><img src="../img2/mars-list.jpg" alt="Марс-2056">
+          <li class="gallery__item" data-type="sci-fi"><a href="#"><img src="../img2/mars-list.jpg" alt="Марс-2056">
               <h3>Марс-2056</h3>
               <p>пр. Ленина, 37</p>
               <div>
@@ -191,7 +185,7 @@
         <li class="socials__item socials__item--vk"><a href="#"></a></li>
       </ul><a class="page-footer__question jsQuestion" href="#">Задать вопрос</a>
     </footer>
-    <div class="overlay"> </div>
+    <div class="overlay"></div>
     <div class="overlay-menu"></div>
     <div class="modal modal--city">
       <button class="modal__close" aria-label="закрыть">
@@ -202,22 +196,22 @@
       <h2>Ваш город</h2><a class="location" href="#"><span>Определить местоположение</span></a>
       <p>... или выберите вручную</p>
       <ul class="modal__list">
-        <li class="modal__list-item modal__list-item--active"><a href="#">Новосибирск </a></li>
-        <li class="modal__list-item"><a href="#">Иркутск </a></li>
-        <li class="modal__list-item"><a href="#">Смоленск </a></li>
-        <li class="modal__list-item"><a href="#">Волгоград </a></li>
-        <li class="modal__list-item"><a href="#">Комсомольск-на-Амуре </a></li>
+        <li class="modal__list-item modal__list-item--active"><a href="#">Новосибирск</a></li>
+        <li class="modal__list-item"><a href="#">Иркутск</a></li>
+        <li class="modal__list-item"><a href="#">Смоленск</a></li>
+        <li class="modal__list-item"><a href="#">Волгоград</a></li>
+        <li class="modal__list-item"><a href="#">Комсомольск-на-Амуре</a></li>
       </ul>
     </div>
-    <div class="modal modal--question"> 
+    <div class="modal modal--question">
       <button class="modal__close" aria-label="закрыть">
         <svg width="16" height="16" aria-hidden="true">
           <use xlink:href="#icon-close"></use>
         </svg>
       </button>
       <h2>Задайте вопрос</h2>
-      <form action="#" method="POST"> 
-        <div class="wrapper"> 
+      <form action="#" method="POST">
+        <div class="wrapper">
           <label>Чтобы мы смогли обращаться к вам, оставьте ваше имя<span class="input-title">Имя</span>
             <input type="text" name="user-name" id="user-name" placeholder="Имя">
           </label>
@@ -229,7 +223,7 @@
           <button class="button" type="submit">Отправить вопрос</button>
         </div>
         <input id="agreement" type="checkbox">
-        <label class="agreement" for="agreement">Я согласен с <a href="#">правилами обработки персональных данных</a>и пользовательским соглашением</label>
+        <label class="agreement" for="agreement">Я согласен с<a href="#">правилами обработки персональных данных</a>и пользовательским соглашением</label>
       </form>
     </div>
     <script src="../js/vendor.min.js"></script>
