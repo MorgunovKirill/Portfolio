@@ -1,0 +1,80 @@
+.study {
+  padding-top: 90px;
+  padding-bottom: 100px;
+  background-color: #000000;
+
+  @media (max-width: 768px) {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+
+  &__section {
+    margin-bottom: 80px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    font-size: 50px;
+    font-weight: 500;
+    font-family: $font-family-primary;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 0 35px 0;
+  }
+
+  &__description {
+    font-size: 22px;
+    font-family: $font-family-secondary;
+    color: rgb(255, 255, 255);
+    line-height: 1.625;
+    text-align: center;
+    margin: 0 0 65px 0;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &--inthernet {
+      display: block;
+      column-count: 2;
+
+      @media (max-width: 500px) {
+        column-count: 1;
+        text-align: center;
+      }
+    }
+  }
+
+  &__item {
+    margin-bottom: 20px;
+  }
+
+  &__heading {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: $font-family-secondary;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 0 50px 0;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: $font-family-primary;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+  }
+}

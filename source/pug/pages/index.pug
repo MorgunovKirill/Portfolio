@@ -13,7 +13,7 @@ block variables
 
 block main
   main
-    .intro
+    section.intro
       .container
         h1.intro__title Кирилл Моргунов
         p.intro__description Фронтенд-разработчик
@@ -39,7 +39,7 @@ block main
             a.socials__link(href="https://github.com/MorgunovKirill" target="_blank" rel="noopener noreferrer")
               +icon('icon-github', 30, 30)
               span Github
-    .stack#stack
+    section.stack#stack
       .container
         h2.stack__title Мой стек
         ul.stack__list
@@ -174,7 +174,7 @@ block main
                 li.stack__feature Использую как фукциональные компоненты, так и классовые
                 li.stack__feature Небольшой опыт использования state-менеджера Redux
                 li.stack__feature Небольшой опыт использования React-hooks (useState, useEffect, useMemo, useContext)
-    .projects#projects
+    section.projects#projects
       .container
         h2.projects__title Мои проекты
         p.projects__description Несколько выполненных работ для демострации навыков
@@ -195,7 +195,7 @@ block main
             a.projects__link(href="escaperoom/escaperoom.html")
               span Escaperoom - страница квестов в реальности (адаптив мобильная, планшетная, десктопная версии - несколько страниц)
               img(src="img/escaperoom.jpg" width=770 height=295 alt="escaperoom")
-    .contacts#contacts
+    section.contacts#contacts
       .container
         h2.contacts__title Контакты
         p.contacts__phone
@@ -210,6 +210,42 @@ block main
           span
              +icon("icon-skype", 30, 30)
           a(href="skype:kirillmorgunov@mail.ru") kirillmorgunov@mail.ru
+    section.study#study
+      .container
+        h2.study__title Мое обучение
+        p.study__description Источники, книги, курсы, которые я использую для обучения
+        .study__section
+          h3.study__heading Оконченные курсы
+          ul.study__list.study__list--courses
+            li.study__item
+              img(src="img/1levelHtml.jpg" width=300 height=400 alt="1 level html & css certificate")
+            li.study__item
+              img(src="img/2levelHtml.jpg"  width=300 height=400 alt="2 level html & css certificate")
+            li.study__item
+              img(src="img/1levelJS.jpg"  width=300 height=400 alt="1 level js certificate")
+        .study__section
+          h3.study__heading Книги
+          ul.study__list.study__list--books
+            li.study__item
+              img(src="img/flanagan.jpg" width=300 height=400 alt="flanagan book")
+            li.study__item
+              img(src="img/eloquent.jpg"  width=300 height=400 alt="eloquent javascript book")
+            li.study__item
+              img(src="img/rezig.jpg"  width=300 height=400 alt="rezig book")
+        .study__section
+          h3.study__heading Интернет ресурсы
+          ul.study__list.study__list--inthernet
+            li.study__item
+              a.study__link(href="https://htmlacademy.ru/") Html academy
+            li.study__item
+              a.study__link(href="https://learn.javascript.ru") learn.javascript.ru
+            li.study__item
+              a.study__link(href="https://www.codecademy.com") Codeacademy
+            li.study__item
+              a.study__link(href="https://developer.mozilla.org/ru/") MDN webdocs
+            li.study__item
+              a.study__link(href="https://www.udemy.com") Udemy
+
 
 
 
