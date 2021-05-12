@@ -2,12 +2,22 @@
     padding: 38px 0;
     background-color: #000000;
     
+    
     &__list {
         margin: 0;
         padding: 0; 
         list-style: none;
         display: flex;
         justify-content: flex-end;
+
+        transition: transform 0.8s ease 0s, opacity 0.8s ease 0s;
+        opacity: 0; 
+        transform: translateX(500px);  
+
+        &.anim-active {        
+            opacity: 1;   
+            transform: none;        
+        }
     }
 
     &__item {
