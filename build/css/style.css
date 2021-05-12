@@ -479,3 +479,73 @@ img {
   .contacts__skype svg {
     -webkit-transform: translateY(6px);
             transform: translateY(6px); }
+
+.study {
+  padding-top: 90px;
+  padding-bottom: 100px;
+  background-color: #000000; }
+  @media (max-width: 768px) {
+    .study {
+      padding-top: 50px;
+      padding-bottom: 60px; } }
+  .study__section {
+    margin-bottom: 80px; }
+    .study__section:last-child {
+      margin-bottom: 0; }
+  .study__title {
+    font-size: 50px;
+    font-weight: 500;
+    font-family: "Rubik", "Arial", sans-serif;
+    color: white;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 0 35px 0; }
+  .study__description {
+    font-size: 22px;
+    font-family: "MyriadPro", "Arial", sans-serif;
+    color: white;
+    line-height: 1.625;
+    text-align: center;
+    margin: 0 0 65px 0; }
+  .study__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .study__list--inthernet {
+      display: block;
+      -webkit-column-count: 2;
+         -moz-column-count: 2;
+              column-count: 2; }
+      @media (max-width: 500px) {
+        .study__list--inthernet {
+          -webkit-column-count: 1;
+             -moz-column-count: 1;
+                  column-count: 1;
+          text-align: center; } }
+  .study__item {
+    margin-bottom: 20px; }
+  .study__heading {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: "MyriadPro", "Arial", sans-serif;
+    color: white;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 0 50px 0; }
+  .study__link {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Rubik", "Arial", sans-serif;
+    color: white;
+    line-height: 1.2; }
