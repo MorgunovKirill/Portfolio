@@ -1,0 +1,23 @@
+.product {
+  background-image: linear-gradient(to right, #ffffff 50%, #f1f2f4 50% 100%);
+  margin-top: 55px;
+  margin-bottom: 129px;
+
+  @media (max-width: 1024px) {
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 15px;
+    background-image: none;
+    margin-bottom: 60px;
+  }
+
+  .container {
+    display: flex;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+}

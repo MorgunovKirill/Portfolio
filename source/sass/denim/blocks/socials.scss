@@ -1,0 +1,23 @@
+.socials {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    justify-content: flex-start;
+  }
+
+  &__item {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}

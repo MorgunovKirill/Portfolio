@@ -1,0 +1,136 @@
+.filter {
+  margin-bottom: 40px;
+
+  &__container {
+    min-height: 80px;
+  }
+
+  &__filter {
+    position: relative;
+    max-width: 245px;
+    margin-left: auto;
+
+    @media (max-width: 768px) {
+      max-width: initial;
+    }
+  }
+
+  &__toggle {
+    display: block;
+    padding: 16px 18px;
+    border: 2px solid #151c22;
+    position: relative;
+    text-decoration: none;
+    font-family: $font-family-primary;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #151c22;
+
+    svg {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      top: 15px;
+      right: 15px;
+      transform: rotate(90deg);
+      transition: transform $modern-transition-settings;
+    }
+
+    &.active {
+      svg {
+        transform: rotate(270deg);
+      }
+    }
+  }
+
+  &__popup {
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 57px;
+    left: 0;
+    background: #ffffff;
+    transition: height $default-transition-settings, overflow $default-transition-settings;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    .filter__toggle {
+      border: none;
+
+      @media (max-width: 768px) {
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+
+    &.active {
+      border: 2px solid #151c22;
+      border-top: none;
+    }
+  }
+
+  &__content {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    &.active {
+      padding-top: 9px;
+      padding-bottom: 25px;
+    }
+  }
+
+  input[type="radio"] {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    font-size: 0;
+  }
+
+  .details__color {
+    margin-bottom: -20px;
+  }
+
+  .details__size {
+    margin-bottom: -20px;
+
+    label {
+      display: inline-block;
+    }
+  }
+
+  label {
+    margin-bottom: 20px;
+  }
+
+  &__type {
+    border-bottom: 2px solid #f1f2f4;
+  }
+
+  &__apply-btn {
+    width: 100%;
+    padding-top: 22.5px;
+    padding-bottom: 22.5px;
+    margin-top: 39px;
+  }
+
+  &__clear-btn {
+    background-color: #ffffff;
+    width: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #151c22;
+    padding-top: 20.5px;
+    padding-bottom: 20.5px;
+  }
+
+  &__cell {
+    min-height: 100px;
+  }
+}
