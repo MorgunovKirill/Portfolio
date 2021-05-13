@@ -6,6 +6,15 @@
     top: 0;
     right: 100px;
 
+    transition: transform 0.8s ease 0s, opacity 0.8s ease 0s;
+    opacity: 0; 
+    transform: translateX(500px);  
+
+    &.anim-active {        
+        opacity: 1;   
+        transform: none;        
+    }
+
     @media (max-width: 768px) {
         position: static;
         display: flex;

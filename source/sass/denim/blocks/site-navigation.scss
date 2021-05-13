@@ -1,0 +1,51 @@
+.site-navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 37px;
+
+  @media (max-width: 768px) {
+    display: block;
+    column-count: 2;
+    column-gap: 88px;
+  }
+
+  &__item {
+    margin-right: 35px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @media (max-width: 768px) {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+
+    &--title {
+      display: none;
+
+      .site-navigation__link {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 28px;
+      }
+
+      @media (max-width: 768px) {
+        display: block;
+      }
+    }
+  }
+
+  &__link {
+    font-family: $font-family-primary;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+}

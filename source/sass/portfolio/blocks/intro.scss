@@ -20,6 +20,15 @@
                 color: rgb(255, 255, 255);
                 line-height: 1.083;
                 margin: 0 0 50px 0;
+
+                transition: transform 0.8s ease 0s, opacity 0.8s ease 0s;
+                opacity: 0; 
+                transform: translateY(200px);  
+
+                &.anim-active {        
+                        opacity: 1;   
+                        transform: none;        
+                }
         }
 
         &__description {      
@@ -27,10 +36,26 @@
                 font-family: $font-family-primary;
                 color: rgb(255, 255, 255);
                 line-height: 1.75;  
-                margin: 0 0 40px 0;        
+                margin: 0 0 40px 0;   
+                
+                transition: transform 0.8s ease 0.4s, opacity 0.8s ease 0.4s;
+                opacity: 0; 
+                transform: translateY(200px);  
+
+                &.anim-active {        
+                        opacity: 1;   
+                        transform: none;        
+                }
         }
 
         &__btn {
                 text-decoration: none;
+
+                transition: opacity 0.8s ease 0.8s;
+                opacity: 0;                
+
+                &.anim-active {        
+                        opacity: 1;                            
+                }
         }
 }

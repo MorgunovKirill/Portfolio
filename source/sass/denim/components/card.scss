@@ -1,0 +1,43 @@
+.card {
+  font-family: $font-family-primary;
+  color: #151c22;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 0 0 15px #ccc;
+  padding: 10px;  
+
+  &__img {
+    margin-bottom: 25px;
+
+    img {
+      @media (max-width: 1024px) {
+        width: 324px;
+ 
+      }
+    }
+  }
+
+  &__heading {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 13px;
+    margin: auto 0 15px 0;
+    align-self: center;
+
+    @media (max-width: 1024px) {
+      margin-top: 0;
+    }
+  }
+
+  &__price {
+    margin: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 11px;
+    align-self: center;
+  }
+}

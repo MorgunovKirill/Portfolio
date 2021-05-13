@@ -1,0 +1,42 @@
+.header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: flex;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    max-width: 100px;
+    margin: 0 auto;
+
+    font-weight: 800;
+
+    a {
+      font-family: $font-family-primary;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 28px;
+      text-decoration: none;
+      color: #151c22;
+      transition: opacity 0.3s ease;
+      outline: none;
+
+      &:hover,
+      &:focus {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  &__menu-toggle {
+    display: none;
+    background-color: $color-transparent;
+    border: none;
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+}

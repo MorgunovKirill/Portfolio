@@ -1,0 +1,30 @@
+.accordion {
+  overflow: hidden;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+
+  &__btn {
+    position: relative;
+
+    @media (max-width: 1024px) {
+      display: flex;
+    }
+  }
+
+  &__content {
+    display: block;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+
+    opacity: 1;
+
+    transition: max-height $modern-transition-settings, overflow $modern-transition-settings, padding $default-transition-settings;
+
+    &.active {
+      overflow: visible;
+    }
+  }
+}
