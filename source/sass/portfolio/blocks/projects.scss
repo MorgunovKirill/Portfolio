@@ -16,6 +16,11 @@
     line-height: 1.2;
     text-align: center;
     margin: 0 0 35px 0;
+
+    &.anim-active {    
+      animation-duration: 3s;
+      animation-fill-mode: both;
+    }
   }
 
   &__description {
@@ -25,6 +30,11 @@
     line-height: 1.625;
     text-align: center;
     margin: 0 0 65px 0;
+
+    &.anim-active {           
+      animation-duration: 6s;
+      animation-fill-mode: both;
+    }
   }
 
   &__list {
@@ -46,6 +56,7 @@
 
   &__item {
     min-height: 295px;
+    opacity: 0;
 
     &--big {
       grid-column: span 2;
@@ -53,6 +64,11 @@
       @media (max-width: 1024px) {
         grid-column: initial;
       }
+    }
+
+    &.anim-active {     
+      animation-duration: 3s;
+      animation-fill-mode: both;
     }
   }
 
